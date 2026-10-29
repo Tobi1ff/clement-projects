@@ -1,0 +1,91 @@
+{
+  "logo": {
+    "file": "cps-logo.png",
+    "width": 515,
+    "height": 258,
+    "source": "Fruit Picking Profile 2026.pdf object 82 and original alpha mask object 83",
+    "note": "Original raster logo extracted with original transparency, no redesign. Best on light background; not a vector."
+  },
+  "assets": [
+    {
+      "file": "mining-pumps.jpg",
+      "width": 1600,
+      "height": 1200,
+      "description": "Blue slurry pump lineup in a workshop, sourced from industrial company profile. Best pump hero/card.",
+      "source": "site/assets/source/industrial-155-1600x1200.jpg",
+      "note": "Supplier/product photograph; do not claim this is a CPS-owned factory."
+    },
+    {
+      "file": "pump-assembly.jpg",
+      "width": 737,
+      "height": 560,
+      "description": "Orange pump and motor assembly.",
+      "source": "site/assets/source/industrial-60-737x560.jpg",
+      "note": "Good for secondary product content; moderate resolution."
+    },
+    {
+      "file": "pump-repair.jpg",
+      "width": 1024,
+      "height": 768,
+      "description": "Disassembled slurry pump in a workshop.",
+      "source": "site/assets/source/industrial-152-1024x768.jpg",
+      "note": "Authentic equipment maintenance context; warm lighting."
+    },
+    {
+      "file": "construction-team.jpg",
+      "width": 1157,
+      "height": 1536,
+      "description": "Two workers pouring and finishing a roadside concrete drain.",
+      "source": "site/assets/source/industrial-5-1157x1536.jpg",
+      "note": "Strong authentic company work photo; phone/date watermark near lower edge."
+    },
+    {
+      "file": "construction-drainage.jpg",
+      "width": 960,
+      "height": 592,
+      "description": "Wide roadside concrete drainage work with team in the distance.",
+      "source": "site/assets/source/industrial-253-960x592.jpg",
+      "note": "Good wide project photo; clear leading lines, no obvious watermark."
+    },
+    {
+      "file": "earthmoving-profile.jpg",
+      "width": 1651,
+      "height": 571,
+      "description": "Wide bulldozer image from industrial profile.",
+      "source": "site/assets/source/industrial-287-1651x571.jpg",
+      "note": "Illustrative/stock-looking profile image, not evidence of a CPS project or CPS-owned equipment."
+    },
+    {
+      "file": "citrus-team.jpg",
+      "width": 780,
+      "height": 1040,
+      "description": "Fruit picking team beside filled citrus crates in an orchard.",
+      "source": "clemets-projects/Fruit-picking-display-images/IMG-20250228-WA0001.jpg",
+      "note": "Best agriculture human story; camera watermark near lower edge."
+    },
+    {
+      "file": "citrus-harvest.jpg",
+      "width": 1040,
+      "height": 780,
+      "description": "Filled citrus crates on a trailer with orchard worker and tractor.",
+      "source": "clemets-projects/Fruit-picking-display-images/IMG-20250312-WA0011.jpg",
+      "note": "Strong wide agriculture card; watermark near bottom."
+    },
+    {
+      "file": "citrus-sorting.jpg",
+      "width": 1040,
+      "height": 780,
+      "description": "Orchard worker recording details beside citrus crates.",
+      "source": "clemets-projects/Fruit-picking-display-images/IMG-20250312-WA0023.jpg",
+      "note": "Useful process photo; watermark near bottom."
+    },
+    {
+      "file": "citrus-orchard.jpg",
+      "width": 780,
+      "height": 1040,
+      "description": "Tractor and fruit crates between green orchard rows.",
+      "source": "clemets-projects/Fruit-picking-display-images/IMG-20250228-WA0008.jpg",
+      "note": "Useful orchard atmosphere; camera watermark near bottom."
+    }
+  ]
+}
