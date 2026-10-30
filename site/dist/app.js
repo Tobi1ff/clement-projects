@@ -147,6 +147,8 @@ if (form) {
   let accessoryEnquiry = enquiryParams.get('enquiry') === 'accessory'
     && enquiryParams.get('service') === 'industrial'
     && Boolean(enquiryParams.get('detail')?.trim());
+  let projectEnquiry = enquiryParams.get('enquiry') === 'project'
+    && Boolean(enquiryParams.get('detail')?.trim());
   const details = {
     industrial: ['Equipment, model or part number', 'A model, part number or quantity helps us understand your requirement.', 'e.g. pump model, spare part and quantity'],
     construction: ['Approximate scope and timing', 'Tell us the work type, approximate size and preferred dates.', 'e.g. drainage works, approximate length and dates'],
@@ -161,8 +163,8 @@ if (form) {
     detail.disabled = !current;
     detail.required = partEnquiry;
     if (current) {
-      document.getElementById('detail-label').textContent = partEnquiry ? 'Part required *' : current[0] + ' (optional)';
-      document.getElementById('detail-help').textContent = partEnquiry ? 'Your selected accessory is filled in. You can update the part name here.' : current[1];
+      document.getElementById('detail-label').textContent = partEnquiry ? 'Part required *' : projectEnquiry ? 'Project reference (optional)' : current[0] + ' (optional)';
+      document.getElementById('detail-help').textContent = partEnquiry ? 'Your selected accessory is filled in. You can update the part name here.' : projectEnquiry ? 'Reference selected from the archive. Describe your own requirements in the message below.' : current[1];
       detail.placeholder = current[2];
     }
     industrialFields.hidden = !industrial;
@@ -177,11 +179,12 @@ if (form) {
   }
   const preselect = enquiryParams.get('service');
   if ([...service.options].some(option => option.value === preselect)) service.value = preselect;
-  if (service.value === 'industrial') detail.value = (enquiryParams.get('detail') || '').slice(0, 300);
+  if (details[service.value]) detail.value = (enquiryParams.get('detail') || '').slice(0, 300);
   updateDetails();
   detail.addEventListener('input', () => { selectedAccessoryName.textContent = detail.value; });
   service.addEventListener('change', () => {
     accessoryEnquiry = false;
+    projectEnquiry = false;
     detail.value = '';
     detail.setCustomValidity('');
     pumpModel.value = '';
@@ -206,7 +209,7 @@ if (form) {
     }
     const selected = service.selectedOptions[0].textContent;
     const recipient = ['documents', 'general'].includes(service.value) ? 'info@clementprojectssolution.co.za' : 'quotations@clementprojectssolution.co.za';
-    const extra = !detail.disabled && value('detail') ? `${partEnquiry ? 'Part required' : details[service.value][0]}: ${value('detail')}\n` : '';
+    const extra = !detail.disabled && value('detail') ? `${partEnquiry ? 'Part required' : projectEnquiry ? 'Project reference' : details[service.value][0]}: ${value('detail')}\n` : '';
     const pumpDetails = service.value === 'industrial'
       ? `${value('pump_model') ? `Pump model: ${value('pump_model')}\n` : ''}${value('quantity') ? `Quantity: ${value('quantity')}\n` : ''}` : '';
     const requirements = value('message') || (partEnquiry ? 'Please quote for the pump accessory listed above.' : '');
@@ -280,4 +283,69 @@ if (modelRows.length) {
     search.focus();
   });
   document.getElementById('print-sheet').addEventListener('click', () => window.print());
+}
+
+const archiveRecords = [...document.querySelectorAll('[data-project-record]')];
+if (archiveRecords.length) {
+  const search = document.getElementById('archive-search');
+  const year = document.getElementById('archive-year');
+  const workType = document.getElementById('archive-work-type');
+  const statuses = [...document.querySelectorAll('[data-archive-status]')];
+  const empty = document.getElementById('archive-empty');
+  const params = new URLSearchParams(location.search);
+  let status = statuses.some(button => button.dataset.archiveStatus === params.get('status')) ? params.get('status') : 'all';
+  search.value = (params.get('q') || '').slice(0, 200);
+  for (const [control, key] of [[year, 'year'], [workType, 'work']]) {
+    if ([...control.options].some(option => option.value === params.get(key))) control.value = params.get(key);
+  }
+  function updateArchive(syncUrl = true) {
+    const words = search.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+    let count = 0;
+    archiveRecords.forEach(record => {
+      const matches = (status === 'all' || record.dataset.recordStatus === status)
+        && (year.value === 'all' || record.dataset.recordYear === year.value)
+        && (workType.value === 'all' || record.dataset.recordWorkType === workType.value)
+        && words.every(word => record.dataset.recordSearch.toLowerCase().includes(word));
+      record.hidden = !matches;
+      if (matches) count++;
+    });
+    statuses.forEach(button => {
+      const active = button.dataset.archiveStatus === status;
+      button.classList.toggle('active', active);
+      button.setAttribute('aria-pressed', String(active));
+    });
+    document.getElementById('archive-count').textContent = `Showing ${count} of ${archiveRecords.length} project records.`;
+    empty.hidden = count !== 0;
+    const noCurrent = status === 'current' && !archiveRecords.some(record => record.dataset.recordStatus === 'current');
+    document.getElementById('archive-empty-title').textContent = noCurrent ? 'No confirmed current projects listed.' : 'No matching project records.';
+    document.getElementById('archive-empty-copy').textContent = noCurrent
+      ? 'Current project updates have not been supplied for this archive. Browse the recorded projects or ask our team for the latest information.'
+      : 'Try another search or clear the filters to browse the archive.';
+    if (syncUrl) {
+      const url = new URL(location.href);
+      for (const [key, value] of [['status', status], ['year', year.value], ['work', workType.value], ['q', search.value.trim()]]) {
+        if (value && value !== 'all') url.searchParams.set(key, value);
+        else url.searchParams.delete(key);
+      }
+      try { history.replaceState(null, '', url); } catch { /* Local-file previews may restrict history updates. */ }
+    }
+  }
+  document.getElementById('archive-controls').hidden = false;
+  document.getElementById('archive-status-filters').hidden = false;
+  search.addEventListener('input', () => updateArchive());
+  year.addEventListener('change', () => updateArchive());
+  workType.addEventListener('change', () => updateArchive());
+  statuses.forEach(button => button.addEventListener('click', () => {
+    status = button.dataset.archiveStatus;
+    updateArchive();
+  }));
+  document.getElementById('archive-reset').addEventListener('click', () => {
+    search.value = '';
+    year.value = 'all';
+    workType.value = 'all';
+    status = 'all';
+    updateArchive();
+    search.focus();
+  });
+  updateArchive(false);
 }

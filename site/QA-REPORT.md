@@ -88,3 +88,15 @@ This was a local verification pass. No hosting deployment or domain change was p
 - Chrome checked all 13 pages at 320 and 1440px, and the catalogue/contact pages at 390, 600, 768 and 1024px; no image decoding errors, JavaScript errors or horizontal overflow occurred.
 - Verified all ten part links, draft data and recipient, optional message, quantity and whitespace validation, editing, service changes, all five existing enquiry routes, model-sheet references, the diagram viewer and no-JavaScript email fallback. No email was sent.
 - Desktop/mobile catalogue and enquiry screenshots visually reviewed. Automation: `/tmp/clement-accessories-check.cjs`.
+
+## Projects & Bids Archive — 30 October 2026
+
+- Added a searchable archive and two standalone project record pages, linked from Our Work, Construction and the footer. No Services-menu entry was added.
+- The 2024 Ba-Phalaborwa plant-hire record is completed, with a 30-day duration and recorded bid of R141,000.00. The Dwellers 2025 drain-construction record has a recorded bid of R572,058.13 and remains last-reported ongoing with current status unconfirmed. Both amounts, years and the completed duration were checked against the original PDF.
+- Amounts are labelled as recorded bids. No contract-award values, open-tender submission process, project-specific photographs or personal reference contacts were invented or added to the project summaries. Original source-document links remain available.
+- Added search, status, recorded-year and work-type filters; combined filtering; empty/reset states; and shareable filter URLs. Current-project filtering truthfully shows no confirmed current records.
+- Project enquiry links preserve the project reference in the contact form and draft; switching service clears that context. The existing accessory enquiry remains supported.
+- Static checks pass for 16 pages and 827 local references. JavaScript syntax passes.
+- Chrome checked all 16 pages at 320 and 1440px, plus archive/detail, Our Work and Construction layouts at 390, 600, 768 and 1024px. No image decoding failures, JavaScript errors or horizontal overflow occurred.
+- Verified status/year/work/search combinations, reload and deep links, invalid parameters, empty/reset states, both detail pages, source-data labels, enquiry references and no-JavaScript browsing. No email was sent.
+- Desktop/mobile archive, record cards and detail pages visually reviewed. Automation: `/tmp/clement-project-archive-check.cjs`.
