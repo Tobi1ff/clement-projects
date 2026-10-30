@@ -49,3 +49,11 @@ This was a local verification pass. No hosting deployment or domain change was p
 - Verified all category filters and linked category views; next/previous controls, wraparound, arrow keys, Escape and return of focus; and the existing Our Work photo dialog.
 - With JavaScript disabled, all 24 photos remain visible and links open the original images.
 - Desktop, mobile, photo-grid and viewer screenshots visually reviewed. Automation: `/tmp/clement-agriculture-check.cjs`.
+
+## Footer client logos — 30 October 2026
+
+- Extracted the four selected original logos from the industrial profile’s Current Clients section (PDF page 12): Mopani TVET College, Ba-Phalaborwa Municipality, Dwellers Trading and Projects, and South African National Parks.
+- Foskor and Stibium are excluded from the footer logo list and build assets.
+- The strip has only images, with accessible alternative text. No visible heading, additional client claims, links, animation or external image requests were added.
+- All 12 generated footers contain exactly these four logos. Static checks pass for 12 pages and 602 local references.
+- Chrome checked logo loading, preserved proportions, lack of visible labels/links and no horizontal overflow at 320, 390, 700, 768, 1024 and 1440 pixels. Desktop/mobile strips visually reviewed. Automation: `/tmp/clement-clients-check.cjs`.

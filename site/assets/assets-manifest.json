@@ -254,6 +254,38 @@
       "description": "A purple harvest crate filled with green citrus among orchard trees.",
       "source": "clemets-projects/Fruit-picking-display-images/IMG-20250312-WA0034.jpg",
       "note": "Original supplied photograph, copied without alteration for the agriculture gallery."
+    },
+    {
+      "file": "client-mopani-tvet.png",
+      "width": 409,
+      "height": 225,
+      "description": "Mopani TVET College logo",
+      "source": "clemets-projects/clemet-project-solutions.pdf, Current Clients section, PDF page 12, image object 345",
+      "note": "Extracted original logo. PDF soft mask and matte converted to PNG transparency where present; no recolouring, cropping or redrawing."
+    },
+    {
+      "file": "client-ba-phalaborwa.png",
+      "width": 384,
+      "height": 130,
+      "description": "Ba-Phalaborwa Municipality logo",
+      "source": "clemets-projects/clemet-project-solutions.pdf, Current Clients section, PDF page 12, image object 347",
+      "note": "Extracted original logo. PDF soft mask and matte converted to PNG transparency where present; no recolouring, cropping or redrawing."
+    },
+    {
+      "file": "client-dwellers.png",
+      "width": 353,
+      "height": 73,
+      "description": "Dwellers Trading and Projects logo",
+      "source": "clemets-projects/clemet-project-solutions.pdf, Current Clients section, PDF page 12, image object 351",
+      "note": "Extracted original logo. PDF soft mask and matte converted to PNG transparency where present; no recolouring, cropping or redrawing."
+    },
+    {
+      "file": "client-sanparks.jpg",
+      "width": 149,
+      "height": 172,
+      "description": "South African National Parks logo",
+      "source": "clemets-projects/clemet-project-solutions.pdf, Current Clients section, PDF page 12, image object 353",
+      "note": "Extracted original logo. PDF soft mask and matte converted to PNG transparency where present; no recolouring, cropping or redrawing."
     }
   ]
 }
