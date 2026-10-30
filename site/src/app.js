@@ -31,8 +31,7 @@ document.querySelectorAll('.footer-clients').forEach(strip => {
   const viewport = strip.querySelector('.footer-client-viewport');
   const track = strip.querySelector('.footer-client-track');
   const group = strip.querySelector('.footer-client-logos');
-  const toggle = strip.querySelector('.footer-clients-toggle');
-  if (!viewport || !track || !group || !toggle) return;
+  if (!viewport || !track || !group) return;
   const copy = group.cloneNode(true);
   copy.classList.add('footer-client-logos-copy');
   copy.setAttribute('aria-hidden', 'true');
@@ -41,24 +40,12 @@ document.querySelectorAll('.footer-clients').forEach(strip => {
   track.append(copy);
   const mobile = window.matchMedia('(max-width: 700px)');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  let paused = false;
   function updateMotion() {
     const animated = mobile.matches && !reducedMotion.matches;
     strip.classList.toggle('is-animated', animated);
-    toggle.hidden = !animated;
     viewport.tabIndex = mobile.matches ? 0 : -1;
     if (!animated) viewport.scrollLeft = 0;
   }
-  function setPaused(value) {
-    paused = value;
-    strip.classList.toggle('is-paused', paused);
-    toggle.setAttribute('aria-pressed', String(paused));
-    toggle.setAttribute('aria-label', paused ? 'Resume logo scrolling' : 'Pause logo scrolling');
-  }
-  toggle.addEventListener('click', () => setPaused(!paused));
-  viewport.addEventListener('pointerdown', () => {
-    if (strip.classList.contains('is-animated')) setPaused(true);
-  });
   mobile.addEventListener('change', updateMotion);
   reducedMotion.addEventListener('change', updateMotion);
   updateMotion();

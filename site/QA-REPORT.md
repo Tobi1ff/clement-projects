@@ -65,3 +65,9 @@ This was a local verification pass. No hosting deployment or domain change was p
 - Loop copies are decorative, inert and hidden from assistive technology; the four original logos retain accessible names. Foskor and Stibium remain excluded.
 - Static checks pass for 12 pages and 602 local references.
 - Chrome verified leftward direction and the loop seam, pause/resume, touch/focus pause, reduced-motion and no-JavaScript fallbacks, no document overflow, and the 700/701px mobile boundary across 320, 390, 700, 701, 768 and 1440px widths. Desktop/mobile strips visually reviewed. Automation: `/tmp/clement-logo-scroll-check.cjs`.
+
+## Remove mobile logo pause control — 30 October 2026
+
+- Removed the pause/resume button and its manual pause state/listeners at the user’s request. The mobile track uses the full strip width.
+- Kept the mobile-only leftward loop, temporary hover/keyboard-focus pause, reduced-motion/manual-scroll fallback and static desktop row.
+- Static checks pass for 12 pages and 602 references. Chrome confirmed the button is absent on all 12 pages, leftward motion on mobile, full strip width, static desktop, reduced-motion scrolling and no overflow at 320, 390, 700, 701, 768 and 1440px. Mobile strip visually reviewed. Automation: `/tmp/clement-no-pause-check.cjs`.
