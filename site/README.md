@@ -12,6 +12,7 @@ Open `dist/index.html` in a browser. Navigation, the work gallery, enquiry draft
 - `scripts/parts-data.mjs`: model pairings transcribed from the industrial profile.
 - `scripts/parts-page.mjs`: model sheet page layout.
 - `scripts/client-logos.mjs`: selected footer logos from the company profile’s Current Clients section; Foskor and Stibium are excluded.
+- `scripts/registered-bodies.mjs`: About-page registration and compliance logos from the supplied industrial profile.
 - `scripts/agriculture-gallery-data.mjs`: selected original agriculture photographs and captions.
 - `scripts/agriculture-gallery-page.mjs`: agriculture gallery and service-page preview.
 - `src/styles.css`: responsive design, including mobile layouts and reduced-motion support.

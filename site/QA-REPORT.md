@@ -71,3 +71,10 @@ This was a local verification pass. No hosting deployment or domain change was p
 - Removed the pause/resume button and its manual pause state/listeners at the user’s request. The mobile track uses the full strip width.
 - Kept the mobile-only leftward loop, temporary hover/keyboard-focus pause, reduced-motion/manual-scroll fallback and static desktop row.
 - Static checks pass for 12 pages and 602 references. Chrome confirmed the button is absent on all 12 pages, leftward motion on mobile, full strip width, static desktop, reduced-motion scrolling and no overflow at 320, 390, 700, 701, 768 and 1440px. Mobile strip visually reviewed. Automation: `/tmp/clement-no-pause-check.cjs`.
+
+## About-page Registered Bodies — 30 October 2026
+
+- Extracted CIDB, RMA, Information Regulator and NHBRC logos from the supplied industrial profile’s Registered Bodies section (PDF page 11).
+- Added a dedicated `#registered-bodies` section on About, a request-current-documents link and a link to the original profile page. The copy attributes the list to the profile without adding current grades or certificate-validity claims.
+- Static checks pass for 12 pages and 608 local references.
+- Chrome verified all four logos load with their original proportions, a responsive 2/4-column layout and no horizontal overflow at 320, 390, 560, 768, 1024 and 1440px. The enquiry link preselects company documents; the founder section and client footer remain present. Desktop/mobile screenshots visually reviewed. Automation: `/tmp/clement-registered-bodies-check.cjs`.

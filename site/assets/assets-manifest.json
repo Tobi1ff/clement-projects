@@ -286,6 +286,38 @@
       "description": "South African National Parks logo",
       "source": "clemets-projects/clemet-project-solutions.pdf, Current Clients section, PDF page 12, image object 353",
       "note": "Extracted original logo. PDF soft mask and matte converted to PNG transparency where present; no recolouring, cropping or redrawing."
+    },
+    {
+      "file": "body-cidb.png",
+      "width": 212,
+      "height": 88,
+      "description": "CIDB logo",
+      "source": "clemets-projects/clemet-project-solutions.pdf, Registered Bodies section, PDF page 11, image object 273",
+      "note": "Original logo extracted from the supplied profile; transparency retained where present. No recolouring or redrawing."
+    },
+    {
+      "file": "body-rma.jpg",
+      "width": 358,
+      "height": 157,
+      "description": "RMA logo",
+      "source": "clemets-projects/clemet-project-solutions.pdf, Registered Bodies section, PDF page 11, image object 275",
+      "note": "Original logo extracted from the supplied profile; transparency retained where present. No recolouring or redrawing."
+    },
+    {
+      "file": "body-information-regulator.jpg",
+      "width": 347,
+      "height": 139,
+      "description": "Information Regulator logo",
+      "source": "clemets-projects/clemet-project-solutions.pdf, Registered Bodies section, PDF page 11, image object 276",
+      "note": "Original logo extracted from the supplied profile; transparency retained where present. No recolouring or redrawing."
+    },
+    {
+      "file": "body-nhbrc.jpg",
+      "width": 190,
+      "height": 155,
+      "description": "NHBRC logo",
+      "source": "clemets-projects/clemet-project-solutions.pdf, Registered Bodies section, PDF page 11, image object 282",
+      "note": "Original logo extracted from the supplied profile; transparency retained where present. No recolouring or redrawing."
     }
   ]
 }
