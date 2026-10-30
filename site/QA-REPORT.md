@@ -39,3 +39,13 @@ This was a local verification pass. No hosting deployment or domain change was p
 - Added the portrait to the About page founder section, with descriptive alternative text and a stable `#founder` link.
 - Static checks pass for 11 pages and 449 local references.
 - Chrome verified loading, proportions, native-size display, desktop/mobile placement and no horizontal overflow at 320, 390, 700, 768, 1024 and 1440 pixels. Desktop and mobile founder-section screenshots visually reviewed.
+
+## Agriculture gallery update — 30 October 2026
+
+- Selected 24 original photos from the supplied fruit-picking folder: 8 people/picking, 6 orchard/transport and 10 harvest/handling photographs. All deployed photo files were verified byte-for-byte against the supplied originals.
+- Added a gallery page, an Agriculture-page preview and links from Services, Our Work and the footer.
+- Static checks pass for 12 pages and 566 local references.
+- Chrome checked all 12 pages at 320 and 1440 pixels, plus the gallery and Agriculture page at 390, 600, 768 and 1024 pixels. Images load without decoding failures; no horizontal overflow or JavaScript errors occurred.
+- Verified all category filters and linked category views; next/previous controls, wraparound, arrow keys, Escape and return of focus; and the existing Our Work photo dialog.
+- With JavaScript disabled, all 24 photos remain visible and links open the original images.
+- Desktop, mobile, photo-grid and viewer screenshots visually reviewed. Automation: `/tmp/clement-agriculture-check.cjs`.

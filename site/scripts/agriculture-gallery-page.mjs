@@ -1,0 +1,20 @@
+import { agriculturePhotos, agricultureCategories } from './agriculture-gallery-data.mjs';
+
+export function renderAgricultureGallery({ eyebrow, button, arrow, diagonal, cta }) {
+  return `<section class="ag-gallery-hero"><div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><a href="agriculture.html">Agriculture</a><span>/</span>Gallery</div>
+    <div class="ag-gallery-hero-grid"><div>${eyebrow('AGRICULTURE GALLERY', true)}<h1>Agriculture<br><em>in pictures.</em></h1><p>A closer look at our team, orchard work and citrus harvests, photographed in the field.</p><div class="hero-actions">${button('Explore the photos', '#agriculture-photos')}${button('Agricultural services', 'agriculture.html', 'ghost')}</div><p class="ag-gallery-meta">${agriculturePhotos.length} PHOTOGRAPHS · PEOPLE, ORCHARDS & HARVESTS</p></div><figure><img src="assets/citrus-harvest.jpg" alt="Citrus-filled harvest crates on a trailer behind a tractor" width="1040" height="780" fetchpriority="high"><figcaption>FROM THE ORCHARD. THROUGH THE HARVEST.</figcaption></figure></div>
+  </div></section>
+  <section class="section ag-gallery-section" id="agriculture-photos"><div class="container">
+    <div class="section-heading"><div>${eyebrow('A DAY IN THE FIELD')}<h2>People. Picking.<br><span>The harvest taking shape.</span></h2></div><p>Explore the photographs by theme. Open any image for a closer look.</p></div>
+    <div class="filter-bar ag-gallery-filters" id="agriculture-filters" role="group" aria-label="Filter agriculture photographs" hidden><button type="button" class="filter-button active" data-filter="all" aria-pressed="true">All photos <span>${agriculturePhotos.length}</span></button>${agricultureCategories.map(category => `<button type="button" class="filter-button" data-filter="${category.id}" aria-pressed="false">${category.label} <span>${agriculturePhotos.filter(photo => photo.category === category.id).length}</span></button>`).join('')}</div>
+    <p id="filter-status" class="ag-gallery-status" data-kind="photos" aria-live="polite">Showing all ${agriculturePhotos.length} photographs.</p>
+    <div class="ag-gallery-grid">${agriculturePhotos.map((photo, index) => `<figure class="ag-photo-card" data-category="${photo.category}"><a class="ag-photo-link" href="assets/${photo.file}" data-image="assets/${photo.file}" data-caption="${photo.alt}" data-gallery="agriculture" aria-label="View photograph ${index + 1}: ${photo.title}"><img src="assets/${photo.file}" alt="${photo.alt}" width="${photo.width}" height="${photo.height}" loading="lazy" decoding="async"><span class="ag-photo-open" aria-hidden="true">${diagonal}</span></a><figcaption><span class="small-label">${agricultureCategories.find(category => category.id === photo.category).label}</span><h3>${photo.title}</h3></figcaption></figure>`).join('')}</div>
+    <noscript><p class="ag-gallery-noscript">Select a photograph to open the original image. Enable JavaScript to filter photographs and browse them in the image viewer.</p></noscript>
+    <a class="text-link ag-gallery-back" href="agriculture.html">Explore our agricultural services${arrow}</a>
+  </div></section>${cta('Planning your next harvest?', 'Let’s discuss the work ahead.', 'contact.html?service=agriculture')}`;
+}
+
+export function renderAgriculturePreview({ eyebrow, button }) {
+  return `<section class="section ag-gallery-preview"><div class="container"><div class="section-heading"><div>${eyebrow('FROM OUR WORKING GALLERY')}<h2>See the people.<br><span>See the work.</span></h2></div>${button('Explore the agriculture gallery', 'agriculture-gallery.html')}</div><div class="ag-preview-grid">${[agriculturePhotos[0], agriculturePhotos[3], agriculturePhotos[6]].map(photo => `<a href="agriculture-gallery.html?filter=${photo.category}#agriculture-photos" aria-label="View ${agricultureCategories.find(category => category.id === photo.category).label.toLowerCase()} photographs"><img src="assets/${photo.file}" alt="${photo.alt}" width="${photo.width}" height="${photo.height}" loading="lazy"><span>${photo.title}</span></a>`).join('')}</div></div></section>`;
+}

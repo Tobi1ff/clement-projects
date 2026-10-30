@@ -42,7 +42,9 @@ function applyFilter(filter) {
     if (!project.hidden) count++;
   });
   const status = document.getElementById('filter-status');
-  if (status) status.textContent = `Showing ${count} ${filter === 'all' ? '' : filter + ' '}items.`;
+  if (status) status.textContent = status.dataset.kind === 'photos'
+    ? `Showing ${count} of ${projects.length} photographs.`
+    : `Showing ${count} ${filter === 'all' ? '' : filter + ' '}items.`;
 }
 filters.forEach(button => button.addEventListener('click', () => {
   applyFilter(button.dataset.filter);
@@ -52,14 +54,52 @@ filters.forEach(button => button.addEventListener('click', () => {
   try { history.replaceState(null, '', url); } catch { /* Local-file previews may restrict history updates. */ }
 }));
 if (filters.length) applyFilter(new URLSearchParams(location.search).get('filter') || 'all');
+const agricultureFilters = document.getElementById('agriculture-filters');
+if (agricultureFilters) agricultureFilters.hidden = false;
 
 const dialog = document.getElementById('image-dialog');
-document.querySelectorAll('[data-image]').forEach(button => button.addEventListener('click', () => {
-  dialog.querySelector('img').src = button.dataset.image;
-  dialog.querySelector('img').alt = button.dataset.caption;
-  document.getElementById('image-caption').textContent = button.dataset.caption;
+const photoLinks = [...document.querySelectorAll('[data-image]')];
+let galleryImages = [];
+let galleryIndex = 0;
+let photoOpener = null;
+function showPhoto(link) {
+  const image = dialog.querySelector('img');
+  image.src = link.dataset.image;
+  image.alt = link.dataset.caption;
+  document.getElementById('image-caption').textContent = link.dataset.caption;
+  const navigation = document.getElementById('image-navigation');
+  navigation.hidden = galleryImages.length < 2;
+  document.getElementById('image-position').textContent = galleryImages.length
+    ? `${galleryIndex + 1} / ${galleryImages.length}` : '';
+}
+function movePhoto(direction) {
+  if (!galleryImages.length) return;
+  galleryIndex = (galleryIndex + direction + galleryImages.length) % galleryImages.length;
+  showPhoto(galleryImages[galleryIndex]);
+}
+photoLinks.forEach(link => link.addEventListener('click', event => {
+  if (!dialog || typeof dialog.showModal !== 'function') return;
+  if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+  event.preventDefault();
+  photoOpener = link;
+  galleryImages = link.dataset.gallery
+    ? photoLinks.filter(item => item.dataset.gallery === link.dataset.gallery && !item.closest('[data-category]')?.hidden)
+    : [];
+  galleryIndex = Math.max(0, galleryImages.indexOf(link));
+  showPhoto(link);
   dialog.showModal();
 }));
+document.getElementById('previous-image')?.addEventListener('click', () => movePhoto(-1));
+document.getElementById('next-image')?.addEventListener('click', () => movePhoto(1));
+dialog?.addEventListener('keydown', event => {
+  if (!galleryImages.length || !['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+  event.preventDefault();
+  movePhoto(event.key === 'ArrowRight' ? 1 : -1);
+});
+dialog?.addEventListener('close', () => {
+  galleryImages = [];
+  photoOpener?.focus({ preventScroll: true });
+});
 dialog?.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
 dialog?.addEventListener('click', event => {
   if (event.target === dialog) {

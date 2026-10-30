@@ -151,3 +151,89 @@
 .founder-portrait img{width:214px;max-width:100%;height:auto}
 .leadership-with-portrait h2{margin-bottom:28px}
 @media(max-width:700px){.leadership-with-portrait{grid-template-columns:minmax(0,1fr);gap:30px}.leadership-with-portrait h2{margin-bottom:24px}}
+
+/* Agriculture photo gallery */
+.ag-gallery-hero{background:#173e31;color:white;padding:30px 0 65px}
+.ag-gallery-hero .breadcrumb{color:#d4e0d9;flex-wrap:wrap;margin-bottom:45px}
+.ag-gallery-hero-grid{display:grid;grid-template-columns:1fr 1.1fr;align-items:center;gap:65px}
+.ag-gallery-hero h1{font-size:clamp(48px,5.7vw,82px);line-height:1.08}
+.ag-gallery-hero-grid>div>p:not(.eyebrow):not(.ag-gallery-meta){color:#d4e0d9;font-size:15px;line-height:1.9;max-width:430px;margin-top:26px}
+.ag-gallery-hero .ag-gallery-meta{font-size:9px;letter-spacing:.12em;color:#d4e0d9;margin-top:35px;line-height:1.9}
+.ag-gallery-hero figure{position:relative;min-width:0}
+.ag-gallery-hero figure img{width:100%;height:410px;object-fit:cover}
+.ag-gallery-hero figcaption{position:absolute;left:0;bottom:0;right:0;background:linear-gradient(transparent,#0b2119e8);padding:55px 25px 22px;font-size:9px;letter-spacing:.12em;color:white}
+.ag-gallery-status{font-size:12px;margin-bottom:30px}
+.ag-gallery-filters{margin-bottom:20px}
+.ag-gallery-filters .filter-button{color:#42564a;border-color:var(--line);min-height:46px}
+.ag-gallery-filters .filter-button.active{background:#173e31;border-color:#173e31;color:white}
+.ag-gallery-grid{columns:3;column-gap:26px}
+.ag-photo-card{display:inline-block;width:100%;vertical-align:top;break-inside:avoid;margin-bottom:28px;background:white;border:1px solid var(--line)}
+.ag-photo-link{display:block;position:relative;background:var(--soft)}
+.ag-photo-link img{width:100%;height:auto}
+.ag-photo-open{position:absolute;right:0;bottom:0;background:var(--orange);color:var(--navy);display:grid;place-items:center;width:44px;height:44px;transition:background .2s}
+.ag-photo-link:hover .ag-photo-open{background:#ffac73}
+.ag-photo-link:focus-visible{outline-offset:3px;z-index:1}
+.ag-photo-card figcaption{padding:21px 23px 24px}
+.ag-photo-card .small-label{font-size:9px;color:#45634d}
+.ag-photo-card h3{font-size:20px;line-height:1.35;margin-top:10px}
+.ag-gallery-back{margin-top:20px}
+.ag-gallery-noscript{font-size:13px;padding:20px 0}
+.ag-gallery-preview{background:var(--soft)}
+.ag-gallery-preview .section-heading>.button{flex-shrink:0}
+.ag-preview-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px}
+.ag-preview-grid>a{display:block;border:1px solid var(--line);background:white}
+.ag-preview-grid img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:50% 30%}
+.ag-preview-grid span{display:block;padding:20px;font-size:15px;line-height:1.5;font-weight:500}
+.ag-preview-grid>a:hover{border-color:var(--orange-dark)}
+.agriculture-hero-gallery{display:flex;width:fit-content;margin-top:20px;color:white}
+.agriculture-hero-gallery:hover{color:var(--orange)}
+.ag-work-gallery-link{display:flex;justify-content:space-between;gap:35px;align-items:center;background:#173e31;color:white;padding:38px;margin-top:45px}
+.ag-work-gallery-link .small-label,.ag-work-gallery-link p{color:#d4e0d9}
+.ag-work-gallery-link h2{font-size:30px;margin-top:14px}
+.ag-work-gallery-link p{font-size:13px;margin-top:18px}
+.ag-work-gallery-action{display:flex;align-items:center;gap:20px;white-space:nowrap;font-size:13px;font-weight:600;color:var(--orange)}
+.dialog-navigation{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:12px 25px 20px;border-top:1px solid #ffffff30}
+.dialog-navigation button{display:flex;align-items:center;gap:12px;background:transparent;color:white;border:1px solid #ffffff60;min-height:44px;padding:9px 14px;font-size:12px}
+.dialog-navigation button:hover{background:#ffffff20}
+.dialog-navigation p{font-size:12px;color:#d3dae2;white-space:nowrap;text-align:center}
+.image-dialog:has(.dialog-navigation:not([hidden]))>img{max-height:calc(100dvh - 210px)}
+@media(max-width:1000px){
+ .ag-gallery-hero-grid{gap:35px}
+ .ag-gallery-hero figure img{height:360px}
+ .ag-gallery-preview .section-heading{align-items:start;flex-direction:column;gap:24px}
+}
+@media(max-width:800px){
+ .ag-gallery-grid{columns:2;column-gap:20px}
+ .ag-photo-card{margin-bottom:20px}
+ .ag-photo-card figcaption{padding:18px}
+ .ag-photo-card h3{font-size:18px}
+ .ag-gallery-hero-grid{grid-template-columns:1fr;gap:35px}
+ .ag-gallery-hero-grid>div>p:not(.eyebrow):not(.ag-gallery-meta){max-width:550px}
+ .ag-gallery-hero figure img{height:330px}
+ .ag-work-gallery-link{padding:28px;align-items:start;flex-direction:column;gap:25px}
+}
+@media(max-width:560px){
+ .ag-gallery-hero{padding-block:25px 35px}
+ .ag-gallery-hero .breadcrumb{font-size:9px;gap:8px;margin-bottom:32px}
+ .ag-gallery-hero .eyebrow{font-size:8px}
+ .ag-gallery-hero h1{font-size:clamp(44px,12vw,64px)}
+ .ag-gallery-hero-grid>div>p:not(.eyebrow):not(.ag-gallery-meta){font-size:14px}
+ .ag-gallery-hero .ag-gallery-meta{font-size:8px;margin-top:25px}
+ .ag-gallery-hero .hero-actions .button{font-size:11px}
+ .ag-gallery-hero figure img{height:auto;aspect-ratio:4/3}
+ .ag-gallery-hero figcaption{font-size:7px;padding:45px 18px 18px}
+ .ag-gallery-grid{columns:1}
+ .ag-gallery-filters{gap:8px}
+ .ag-gallery-filters .filter-button{font-size:11px}
+ .ag-gallery-status{font-size:11px;margin-bottom:23px}
+ .ag-photo-card{margin-bottom:23px}
+ .ag-photo-card h3{font-size:21px}
+ .ag-photo-card .small-label{font-size:9px}
+ .ag-gallery-preview .section-heading>.button{font-size:11px;gap:16px;max-width:100%}
+ .ag-preview-grid{grid-template-columns:1fr;gap:20px}
+ .ag-preview-grid span{font-size:15px}
+ .ag-work-gallery-link h2{font-size:27px}
+ .dialog-navigation{padding:12px 16px 18px;gap:8px}
+ .dialog-navigation button{font-size:11px;padding-inline:10px;gap:8px}
+ .image-dialog:has(.dialog-navigation:not([hidden]))>img{max-height:calc(100dvh - 220px)}
+}
