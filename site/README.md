@@ -25,6 +25,8 @@ Run `npm run build` after changes, then `npm run check`. The original company pr
 
 Twelve generated pages: home, about, three service areas, interchangeable models and parts sheet, work gallery, agriculture gallery, resources, contact, privacy and 404. The parts sheet contains the 40 model pairings from printed page 6 of the industrial profile, with model search, family filters, a full-sheet print layout and links that prefill model references in an industrial enquiry. The work gallery supports category links and accessible native photo dialogs. The agriculture gallery contains 24 original photographs with three category filters, captions and a full-size viewer with previous/next buttons and arrow-key navigation. Photos load lazily; without JavaScript, links open the original photographs. The Agriculture page includes a three-photo preview. Service enquiry links preselect the corresponding contact option.
 
+The footer displays four selected client logos. On screens up to 700px, the logos scroll left in a continuous loop with a pause/resume control. Touching or focusing the strip pauses motion. Reduced-motion preferences and browsers without JavaScript use a manually scrollable row. Desktop keeps the static four-logo layout. Decorative loop copies are hidden from assistive technology.
+
 The enquiry form deliberately prepares an email draft rather than pretending to send a message. Visitors review the draft, open their email app, and send it themselves. A copy action supports browsers without an email app. The form does not store personal information, and the site includes no analytics or embedded third-party resources.
 
 ## Content review before public launch

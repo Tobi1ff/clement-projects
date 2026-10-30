@@ -57,3 +57,11 @@ This was a local verification pass. No hosting deployment or domain change was p
 - The strip has only images, with accessible alternative text. No visible heading, additional client claims, links, animation or external image requests were added.
 - All 12 generated footers contain exactly these four logos. Static checks pass for 12 pages and 602 local references.
 - Chrome checked logo loading, preserved proportions, lack of visible labels/links and no horizontal overflow at 320, 390, 700, 768, 1024 and 1440 pixels. Desktop/mobile strips visually reviewed. Automation: `/tmp/clement-clients-check.cjs`.
+
+## Mobile client logo scrolling — 30 October 2026
+
+- Added a seamless leftward logo loop only on screens up to 700px. Desktop retains the four-logo row.
+- Added a mobile pause/resume icon control; touch and keyboard focus pause the strip. Reduced-motion preferences and browsers without JavaScript provide manual horizontal scrolling without automatic motion.
+- Loop copies are decorative, inert and hidden from assistive technology; the four original logos retain accessible names. Foskor and Stibium remain excluded.
+- Static checks pass for 12 pages and 602 local references.
+- Chrome verified leftward direction and the loop seam, pause/resume, touch/focus pause, reduced-motion and no-JavaScript fallbacks, no document overflow, and the 700/701px mobile boundary across 320, 390, 700, 701, 768 and 1440px widths. Desktop/mobile strips visually reviewed. Automation: `/tmp/clement-logo-scroll-check.cjs`.

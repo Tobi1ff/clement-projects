@@ -245,5 +245,29 @@
 .footer-client-logo{display:flex;align-items:center;justify-content:center;min-width:0;min-height:95px}
 .footer-client-logo img{display:block;width:auto;height:auto;max-width:100%;max-height:84px;object-fit:contain}
 .site-footer .footer-main{padding-top:60px}
-@media(max-width:700px){.footer-client-logos{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 30px;padding-block:24px}.footer-client-logo{min-height:90px}.footer-client-logo img{max-height:76px}.site-footer .footer-main{padding-top:45px}}
-@media(max-width:360px){.footer-client-logos{gap:18px}.footer-client-logo{min-height:80px}.footer-client-logo img{max-height:65px}}
+.footer-clients{position:relative}
+.footer-client-viewport{width:100%}
+.footer-client-logos-copy,.footer-clients-toggle,.client-play-icon{display:none}
+@media screen and (max-width:700px){
+ .footer-client-viewport{overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+ .footer-client-track{display:flex;width:max-content}
+ .footer-client-logos{display:flex;flex:0 0 auto;width:max-content;max-width:none;margin:0;gap:0;padding:18px 0}
+ .footer-client-logos-copy{display:none}
+ .footer-client-logo{flex:0 0 max(180px,calc((100vw - 48px)/2));width:max(180px,calc((100vw - 48px)/2));min-height:88px;padding:0 20px}
+ .footer-client-logo img{max-width:140px;max-height:76px}
+ .footer-clients.is-animated .footer-client-viewport{width:calc(100% - 48px);overflow:hidden}
+ .footer-clients.is-animated .footer-client-logos-copy{display:flex}
+ .footer-clients-toggle{position:absolute;right:8px;top:50%;transform:translateY(-50%);display:grid;place-items:center;width:36px;height:44px;padding:7px;border:1px solid var(--line);background:white;color:var(--navy);border-radius:3px}
+ .footer-clients-toggle svg{width:20px;height:20px}
+ .footer-clients.is-paused .client-pause-icon{display:none}
+ .footer-clients.is-paused .client-play-icon{display:block}
+ .site-footer .footer-main{padding-top:45px}
+}
+@media screen and (max-width:700px) and (prefers-reduced-motion:no-preference){
+ .footer-clients.is-animated .footer-client-track{animation:client-logos-left 24s linear infinite}
+ .footer-clients.is-paused .footer-client-track,.footer-client-viewport:focus-within .footer-client-track{animation-play-state:paused}
+}
+@media screen and (max-width:700px) and (hover:hover){
+ .footer-client-viewport:hover .footer-client-track{animation-play-state:paused}
+}
+@keyframes client-logos-left{from{transform:translateX(0)}to{transform:translateX(-50%)}}
