@@ -137,6 +137,16 @@ if (form) {
   const service = document.getElementById('service');
   const detail = document.getElementById('detail');
   const detailField = document.querySelector('.service-extra');
+  const industrialFields = document.querySelector('.industrial-enquiry-fields');
+  const pumpModel = document.getElementById('pump-model');
+  const quantity = document.getElementById('quantity');
+  const message = document.getElementById('message');
+  const selectedAccessory = document.getElementById('selected-accessory');
+  const selectedAccessoryName = document.getElementById('selected-accessory-name');
+  const enquiryParams = new URLSearchParams(location.search);
+  let accessoryEnquiry = enquiryParams.get('enquiry') === 'accessory'
+    && enquiryParams.get('service') === 'industrial'
+    && Boolean(enquiryParams.get('detail')?.trim());
   const details = {
     industrial: ['Equipment, model or part number', 'A model, part number or quantity helps us understand your requirement.', 'e.g. pump model, spare part and quantity'],
     construction: ['Approximate scope and timing', 'Tell us the work type, approximate size and preferred dates.', 'e.g. drainage works, approximate length and dates'],
@@ -145,28 +155,49 @@ if (form) {
   };
   function updateDetails() {
     const current = details[service.value];
+    const industrial = service.value === 'industrial';
+    const partEnquiry = industrial && accessoryEnquiry;
     detailField.hidden = !current;
     detail.disabled = !current;
+    detail.required = partEnquiry;
     if (current) {
-      document.getElementById('detail-label').textContent = current[0] + ' (optional)';
-      document.getElementById('detail-help').textContent = current[1];
+      document.getElementById('detail-label').textContent = partEnquiry ? 'Part required *' : current[0] + ' (optional)';
+      document.getElementById('detail-help').textContent = partEnquiry ? 'Your selected accessory is filled in. You can update the part name here.' : current[1];
       detail.placeholder = current[2];
     }
+    industrialFields.hidden = !industrial;
+    pumpModel.disabled = !industrial;
+    quantity.disabled = !industrial;
+    message.required = !partEnquiry;
+    document.getElementById('message-label-text').textContent = partEnquiry ? 'Additional requirements' : 'How can we help?';
+    document.getElementById('message-required').hidden = partEnquiry;
+    document.getElementById('message-optional').hidden = !partEnquiry;
+    selectedAccessory.hidden = !partEnquiry;
+    selectedAccessoryName.textContent = detail.value;
   }
-  const enquiryParams = new URLSearchParams(location.search);
   const preselect = enquiryParams.get('service');
   if ([...service.options].some(option => option.value === preselect)) service.value = preselect;
-  updateDetails();
   if (service.value === 'industrial') detail.value = (enquiryParams.get('detail') || '').slice(0, 300);
-  service.addEventListener('change', () => { detail.value = ''; updateDetails(); });
+  updateDetails();
+  detail.addEventListener('input', () => { selectedAccessoryName.textContent = detail.value; });
+  service.addEventListener('change', () => {
+    accessoryEnquiry = false;
+    detail.value = '';
+    detail.setCustomValidity('');
+    pumpModel.value = '';
+    quantity.value = '';
+    updateDetails();
+  });
   let prepared = '';
   form.addEventListener('submit', event => {
     event.preventDefault();
     if (!form.reportValidity()) return;
     const data = new FormData(form);
     const value = key => String(data.get(key) || '').trim();
-    if (!value('name') || !value('location') || !value('message')) {
-      const empty = ['name', 'location', 'message'].find(key => !value(key));
+    const partEnquiry = service.value === 'industrial' && accessoryEnquiry;
+    const required = ['name', 'location', ...(message.required ? ['message'] : []), ...(detail.required ? ['detail'] : [])];
+    if (required.some(key => !value(key))) {
+      const empty = required.find(key => !value(key));
       const input = document.getElementById(empty);
       input.setCustomValidity('Please enter your details.');
       input.reportValidity();
@@ -175,10 +206,13 @@ if (form) {
     }
     const selected = service.selectedOptions[0].textContent;
     const recipient = ['documents', 'general'].includes(service.value) ? 'info@clementprojectssolution.co.za' : 'quotations@clementprojectssolution.co.za';
-    const extra = !detail.disabled && value('detail') ? `${details[service.value][0]}: ${value('detail')}\n` : '';
-    prepared = `Hello CPS team,\n\nI would like to enquire about ${selected.toLowerCase()}.\n\nName: ${value('name')}\n${value('company') ? `Company: ${value('company')}\n` : ''}Email: ${value('email')}\n${value('phone') ? `Phone: ${value('phone')}\n` : ''}Location: ${value('location')}\n${extra}\nRequirements:\n${value('message')}\n\nKind regards,\n${value('name')}`;
+    const extra = !detail.disabled && value('detail') ? `${partEnquiry ? 'Part required' : details[service.value][0]}: ${value('detail')}\n` : '';
+    const pumpDetails = service.value === 'industrial'
+      ? `${value('pump_model') ? `Pump model: ${value('pump_model')}\n` : ''}${value('quantity') ? `Quantity: ${value('quantity')}\n` : ''}` : '';
+    const requirements = value('message') || (partEnquiry ? 'Please quote for the pump accessory listed above.' : '');
+    prepared = `Hello CPS team,\n\nI would like to enquire about ${selected.toLowerCase()}.\n\nName: ${value('name')}\n${value('company') ? `Company: ${value('company')}\n` : ''}Email: ${value('email')}\n${value('phone') ? `Phone: ${value('phone')}\n` : ''}Location: ${value('location')}\n${extra}${pumpDetails}\nRequirements:\n${requirements}\n\nKind regards,\n${value('name')}`;
     document.getElementById('enquiry-preview').textContent = prepared;
-    document.getElementById('email-draft').href = `mailto:${recipient}?subject=${encodeURIComponent(`${selected} enquiry — ${value('company') || value('name')}`)}&body=${encodeURIComponent(prepared)}`;
+    document.getElementById('email-draft').href = `mailto:${recipient}?subject=${encodeURIComponent(`${partEnquiry ? value('detail') : selected} enquiry — ${value('company') || value('name')}`)}&body=${encodeURIComponent(prepared)}`;
     document.getElementById('draft-recipient').textContent = recipient;
     form.hidden = true;
     const result = document.getElementById('enquiry-result');

@@ -78,3 +78,13 @@ This was a local verification pass. No hosting deployment or domain change was p
 - Added a dedicated `#registered-bodies` section on About, a request-current-documents link and a link to the original profile page. The copy attributes the list to the profile without adding current grades or certificate-validity claims.
 - Static checks pass for 12 pages and 608 local references.
 - Chrome verified all four logos load with their original proportions, a responsive 2/4-column layout and no horizontal overflow at 320, 390, 560, 768, 1024 and 1440px. The enquiry link preselects company documents; the founder section and client footer remain present. Desktop/mobile screenshots visually reviewed. Automation: `/tmp/clement-registered-bodies-check.cjs`.
+
+## Pump accessories and enquiries — 30 October 2026
+
+- Added a catalogue for the ten accessories named on PDF page 9 of the industrial profile. The original labelled exploded-view diagram was extracted from image object 238.
+- Added links from Mining & Industrial, Resources, the Models & Parts Sheet and footer.
+- Part links preselect the industrial enquiry and part name. Added optional pump-model and quantity fields; a selected accessory requires its part name and allows an optional message. The draft includes the part, model, quantity and requirements, and uses the selected part in its subject.
+- Static checks pass for 13 pages and 676 local references. JavaScript syntax passes.
+- Chrome checked all 13 pages at 320 and 1440px, and the catalogue/contact pages at 390, 600, 768 and 1024px; no image decoding errors, JavaScript errors or horizontal overflow occurred.
+- Verified all ten part links, draft data and recipient, optional message, quantity and whitespace validation, editing, service changes, all five existing enquiry routes, model-sheet references, the diagram viewer and no-JavaScript email fallback. No email was sent.
+- Desktop/mobile catalogue and enquiry screenshots visually reviewed. Automation: `/tmp/clement-accessories-check.cjs`.

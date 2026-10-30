@@ -11,6 +11,7 @@ Open `dist/index.html` in a browser. Navigation, the work gallery, enquiry draft
 - `scripts/build.mjs`: page content, shared components and generation.
 - `scripts/parts-data.mjs`: model pairings transcribed from the industrial profile.
 - `scripts/parts-page.mjs`: model sheet page layout.
+- `scripts/pump-accessories.mjs`: accessory catalogue and preselected enquiry links.
 - `scripts/client-logos.mjs`: selected footer logos from the company profile’s Current Clients section; Foskor and Stibium are excluded.
 - `scripts/registered-bodies.mjs`: About-page registration and compliance logos from the supplied industrial profile.
 - `scripts/agriculture-gallery-data.mjs`: selected original agriculture photographs and captions.
@@ -24,9 +25,11 @@ Run `npm run build` after changes, then `npm run check`. The original company pr
 
 ## Current behaviour
 
-Twelve generated pages: home, about, three service areas, interchangeable models and parts sheet, work gallery, agriculture gallery, resources, contact, privacy and 404. The parts sheet contains the 40 model pairings from printed page 6 of the industrial profile, with model search, family filters, a full-sheet print layout and links that prefill model references in an industrial enquiry. The work gallery supports category links and accessible native photo dialogs. The agriculture gallery contains 24 original photographs with three category filters, captions and a full-size viewer with previous/next buttons and arrow-key navigation. Photos load lazily; without JavaScript, links open the original photographs. The Agriculture page includes a three-photo preview. Service enquiry links preselect the corresponding contact option.
+Thirteen generated pages: home, about, three service areas, pump accessories and spares, interchangeable models and parts sheet, work gallery, agriculture gallery, resources, contact, privacy and 404. The parts sheet contains the 40 model pairings from printed page 6 of the industrial profile, with model search, family filters, a full-sheet print layout and links that prefill model references in an industrial enquiry. The work gallery supports category links and accessible native photo dialogs. The agriculture gallery contains 24 original photographs with three category filters, captions and a full-size viewer with previous/next buttons and arrow-key navigation. Photos load lazily; without JavaScript, links open the original photographs. The Agriculture page includes a three-photo preview. Service enquiry links preselect the corresponding contact option.
 
 The footer displays four selected client logos. On screens up to 700px, the logos scroll left in a continuous loop. Hovering or keyboard-focusing the strip temporarily pauses motion. Reduced-motion preferences and browsers without JavaScript use a manually scrollable row. Desktop keeps the static four-logo layout. Decorative loop copies are hidden from assistive technology.
+
+The Pump Accessories & Spares page lists ten accessories from the industrial profile. Each part links to the existing contact form with its selection filled in. Industrial enquiries have optional pump-model and quantity fields. For a selected accessory, the part name is required and the additional message is optional. The selected part, model and quantity appear in the prepared email draft; the part also appears in the email subject. Editing the selected part preserves other entered details.
 
 The enquiry form deliberately prepares an email draft rather than pretending to send a message. Visitors review the draft, open their email app, and send it themselves. A copy action supports browsers without an email app. The form does not store personal information, and the site includes no analytics or embedded third-party resources.
 

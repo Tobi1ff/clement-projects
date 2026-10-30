@@ -318,6 +318,14 @@
       "description": "NHBRC logo",
       "source": "clemets-projects/clemet-project-solutions.pdf, Registered Bodies section, PDF page 11, image object 282",
       "note": "Original logo extracted from the supplied profile; transparency retained where present. No recolouring or redrawing."
+    },
+    {
+      "file": "pump-accessories-diagram.jpg",
+      "width": 1495,
+      "height": 942,
+      "description": "Labelled exploded pump assembly illustration from the Pump Accessories section.",
+      "source": "clemets-projects/clemet-project-solutions.pdf, PDF page 9, image object 238",
+      "note": "Original embedded JPEG extracted without alteration. Diagram references illustrate the assembly; use the actual pump model when enquiring."
     }
   ]
 }
