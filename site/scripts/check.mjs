@@ -29,7 +29,9 @@ for (const page of pages) {
     assert.ok(destination.startsWith(root), `${page}: path leaves distribution directory`);
     assert.ok(existsSync(destination), `${page}: missing ${reference}`);
     assert.ok(statSync(destination).isFile(), `${page}: not a file: ${reference}`);
-    if (hash) {
+    if (hash && destination.endsWith('.pdf')) {
+      assert.match(hash, /^page=[1-9]\d*$/, `${page}: invalid PDF page reference`);
+    } else if (hash) {
       const targetPage = destination.slice(root.length + 1);
       assert.ok(idsByPage.get(targetPage)?.has(hash), `${page}: missing anchor ${reference}`);
     }

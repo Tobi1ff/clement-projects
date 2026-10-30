@@ -89,9 +89,11 @@ if (form) {
       detail.placeholder = current[2];
     }
   }
-  const preselect = new URLSearchParams(location.search).get('service');
+  const enquiryParams = new URLSearchParams(location.search);
+  const preselect = enquiryParams.get('service');
   if ([...service.options].some(option => option.value === preselect)) service.value = preselect;
   updateDetails();
+  if (service.value === 'industrial') detail.value = (enquiryParams.get('detail') || '').slice(0, 300);
   service.addEventListener('change', () => { detail.value = ''; updateDetails(); });
   let prepared = '';
   form.addEventListener('submit', event => {
@@ -140,4 +142,44 @@ if (form) {
       status.textContent = 'Your draft is selected. Use your device’s Copy command to copy it.';
     }
   });
+}
+
+const modelRows = [...document.querySelectorAll('[data-model-row]')];
+if (modelRows.length) {
+  const search = document.getElementById('model-search');
+  const familyButtons = [...document.querySelectorAll('[data-pump-family]')];
+  const normalizeModel = value => value.toLowerCase().replace(/[^a-z0-9]/g, '');
+  let family = 'all';
+  function filterModels() {
+    const query = normalizeModel(search.value);
+    let count = 0;
+    modelRows.forEach(row => {
+      const matchesFamily = family === 'all' || row.dataset.pumpGroup === family;
+      const matchesQuery = [row.dataset.reference, row.dataset.model].some(value => normalizeModel(value).includes(query));
+      row.hidden = !matchesFamily || !matchesQuery;
+      if (!row.hidden) count++;
+    });
+    familyButtons.forEach(button => {
+      const active = button.dataset.pumpFamily === family;
+      button.classList.toggle('active', active);
+      button.setAttribute('aria-pressed', String(active));
+    });
+    document.getElementById('model-count').textContent = `Showing ${count} of ${modelRows.length} model pairings.`;
+    document.getElementById('models-empty').hidden = count !== 0;
+    document.getElementById('models-table').hidden = count === 0;
+  }
+  document.getElementById('parts-tools').hidden = false;
+  document.getElementById('print-sheet').hidden = false;
+  search.addEventListener('input', filterModels);
+  familyButtons.forEach(button => button.addEventListener('click', () => {
+    family = button.dataset.pumpFamily;
+    filterModels();
+  }));
+  document.getElementById('reset-models').addEventListener('click', () => {
+    search.value = '';
+    family = 'all';
+    filterModels();
+    search.focus();
+  });
+  document.getElementById('print-sheet').addEventListener('click', () => window.print());
 }
