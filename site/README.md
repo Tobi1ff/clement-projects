@@ -37,7 +37,7 @@ The footer displays four selected client logos. On screens up to 700px, the logo
 
 The Pump Accessories & Spares page lists ten accessories from the industrial profile. Each part links to the existing contact form with its selection filled in. Industrial enquiries have optional pump-model and quantity fields. For a selected accessory, the part name is required and the additional message is optional. The selected part, model and quantity appear in the prepared email draft; the part also appears in the email subject. Editing the selected part preserves other entered details.
 
-The enquiry form deliberately prepares an email draft rather than pretending to send a message. Visitors review the draft, open their email app, and send it themselves. A copy action supports browsers without an email app. The form does not store personal information, and the site includes no analytics or embedded third-party resources.
+The enquiry form deliberately prepares an email draft rather than pretending to send a message. Standard enquiries for every service go to `info@clementprojectssolution.co.za`. Selected pump-accessory quotation requests and direct quotation links go to `sales@clementprojectssolution.co.za`. Visitors review the draft, open their email app, and send it themselves. A copy action supports browsers without an email app. The form does not store personal information, and the site includes no analytics or embedded third-party resources.
 
 ## Content review before public launch
 

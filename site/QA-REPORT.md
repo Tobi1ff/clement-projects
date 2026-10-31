@@ -110,3 +110,11 @@ This was a local verification pass. No hosting deployment or domain change was p
 - Verified public PDF text, object dictionaries and decoded streams contain neither original figure. Verified all 16 HTML pages and public project data omit the figures.
 - Static checks pass for 16 pages and 827 references. Chrome checked archive/detail layouts at 320, 390, 768 and 1440px, withheld notices, filters, project-reference enquiries and no-JavaScript output. Public PDF page and desktop/mobile cards visually reviewed.
 - One-time PDF tooling: `/tmp/clement-redact-public-profile.py`; browser checks: `/tmp/clement-bid-mask-check.cjs`. No email was sent.
+
+## Quotation and enquiry email routing — 31 October 2026
+
+- Standard enquiries for all five contact service options now prepare drafts to `info@clementprojectssolution.co.za`. Selected pump-accessory quotation requests and direct quotation links use `sales@clementprojectssolution.co.za`.
+- Selected-part drafts now identify themselves as quotation requests in the button, subject, message and result heading. Editing and changing service restores the standard enquiry flow and recipient.
+- Updated the reviewed public profile’s quotation address on page 12, including tagged text. Its other eleven pages render identically to the previous approved public PDF; both bid redactions remain intact. Updated the SHA-256 manifest and verified the built download.
+- Static checks pass for 16 pages and 827 references; JavaScript syntax passes. Chrome verified all five enquiry routes, all ten accessory quotations, project-reference enquiries, direct contact links and labels at 320, 390 and 1440px. No JavaScript errors or horizontal overflow occurred. No email was sent.
+- Browser verification: `/tmp/clement-email-routing-check.cjs`; temporary document update: `/tmp/clement-update-profile-email.py`.

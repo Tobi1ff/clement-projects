@@ -1,8 +1,10 @@
 {
   "file": "cps-industrial-construction-profile.pdf",
-  "sha256": "5aca0c47b599cbca70f88df9df3c2c648d5097322d3f0d43d3862a8129652e25",
+  "sha256": "e4073349b6850e9b805875bcd93d54d656838613b31fe4f32e594ac3c7277589",
   "pages": 12,
   "withheldFields": [
     "Project bid amounts"
-  ]
+  ],
+  "quotationEmail": "sales@clementprojectssolution.co.za",
+  "enquiryEmail": "info@clementprojectssolution.co.za"
 }

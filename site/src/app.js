@@ -176,6 +176,7 @@ if (form) {
     document.getElementById('message-optional').hidden = !partEnquiry;
     selectedAccessory.hidden = !partEnquiry;
     selectedAccessoryName.textContent = detail.value;
+    document.getElementById('enquiry-submit-label').textContent = partEnquiry ? 'Prepare quotation email' : 'Prepare email enquiry';
   }
   const preselect = enquiryParams.get('service');
   if ([...service.options].some(option => option.value === preselect)) service.value = preselect;
@@ -208,14 +209,16 @@ if (form) {
       return;
     }
     const selected = service.selectedOptions[0].textContent;
-    const recipient = ['documents', 'general'].includes(service.value) ? 'info@clementprojectssolution.co.za' : 'quotations@clementprojectssolution.co.za';
+    const recipient = partEnquiry ? 'sales@clementprojectssolution.co.za' : 'info@clementprojectssolution.co.za';
     const extra = !detail.disabled && value('detail') ? `${partEnquiry ? 'Part required' : projectEnquiry ? 'Project reference' : details[service.value][0]}: ${value('detail')}\n` : '';
     const pumpDetails = service.value === 'industrial'
       ? `${value('pump_model') ? `Pump model: ${value('pump_model')}\n` : ''}${value('quantity') ? `Quantity: ${value('quantity')}\n` : ''}` : '';
     const requirements = value('message') || (partEnquiry ? 'Please quote for the pump accessory listed above.' : '');
-    prepared = `Hello CPS team,\n\nI would like to enquire about ${selected.toLowerCase()}.\n\nName: ${value('name')}\n${value('company') ? `Company: ${value('company')}\n` : ''}Email: ${value('email')}\n${value('phone') ? `Phone: ${value('phone')}\n` : ''}Location: ${value('location')}\n${extra}${pumpDetails}\nRequirements:\n${requirements}\n\nKind regards,\n${value('name')}`;
+    const introduction = partEnquiry ? 'I would like a quotation for the pump accessory listed below.' : `I would like to enquire about ${selected.toLowerCase()}.`;
+    prepared = `Hello CPS team,\n\n${introduction}\n\nName: ${value('name')}\n${value('company') ? `Company: ${value('company')}\n` : ''}Email: ${value('email')}\n${value('phone') ? `Phone: ${value('phone')}\n` : ''}Location: ${value('location')}\n${extra}${pumpDetails}\nRequirements:\n${requirements}\n\nKind regards,\n${value('name')}`;
     document.getElementById('enquiry-preview').textContent = prepared;
-    document.getElementById('email-draft').href = `mailto:${recipient}?subject=${encodeURIComponent(`${partEnquiry ? value('detail') : selected} enquiry — ${value('company') || value('name')}`)}&body=${encodeURIComponent(prepared)}`;
+    document.getElementById('enquiry-result-title').textContent = partEnquiry ? 'Your quotation request is prepared.' : 'Your enquiry is prepared.';
+    document.getElementById('email-draft').href = `mailto:${recipient}?subject=${encodeURIComponent(`${partEnquiry ? value('detail') + ' quotation request' : selected + ' enquiry'} — ${value('company') || value('name')}`)}&body=${encodeURIComponent(prepared)}`;
     document.getElementById('draft-recipient').textContent = recipient;
     form.hidden = true;
     const result = document.getElementById('enquiry-result');
