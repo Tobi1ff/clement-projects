@@ -16,6 +16,7 @@ Open `dist/index.html` in a browser. Navigation, the work gallery, enquiry draft
 - `scripts/project-records.mjs`: structured public project records, status and source references; bid amounts are withheld.
 - `scripts/project-archive-page.mjs`: archive filters, cards and individual record pages.
 - `scripts/client-logos.mjs`: selected client and partner footer logos from the company profile; Foskor and Stibium are excluded.
+- `scripts/social-links.mjs`: supplied Facebook/LinkedIn destinations, WhatsApp contact and shared social-link rendering.
 - `scripts/business-platforms.mjs`: About-page Netcash, Sage, SAP Ariba and Coupa platform logos.
 - `scripts/registered-bodies.mjs`: About-page registration and compliance logos from the supplied industrial profile, plus the official SIZA logo.
 - `scripts/agriculture-gallery-data.mjs`: selected original agriculture photographs and captions.
@@ -46,6 +47,8 @@ The Lifting & Rigging page groups 37 product choices into seven categories from 
 The enquiry form deliberately prepares an email draft rather than pretending to send a message. Standard enquiries for every service go to `info@clementprojectssolution.co.za`. Selected pump-accessory and lifting-product quotation requests and direct quotation links go to `sales@clementprojectssolution.co.za`. Visitors review the draft, open their email app, and send it themselves. A copy action supports browsers without an email app. The form does not store personal information, and the site includes no analytics or embedded third-party resources.
 
 About also includes a Business platforms section with Netcash, Sage, SAP Ariba and Coupa Supplier Portal. The existing profile assets are reused for Netcash and Sage; SAP Ariba comes from SAP’s official supplier guide with its original transparency, and Coupa comes from the official Supplier Portal. Logos are grouped separately from registered bodies without partner-tier or certification claims.
+
+The footer links to Facebook, LinkedIn and WhatsApp on every page. Contact includes a direct WhatsApp card for 065 691 8895 (`https://wa.me/27656918895`) and Facebook/LinkedIn links. Links open external platforms in a new tab; no third-party widgets or embeds are added. Social icons are from Bootstrap Icons under the MIT licence, retained in `assets/LICENSE-Bootstrap-Icons.txt`.
 
 ## Content review before public launch
 
