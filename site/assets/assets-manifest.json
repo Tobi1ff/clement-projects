@@ -358,6 +358,22 @@
       "description": "Shackles, turnbuckles and rigging hardware.",
       "source": "Clement Projects Lifting Equipments 2026.pdf, PDF page 2, image object 40",
       "note": "Original extracted product photograph, illustrating equipment range; not a completed CPS project."
+    },
+    {
+      "file": "platform-ariba.png",
+      "width": 267,
+      "height": 52,
+      "description": "SAP Ariba logo",
+      "source": "https://assets.cdn.sap.com/agreements/supplier-portal/ariba-supplier-enablement/system-administration-process-guide-for-suppliers-global-english.pdf, PDF page 1, image object 144 with original alpha mask 1470",
+      "note": "Original SAP Ariba mark extracted from SAP’s official supplier guide, retaining its original colours and transparency. Shown as a business platform, without certification or partner-tier claims."
+    },
+    {
+      "file": "platform-coupa.png",
+      "width": 291,
+      "height": 47,
+      "description": "Coupa Supplier Portal logo",
+      "source": "https://supplier.coupahost.com/assets/CSP_logo-82ef11b1868649330682f1cc61ec964e5cb143f1845b41bd7376e6e509f79912.png",
+      "note": "Original official Coupa Supplier Portal header logo downloaded without alteration. Shown as a business platform, without certification or partner-tier claims."
     }
   ]
 }

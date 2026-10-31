@@ -16,6 +16,7 @@ Open `dist/index.html` in a browser. Navigation, the work gallery, enquiry draft
 - `scripts/project-records.mjs`: structured public project records, status and source references; bid amounts are withheld.
 - `scripts/project-archive-page.mjs`: archive filters, cards and individual record pages.
 - `scripts/client-logos.mjs`: selected client and partner footer logos from the company profile; Foskor and Stibium are excluded.
+- `scripts/business-platforms.mjs`: About-page Netcash, Sage, SAP Ariba and Coupa platform logos.
 - `scripts/registered-bodies.mjs`: About-page registration and compliance logos from the supplied industrial profile, plus the official SIZA logo.
 - `scripts/agriculture-gallery-data.mjs`: selected original agriculture photographs and captions.
 - `scripts/agriculture-gallery-page.mjs`: agriculture gallery and service-page preview.
@@ -43,6 +44,8 @@ The Pump Accessories & Spares page lists ten accessories from the industrial pro
 The Lifting & Rigging page groups 37 product choices into seven categories from the 2026 lifting profile. Product links prefill the lifting enquiry, showing product, size/reference, quantity and optional requirements. General lifting enquiries retain the standard enquiry route. Equipment imagery is extracted from the supplied profile. Inspection-service attribution and unspecified capacities/grades are omitted. Resources and Home provide four service-specific downloads: Mining & Industrial, Construction, Lifting and Agriculture. Service and source links use the relevant reviewed document. New public copies correct the quotation mailbox, withhold construction bid amounts and replace the third-party inspection-service attribution with product-enquiry guidance. Original supplied PDFs are unchanged.
 
 The enquiry form deliberately prepares an email draft rather than pretending to send a message. Standard enquiries for every service go to `info@clementprojectssolution.co.za`. Selected pump-accessory and lifting-product quotation requests and direct quotation links go to `sales@clementprojectssolution.co.za`. Visitors review the draft, open their email app, and send it themselves. A copy action supports browsers without an email app. The form does not store personal information, and the site includes no analytics or embedded third-party resources.
+
+About also includes a Business platforms section with Netcash, Sage, SAP Ariba and Coupa Supplier Portal. The existing profile assets are reused for Netcash and Sage; SAP Ariba comes from SAP’s official supplier guide with its original transparency, and Coupa comes from the official Supplier Portal. Logos are grouped separately from registered bodies without partner-tier or certification claims.
 
 ## Content review before public launch
 

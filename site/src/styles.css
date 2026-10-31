@@ -527,3 +527,12 @@
  .site-header:not(.navigation-ready) .header-inner nav{display:flex;position:static;width:100%;max-height:none;box-shadow:none;border:0;padding:0;flex-direction:column;align-items:stretch;gap:0}
 }
 @media(max-width:560px){.header-inner nav{max-height:calc(100dvh - 110px)}}
+
+/* About-page business platforms, using original brand artwork. */
+.business-platforms-section{padding-block:65px}
+.business-platforms-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.business-platform-logo{display:flex;align-items:center;justify-content:center;min-width:0;min-height:128px;padding:28px;background:white;border:1px solid var(--line)}
+.business-platform-logo img{width:180px;height:auto;max-width:100%;max-height:62px;object-fit:contain}
+@media(max-width:700px){.business-platforms-section{padding-block:45px}.business-platforms-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.business-platform-logo{min-height:110px;padding:20px}.business-platform-logo img{max-height:52px}}
+
+.business-platform-logo img[src$="/partner-sage.png"]{width:72px}
