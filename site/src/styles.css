@@ -238,10 +238,10 @@
  .image-dialog:has(.dialog-navigation:not([hidden]))>img{max-height:calc(100dvh - 220px)}
 }
 
-/* Original client logos, presented without additional endorsement copy. */
+/* Original client and partner logos from the supplied company profile. */
 .site-footer{padding-top:0}
 .footer-clients{background:white;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.footer-client-logos{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:35px;align-items:center;padding-block:30px;max-width:1100px}
+.footer-client-logos{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:35px;align-items:center;padding-block:30px;max-width:1100px}
 .footer-client-logo{display:flex;align-items:center;justify-content:center;min-width:0;min-height:95px}
 .footer-client-logo img{display:block;width:auto;height:auto;max-width:100%;max-height:84px;object-fit:contain}
 .site-footer .footer-main{padding-top:60px}
@@ -259,7 +259,7 @@
  .site-footer .footer-main{padding-top:45px}
 }
 @media screen and (max-width:700px) and (prefers-reduced-motion:no-preference){
- .footer-clients.is-animated .footer-client-track{animation:client-logos-left 24s linear infinite}
+ .footer-clients.is-animated .footer-client-track{animation:client-logos-left 36s linear infinite}
  .footer-client-viewport:focus-within .footer-client-track{animation-play-state:paused}
 }
 @media screen and (max-width:700px) and (hover:hover){
@@ -267,9 +267,9 @@
 }
 @keyframes client-logos-left{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
-/* Registration and compliance logos from the supplied company profile. */
+/* Registration and compliance logos from the company profile and official SIZA website. */
 .registered-bodies-section{background:var(--soft)}
-.registered-bodies-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.registered-bodies-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px}
 .registered-body-card{background:white;border:1px solid var(--line);padding:30px 24px;min-width:0}
 .registered-body-logo{display:flex;align-items:center;justify-content:center;min-height:115px;margin-bottom:26px}
 .registered-body-logo img{width:auto;height:auto;max-width:100%;max-height:100px;object-fit:contain}
@@ -278,6 +278,7 @@
 .registered-bodies-documents{display:flex;align-items:center;justify-content:space-between;gap:40px;padding-top:35px;margin-top:35px;border-top:1px solid var(--line)}
 .registered-bodies-documents>p{font-size:13px;line-height:1.9;max-width:390px}
 .registered-bodies-documents>div{display:flex;align-items:center;gap:25px;flex-wrap:wrap}
+@media(max-width:1200px){.registered-bodies-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:1000px){.registered-bodies-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.registered-bodies-documents{align-items:start;flex-direction:column;gap:24px}}
 @media(max-width:560px){.registered-bodies-grid{gap:16px}.registered-body-card{padding:22px 16px}.registered-body-logo{min-height:95px;margin-bottom:22px}.registered-body-logo img{max-height:80px}.registered-body-card h3{font-size:17px}.registered-body-card p{font-size:11px}.registered-bodies-documents>div{gap:22px}.registered-bodies-documents .button{font-size:11px}}
 

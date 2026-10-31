@@ -1,4 +1,4 @@
-// Bodies listed in the supplied industrial profile, PDF page 11.
+// Original profile bodies from PDF page 11, plus SIZA added at the company’s request.
 // Do not infer current grades, accreditation or certificate validity from these logos.
 export const registeredBodies = [
   {
@@ -32,9 +32,17 @@ export const registeredBodies = [
     "width": 190,
     "height": 155,
     "sourceObject": 282
+  },
+  {
+    "file": "body-siza.png",
+    "name": "SIZA",
+    "description": "The Sustainability Initiative of South Africa",
+    "width": 2361,
+    "height": 801,
+    "sourceUrl": "https://siza.co.za/wp-content/uploads/2024/02/SIZA-Logo_PNG_detailed_drop-shadow.png"
   }
 ];
 
 export function renderRegisteredBodies({ eyebrow, button, arrow }) {
-  return `<section class="section registered-bodies-section" id="registered-bodies"><div class="container"><div class="section-heading"><div>${eyebrow('REGISTRATION & COMPLIANCE')}<h2>Registered Bodies.</h2></div><p>Registration and compliance bodies listed in our company profile.</p></div><div class="registered-bodies-grid">${registeredBodies.map(body => `<article class="registered-body-card"><div class="registered-body-logo"><img src="assets/${body.file}" alt="${body.name} logo" width="${body.width}" height="${body.height}" loading="lazy" decoding="async"></div><h3>${body.name}</h3><p>${body.description}</p></article>`).join('')}</div><div class="registered-bodies-documents"><p>Contact our team for current registration records and supporting documentation relevant to your requirements.</p><div>${button('Request current documents', 'contact.html?service=documents')}<a class="text-link" href="downloads/cps-industrial-construction-profile.pdf#page=11">View company profile${arrow}</a></div></div></div></section>`;
+  return `<section class="section registered-bodies-section" id="registered-bodies"><div class="container"><div class="section-heading"><div>${eyebrow('REGISTRATION & COMPLIANCE')}<h2>Registered Bodies.</h2></div><p>Registration and compliance across our services.</p></div><div class="registered-bodies-grid">${registeredBodies.map(body => `<article class="registered-body-card"><div class="registered-body-logo"><img src="assets/${body.file}" alt="${body.name} logo" width="${body.width}" height="${body.height}" loading="lazy" decoding="async"></div><h3>${body.name}</h3><p>${body.description}</p></article>`).join('')}</div><div class="registered-bodies-documents"><p>Contact our team for current registration records and supporting documentation relevant to your requirements.</p><div>${button('Request current documents', 'contact.html?service=documents')}<a class="text-link" href="downloads/cps-industrial-construction-profile.pdf#page=11">View company profile${arrow}</a></div></div></div></section>`;
 }

@@ -14,8 +14,8 @@ Open `dist/index.html` in a browser. Navigation, the work gallery, enquiry draft
 - `scripts/pump-accessories.mjs`: accessory catalogue and preselected enquiry links.
 - `scripts/project-records.mjs`: structured public project records, status and source references; bid amounts are withheld.
 - `scripts/project-archive-page.mjs`: archive filters, cards and individual record pages.
-- `scripts/client-logos.mjs`: selected footer logos from the company profile’s Current Clients section; Foskor and Stibium are excluded.
-- `scripts/registered-bodies.mjs`: About-page registration and compliance logos from the supplied industrial profile.
+- `scripts/client-logos.mjs`: selected client and partner footer logos from the company profile; Foskor and Stibium are excluded.
+- `scripts/registered-bodies.mjs`: About-page registration and compliance logos from the supplied industrial profile, plus the official SIZA logo.
 - `scripts/agriculture-gallery-data.mjs`: selected original agriculture photographs and captions.
 - `scripts/agriculture-gallery-page.mjs`: agriculture gallery and service-page preview.
 - `src/styles.css`: responsive design, including mobile layouts and reduced-motion support.
@@ -33,7 +33,7 @@ The Projects & Bids Archive contains the two project records in the industrial p
 
 To add or update a project, edit `scripts/project-records.mjs`, keep its slug stable, set `status` to `current`, `completed` or `unconfirmed`, and record the supported year, scope, client and source. Do not put bid amounts in this public data file. Use `current` only after company confirmation, and update its status note at the same time. Rebuild, check and publish; the archive counts, filters and record pages are generated from this file.
 
-The footer displays four selected client logos. On screens up to 700px, the logos scroll left in a continuous loop. Hovering or keyboard-focusing the strip temporarily pauses motion. Reduced-motion preferences and browsers without JavaScript use a manually scrollable row. Desktop keeps the static four-logo layout. Decorative loop copies are hidden from assistive technology.
+The footer displays four selected client logos plus Netcash and Sage from the profile’s Partnered with section. On screens up to 700px, the logos scroll left in a continuous loop. Hovering or keyboard-focusing the strip temporarily pauses motion. Reduced-motion preferences and browsers without JavaScript use a manually scrollable row. Desktop keeps the static six-logo layout. Decorative loop copies are hidden from assistive technology.
 
 The Pump Accessories & Spares page lists ten accessories from the industrial profile. Each part links to the existing contact form with its selection filled in. Industrial enquiries have optional pump-model and quantity fields. For a selected accessory, the part name is required and the additional message is optional. The selected part, model and quantity appear in the prepared email draft; the part also appears in the email subject. Editing the selected part preserves other entered details.
 
