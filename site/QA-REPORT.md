@@ -126,3 +126,10 @@ This was a local verification pass. No hosting deployment or domain change was p
 - Added the official SIZA logo from siza.co.za to About → Registered Bodies, with its full organisation name. The asset is unchanged from the official download. Updated source provenance, section copy and responsive five-body layout without adding audit ratings or certificate-validity claims.
 - Static checks pass for 16 pages and 860 references; both logo-data modules pass JavaScript syntax checks. Chrome verified all six footer images, all five body cards, mobile-only motion, reduced-motion fallback and no overflow or JavaScript errors at 320, 390, 700, 701, 768, 1024 and 1440px. Desktop/mobile screenshots visually reviewed.
 - Browser verification: `/tmp/clement-partner-body-check.cjs`.
+
+## Compact footer registered-body logos — 31 October 2026
+
+- Added CIDB, RMA, Information Regulator, NHBRC and SIZA as five small image-only icons beside the company logo in the shared footer. Image alternatives identify each body without visible labels or extra claims.
+- The brand row spans the footer width above the existing columns and keeps all six logos aligned on one line down to 320px. The company logo remains transparent. Existing About-page cards and the mobile client/partner strip remain available.
+- Static checks pass for 16 pages and 940 references. Chrome verified loading, accessible names, no visible label text, alignment, transparency and no overflow or JavaScript errors at 320, 360, 390, 560, 700, 768, 1024 and 1440px. Desktop and narrow-mobile footer screenshots visually reviewed.
+- Browser verification: `/tmp/clement-footer-bodies-check.cjs`.
