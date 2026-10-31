@@ -1,31 +1,44 @@
 const menuButton = document.querySelector('.menu-toggle');
 const nav = document.querySelector('#main-nav');
+const serviceMenu = nav?.querySelector('.nav-services');
+const desktopNavigation = window.matchMedia('(min-width: 1101px)');
+document.querySelector('.site-header')?.classList.add('navigation-ready');
 function closeMenu() {
+  if (serviceMenu) serviceMenu.open = false;
   nav?.classList.remove('is-open');
+  if (nav) nav.scrollTop = 0;
   menuButton?.setAttribute('aria-expanded', 'false');
   menuButton?.setAttribute('aria-label', 'Open navigation');
 }
 menuButton?.addEventListener('click', () => {
   const open = menuButton.getAttribute('aria-expanded') !== 'true';
-  menuButton.setAttribute('aria-expanded', String(open));
-  menuButton.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
-  nav.classList.toggle('is-open', open);
+  if (!open) { closeMenu(); return; }
+  menuButton.setAttribute('aria-expanded', 'true');
+  menuButton.setAttribute('aria-label', 'Close navigation');
+  nav?.classList.add('is-open');
 });
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape' && menuButton?.getAttribute('aria-expanded') === 'true') {
+document.addEventListener('keydown', event => {
+  if (event.key !== 'Escape') return;
+  if (serviceMenu?.open) {
+    serviceMenu.open = false;
+    serviceMenu.querySelector('summary').focus();
+    event.preventDefault();
+  } else if (menuButton?.getAttribute('aria-expanded') === 'true') {
     closeMenu();
     menuButton.focus();
+    event.preventDefault();
   }
 });
-document.addEventListener('click', (event) => {
+document.addEventListener('click', event => {
   if (!event.target.closest('.site-header')) closeMenu();
 });
-nav?.addEventListener('click', (event) => {
+nav?.addEventListener('click', event => {
   if (event.target.closest('a')) closeMenu();
 });
-window.matchMedia('(min-width: 801px)').addEventListener('change', (event) => {
-  if (event.matches) closeMenu();
+nav?.addEventListener('focusout', event => {
+  if (!nav.contains(event.relatedTarget) && serviceMenu) serviceMenu.open = false;
 });
+desktopNavigation.addEventListener('change', closeMenu);
 
 document.querySelectorAll('.footer-clients').forEach(strip => {
   const viewport = strip.querySelector('.footer-client-viewport');
