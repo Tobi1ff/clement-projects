@@ -92,7 +92,7 @@ This was a local verification pass. No hosting deployment or domain change was p
 ## Projects & Bids Archive — 30 October 2026
 
 - Added a searchable archive and two standalone project record pages, linked from Our Work, Construction and the footer. No Services-menu entry was added.
-- The 2024 Ba-Phalaborwa plant-hire record is completed, with a 30-day duration and recorded bid of R141,000.00. The Dwellers 2025 drain-construction record has a recorded bid of R572,058.13 and remains last-reported ongoing with current status unconfirmed. Both amounts, years and the completed duration were checked against the original PDF.
+- The 2024 Ba-Phalaborwa plant-hire record is completed, with a 30-day duration; its bid amount is now withheld. The Dwellers 2025 drain-construction record has its bid amount withheld and remains last-reported ongoing with current status unconfirmed. Both amounts, years and the completed duration were checked against the original PDF.
 - Amounts are labelled as recorded bids. No contract-award values, open-tender submission process, project-specific photographs or personal reference contacts were invented or added to the project summaries. Original source-document links remain available.
 - Added search, status, recorded-year and work-type filters; combined filtering; empty/reset states; and shareable filter URLs. Current-project filtering truthfully shows no confirmed current records.
 - Project enquiry links preserve the project reference in the contact form and draft; switching service clears that context. The existing accessory enquiry remains supported.
@@ -100,3 +100,13 @@ This was a local verification pass. No hosting deployment or domain change was p
 - Chrome checked all 16 pages at 320 and 1440px, plus archive/detail, Our Work and Construction layouts at 390, 600, 768 and 1024px. No image decoding failures, JavaScript errors or horizontal overflow occurred.
 - Verified status/year/work/search combinations, reload and deep links, invalid parameters, empty/reset states, both detail pages, source-data labels, enquiry references and no-JavaScript browsing. No email was sent.
 - Desktop/mobile archive, record cards and detail pages visually reviewed. Automation: `/tmp/clement-project-archive-check.cjs`.
+
+## Withhold public bid amounts — 31 October 2026
+
+- Removed bid amount fields from public project data and replaced values on the archive/detail pages with “Available on request”. Updated public copy and metadata accordingly.
+- Created a reviewed 12-page public profile PDF with both amounts removed from the rendered content and tagged-PDF ActualText entries. Replaced those fields with “Available on request”; removed document metadata and embedded-file payloads. The other eleven pages render identically to the source.
+- The local original remains unchanged and is excluded from the current public Git revision. Earlier Git history is unchanged. Historical local export archives are also ignored.
+- The build now serves the reviewed PDF from `documents/`, with a SHA-256 manifest checked against deployment output. The normal website build needs no external PDF library.
+- Verified public PDF text, object dictionaries and decoded streams contain neither original figure. Verified all 16 HTML pages and public project data omit the figures.
+- Static checks pass for 16 pages and 827 references. Chrome checked archive/detail layouts at 320, 390, 768 and 1440px, withheld notices, filters, project-reference enquiries and no-JavaScript output. Public PDF page and desktop/mobile cards visually reviewed.
+- One-time PDF tooling: `/tmp/clement-redact-public-profile.py`; browser checks: `/tmp/clement-bid-mask-check.cjs`. No email was sent.

@@ -1,6 +1,6 @@
 // Public project summaries transcribed from the industrial company profile,
 // PDF page 11 (printed page 10). Reference contacts are omitted.
-// Bid amounts are recorded bids, not confirmed contract awards or final payments.
+// Bid amounts are withheld from public records and available on request.
 // Change status to "current" only after obtaining a current company update.
 export const projectRecords = [
   {
@@ -16,7 +16,6 @@ export const projectRecords = [
     statusNote: 'The profile lists this 2025 project as ongoing. Its current status has not been confirmed.',
     scope: 'Construction of side open drains.',
     duration: null,
-    bidAmountCents: 57205813,
     source: 'Industrial & Construction Company Profile',
     sourcePage: 11,
   },
@@ -33,7 +32,6 @@ export const projectRecords = [
     statusNote: 'Recorded as completed in 2024 in the company profile.',
     scope: 'TLB plant hire to assist water and sanitation teams repairing leaking pipes.',
     duration: '30 days',
-    bidAmountCents: 14100000,
     source: 'Industrial & Construction Company Profile',
     sourcePage: 11,
   },
@@ -53,7 +51,7 @@ export function validateProjectRecords(records) {
     slugs.add(record.slug);
     if (!['current', 'completed', 'unconfirmed'].includes(record.status)) throw new Error(`Invalid status: ${record.slug}`);
     if (!['construction', 'industrial', 'agriculture'].includes(record.service)) throw new Error(`Invalid service: ${record.slug}`);
-    if (!Number.isSafeInteger(record.bidAmountCents) || record.bidAmountCents < 0) throw new Error(`Invalid recorded bid amount: ${record.slug}`);
+    if ('bidAmountCents' in record) throw new Error(`Keep bid amounts out of public project records: ${record.slug}`);
     if (!Number.isInteger(record.year) || record.year < 1900) throw new Error(`Invalid project year: ${record.slug}`);
     for (const key of ['title', 'client', 'scope', 'workType', 'workTypeLabel', 'statusNote', 'source']) {
       if (typeof record[key] !== 'string' || !record[key].trim()) throw new Error(`Missing ${key}: ${record.slug}`);

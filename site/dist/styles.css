@@ -345,7 +345,7 @@
  .selected-accessory strong{font-size:20px}
 }
 
-/* Project records and recorded bid amounts. */
+/* Project records and bid information requests. */
 .archive-hero,.record-hero{background:var(--navy);color:white;padding:30px 0 65px}
 .archive-hero .breadcrumb,.record-hero .breadcrumb{color:#c6cfdb;flex-wrap:wrap;margin-bottom:42px}
 .archive-hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:90px;align-items:center}
@@ -465,3 +465,5 @@
 }
 
 @media(max-width:360px){.archive-controls{grid-template-columns:1fr}.archive-search{grid-column:auto}}
+
+.archive-card-value .bid-on-request,.record-facts .record-bid .bid-on-request{font-size:23px;letter-spacing:-.025em;line-height:1.4}
