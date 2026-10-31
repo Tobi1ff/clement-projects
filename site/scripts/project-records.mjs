@@ -1,5 +1,5 @@
-// Public project summaries transcribed from the industrial company profile,
-// PDF page 11 (printed page 10). Reference contacts are omitted.
+// Public project summaries cross-checked against the 2026 construction profile,
+// PDF page 6 (printed page 5). Reference contacts are omitted.
 // Bid amounts are withheld from public records and available on request.
 // Change status to "current" only after obtaining a current company update.
 export const projectRecords = [
@@ -16,8 +16,8 @@ export const projectRecords = [
     statusNote: 'The profile lists this 2025 project as ongoing. Its current status has not been confirmed.',
     scope: 'Construction of side open drains.',
     duration: null,
-    source: 'Industrial & Construction Company Profile',
-    sourcePage: 11,
+    source: 'Construction Company Profile 2026',
+    sourcePage: 6,
   },
   {
     slug: 'ba-phalaborwa-plant-hire-2024',
@@ -32,8 +32,8 @@ export const projectRecords = [
     statusNote: 'Recorded as completed in 2024 in the company profile.',
     scope: 'TLB plant hire to assist water and sanitation teams repairing leaking pipes.',
     duration: '30 days',
-    source: 'Industrial & Construction Company Profile',
-    sourcePage: 11,
+    source: 'Construction Company Profile 2026',
+    sourcePage: 6,
   },
 ];
 

@@ -1,4 +1,5 @@
-// Transcribed from clemet-project-solutions.pdf, printed page 6 (PDF page 7).
+// Transcribed from clemet-project-solutions.pdf, printed pages 6–7 (PDF pages 7–8).
+// Cross-checked against the 2026 Mining & Industrial profile, PDF pages 7–8.
 // Preserve the listed model pairings; these are references, not fit guarantees.
 export const pumpFamilies = [
   { id: 'ah', label: 'AH / AHR', pairs: [
@@ -26,9 +27,23 @@ export const pumpFamilies = [
   { id: 'm', label: 'M', pairs: [
     ['10/8R-M', '10/8R-AMM'], ['10/8E-M', '10/8E-AMM'],
   ] },
-  { id: 'g', label: 'G', pairs: [
+  { id: 'g', label: 'G / GH', pairs: [
     ['6/4D-G', '6/4D-AMG'], ['8/6E-G', '8/6E-AMG'],
     ['10/8F-G', '10/8F-AMG'], ['12/10G-G', '12/10G-AMG'],
     ['14/12G-G', '14/12G-AMG'],
+    ['14/12T-G', '14/12T-AMG'], ['16/14G-GH', '16/14G-AMGH'],
+  ] },
+  { id: 'sp', label: 'SP / SP(R)', pairs: [
+    ['40PV-SP', '40BP'], ['40PV-SPR', '40BPR'],
+    ['65QV-SP', '65BP'], ['65QV-SPR', '65BPR'],
+    ['100RV-SP', '100BP'], ['100RV-SPR', '100BPR'],
+    ['150SV-SP', '150BP'], ['150SV-SPR', '150BPR'],
+    ['200SV-SP', '200BP'], ['250TV-SP', '250BP'],
+  ] },
+  { id: 'sh', label: 'SH', pairs: [
+    ['6/4E-SH', '100ASHE'], ['8/6F-SH', '150ASHF'], ['12/10T-SH', '250ASHT'],
+  ] },
+  { id: 'af', label: 'AF / AMF', pairs: [
+    ['2QV-AF', '2AMF'], ['3QV-AF', '3AMF'], ['4RV-AF', '4AMF'], ['6SV-AF', '6AMF'],
   ] },
 ];

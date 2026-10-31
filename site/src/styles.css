@@ -488,3 +488,12 @@
  .footer-brand-row{gap:12px}
  .footer-brand-row .footer-brand img{width:64px;height:32px}
 }
+
+/* Lifting equipment uses the established industrial catalogue layout. */
+.lifting-hero-image{width:100%;height:auto;display:block}
+.lifting-preview{padding-block:0}
+.lifting-preview .parts-resource-link{margin-top:0}
+.parts-source-links{margin-top:20px}
+.parts-reference p+p{margin-top:12px}
+.page-lifting .accessory-choice>span:first-child{min-width:0;overflow-wrap:anywhere}
+.page-lifting .accessory-choice-action{flex-shrink:0}

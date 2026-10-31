@@ -45,7 +45,7 @@ assert.match(css, /prefers-reduced-motion/);
 assert.match(css, /focus-visible/);
 const contact = readFileSync(resolve(root, 'contact.html'), 'utf8');
 for (const [, id] of contact.matchAll(/<(?:input|select|textarea)\b[^>]*\bid="([^"]+)"/g)) assert.ok(contact.includes(`for="${id}"`), `Contact field ${id} has no label`);
-for (const file of ['cps-industrial-construction-profile.pdf', 'cps-agriculture-profile.pdf']) {
+for (const file of ['cps-industrial-construction-profile.pdf', 'cps-mining-industrial-profile.pdf', 'cps-construction-profile.pdf', 'cps-lifting-equipment-profile.pdf', 'cps-agriculture-profile.pdf']) {
   assert.equal(readFileSync(resolve(root, 'downloads', file)).subarray(0, 5).toString(), '%PDF-', `${file}: invalid PDF`);
 }
 const documents = resolve(import.meta.dirname, '../documents');
@@ -53,10 +53,17 @@ const publicProfile = JSON.parse(readFileSync(resolve(documents, 'public-profile
 const reviewedProfile = readFileSync(resolve(documents, publicProfile.file));
 assert.equal(createHash('sha256').update(reviewedProfile).digest('hex'), publicProfile.sha256, 'Public profile changed: review redactions and update its manifest');
 assert.deepEqual(readFileSync(resolve(root, 'downloads', publicProfile.file)), reviewedProfile, 'Build must serve the reviewed, bid-redacted public profile');
+const serviceProfiles = JSON.parse(readFileSync(resolve(documents, 'public-profiles.json'), 'utf8')).profiles;
+assert.equal(serviceProfiles.length, 3, 'Three reviewed service profiles are required');
+for (const profile of serviceProfiles) {
+  const bytes = readFileSync(resolve(documents, profile.file));
+  assert.equal(createHash('sha256').update(bytes).digest('hex'), profile.sha256, `${profile.file}: review document changes and update its manifest`);
+  assert.deepEqual(readFileSync(resolve(root, 'downloads', profile.file)), bytes, `${profile.file}: build must serve the reviewed public copy`);
+}
 for (const page of pages.filter(name => name.startsWith('project-'))) {
   const html = readFileSync(resolve(root, page), 'utf8');
   assert.ok(!/\bR\s*\d[\d, ]*\.\d{2}/.test(html), `${page}: bid amounts must not be published`);
   assert.ok(!html.includes('bidAmountCents'), `${page}: private bid data must not be embedded`);
   assert.ok(html.includes('Available on request'), `${page}: missing bid information notice`);
 }
-console.log(`Passed: ${pages.length} pages, ${checkedLinks} local references, unique IDs, heading structure, form labels, image alternatives, both PDF downloads and accessibility CSS.`);
+console.log(`Passed: ${pages.length} pages, ${checkedLinks} local references, unique IDs, heading structure, form labels, image alternatives, all five PDF downloads, reviewed document hashes and accessibility CSS.`);

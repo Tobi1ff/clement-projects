@@ -350,6 +350,14 @@
       "description": "SIZA logo — The Sustainability Initiative of South Africa",
       "source": "https://siza.co.za/wp-content/uploads/2024/02/SIZA-Logo_PNG_detailed_drop-shadow.png",
       "note": "Original official logo downloaded from the SIZA homepage on 31 October 2026, without alteration. Added to Registered Bodies at the company’s request; no audit rating or certificate-validity claim."
+    },
+    {
+      "file": "lifting-rigging.jpg",
+      "width": 1024,
+      "height": 678,
+      "description": "Shackles, turnbuckles and rigging hardware.",
+      "source": "Clement Projects Lifting Equipments 2026.pdf, PDF page 2, image object 40",
+      "note": "Original extracted product photograph, illustrating equipment range; not a completed CPS project."
     }
   ]
 }

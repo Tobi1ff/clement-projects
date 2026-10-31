@@ -1,0 +1,46 @@
+{
+  "profiles": [
+    {
+      "id": "industrial",
+      "file": "cps-mining-industrial-profile.pdf",
+      "sha256": "501ac34125b058e0779681ca05a83c9b84b2cddf6762c43d455a07c59d846925",
+      "pages": 10,
+      "source": "Clement Projects Mining and Industrial 2026 Profile.pdf",
+      "quotationEmail": "sales@clementprojectssolution.co.za",
+      "enquiryEmail": "info@clementprojectssolution.co.za",
+      "withheldFields": [],
+      "editorialChanges": [
+        "Replace quotation mailbox"
+      ]
+    },
+    {
+      "id": "construction",
+      "file": "cps-construction-profile.pdf",
+      "sha256": "712f674961b9bc37fd854ec09f2cb4dc326dad142cf617415335598bc5144c29",
+      "pages": 7,
+      "source": "Clement Projects Construction 2026 Profile.pdf",
+      "quotationEmail": "sales@clementprojectssolution.co.za",
+      "enquiryEmail": "info@clementprojectssolution.co.za",
+      "withheldFields": [
+        "Project bid amounts"
+      ],
+      "editorialChanges": [
+        "Replace quotation mailbox",
+        "Withhold project bid amounts"
+      ]
+    },
+    {
+      "id": "lifting",
+      "file": "cps-lifting-equipment-profile.pdf",
+      "sha256": "c13054fb87f156ca80f88e194170443ab1606dfdd9cec04d187cade316083d00",
+      "pages": 6,
+      "source": "Clement Projects Lifting Equipments 2026.pdf",
+      "quotationEmail": "sales@clementprojectssolution.co.za",
+      "enquiryEmail": "info@clementprojectssolution.co.za",
+      "withheldFields": [],
+      "editorialChanges": [
+        "Replace third-party inspection-service attribution with product enquiry guidance"
+      ]
+    }
+  ]
+}

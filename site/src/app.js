@@ -149,7 +149,11 @@ if (form) {
     && Boolean(enquiryParams.get('detail')?.trim());
   let projectEnquiry = enquiryParams.get('enquiry') === 'project'
     && Boolean(enquiryParams.get('detail')?.trim());
+  let liftingProductEnquiry = enquiryParams.get('enquiry') === 'product'
+    && enquiryParams.get('service') === 'lifting'
+    && Boolean(enquiryParams.get('detail')?.trim());
   const details = {
+    lifting: ['Product required', 'Include the equipment type and intended application.', 'e.g. manual chain block or webbing sling'],
     industrial: ['Equipment, model or part number', 'A model, part number or quantity helps us understand your requirement.', 'e.g. pump model, spare part and quantity'],
     construction: ['Approximate scope and timing', 'Tell us the work type, approximate size and preferred dates.', 'e.g. drainage works, approximate length and dates'],
     agriculture: ['Fruit type and harvest dates', 'Include approximate scale and the picking or handling services you need.', 'e.g. citrus harvest, dates and approximate scale'],
@@ -158,18 +162,21 @@ if (form) {
   function updateDetails() {
     const current = details[service.value];
     const industrial = service.value === 'industrial';
-    const partEnquiry = industrial && accessoryEnquiry;
+    const lifting = service.value === 'lifting';
+    const partEnquiry = (industrial && accessoryEnquiry) || (lifting && liftingProductEnquiry);
     detailField.hidden = !current;
     detail.disabled = !current;
     detail.required = partEnquiry;
     if (current) {
-      document.getElementById('detail-label').textContent = partEnquiry ? 'Part required *' : projectEnquiry ? 'Project reference (optional)' : current[0] + ' (optional)';
-      document.getElementById('detail-help').textContent = partEnquiry ? 'Your selected accessory is filled in. You can update the part name here.' : projectEnquiry ? 'Reference selected from the archive. Describe your own requirements in the message below.' : current[1];
+      document.getElementById('detail-label').textContent = partEnquiry ? (lifting ? 'Product required *' : 'Part required *') : projectEnquiry ? 'Project reference (optional)' : current[0] + ' (optional)';
+      document.getElementById('detail-help').textContent = partEnquiry ? 'Your selection is filled in. You can update it here.' : projectEnquiry ? 'Reference selected from the archive. Describe your own requirements in the message below.' : current[1];
       detail.placeholder = current[2];
     }
-    industrialFields.hidden = !industrial;
-    pumpModel.disabled = !industrial;
-    quantity.disabled = !industrial;
+    industrialFields.hidden = !(industrial || lifting);
+    pumpModel.disabled = !(industrial || lifting);
+    quantity.disabled = !(industrial || lifting);
+    document.getElementById('equipment-model-label').textContent = lifting ? 'Size or product reference' : 'Pump model';
+    pumpModel.placeholder = lifting ? 'e.g. size, model or marked reference' : 'e.g. 6/4D-AH';
     message.required = !partEnquiry;
     document.getElementById('message-label-text').textContent = partEnquiry ? 'Additional requirements' : 'How can we help?';
     document.getElementById('message-required').hidden = partEnquiry;
@@ -185,6 +192,7 @@ if (form) {
   detail.addEventListener('input', () => { selectedAccessoryName.textContent = detail.value; });
   service.addEventListener('change', () => {
     accessoryEnquiry = false;
+    liftingProductEnquiry = false;
     projectEnquiry = false;
     detail.value = '';
     detail.setCustomValidity('');
@@ -198,7 +206,8 @@ if (form) {
     if (!form.reportValidity()) return;
     const data = new FormData(form);
     const value = key => String(data.get(key) || '').trim();
-    const partEnquiry = service.value === 'industrial' && accessoryEnquiry;
+    const lifting = service.value === 'lifting';
+    const partEnquiry = (service.value === 'industrial' && accessoryEnquiry) || (lifting && liftingProductEnquiry);
     const required = ['name', 'location', ...(message.required ? ['message'] : []), ...(detail.required ? ['detail'] : [])];
     if (required.some(key => !value(key))) {
       const empty = required.find(key => !value(key));
@@ -210,11 +219,12 @@ if (form) {
     }
     const selected = service.selectedOptions[0].textContent;
     const recipient = partEnquiry ? 'sales@clementprojectssolution.co.za' : 'info@clementprojectssolution.co.za';
-    const extra = !detail.disabled && value('detail') ? `${partEnquiry ? 'Part required' : projectEnquiry ? 'Project reference' : details[service.value][0]}: ${value('detail')}\n` : '';
-    const pumpDetails = service.value === 'industrial'
-      ? `${value('pump_model') ? `Pump model: ${value('pump_model')}\n` : ''}${value('quantity') ? `Quantity: ${value('quantity')}\n` : ''}` : '';
-    const requirements = value('message') || (partEnquiry ? 'Please quote for the pump accessory listed above.' : '');
-    const introduction = partEnquiry ? 'I would like a quotation for the pump accessory listed below.' : `I would like to enquire about ${selected.toLowerCase()}.`;
+    const extra = !detail.disabled && value('detail') ? `${partEnquiry ? (lifting ? 'Product required' : 'Part required') : projectEnquiry ? 'Project reference' : details[service.value][0]}: ${value('detail')}\n` : '';
+    const pumpDetails = service.value === 'industrial' || lifting
+      ? `${value('pump_model') ? `${lifting ? 'Size or product reference' : 'Pump model'}: ${value('pump_model')}\n` : ''}${value('quantity') ? `Quantity: ${value('quantity')}\n` : ''}` : '';
+    const productType = lifting ? 'lifting equipment' : 'pump accessory';
+    const requirements = value('message') || (partEnquiry ? `Please quote for the ${productType} listed above.` : '');
+    const introduction = partEnquiry ? `I would like a quotation for the ${productType} listed below.` : `I would like to enquire about ${selected.toLowerCase()}.`;
     prepared = `Hello CPS team,\n\n${introduction}\n\nName: ${value('name')}\n${value('company') ? `Company: ${value('company')}\n` : ''}Email: ${value('email')}\n${value('phone') ? `Phone: ${value('phone')}\n` : ''}Location: ${value('location')}\n${extra}${pumpDetails}\nRequirements:\n${requirements}\n\nKind regards,\n${value('name')}`;
     document.getElementById('enquiry-preview').textContent = prepared;
     document.getElementById('enquiry-result-title').textContent = partEnquiry ? 'Your quotation request is prepared.' : 'Your enquiry is prepared.';
