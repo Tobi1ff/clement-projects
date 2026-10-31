@@ -536,3 +536,5 @@
 @media(max-width:700px){.business-platforms-section{padding-block:45px}.business-platforms-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.business-platform-logo{min-height:110px;padding:20px}.business-platform-logo img{max-height:52px}}
 
 .business-platform-logo img[src$="/partner-sage.png"]{width:72px}
+
+.business-platforms-copy{max-width:980px;margin-top:24px;font-size:15px;line-height:1.8}
