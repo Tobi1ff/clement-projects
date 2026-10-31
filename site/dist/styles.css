@@ -553,3 +553,8 @@
 .whatsapp-contact-link>span{flex:1}
 .whatsapp-contact-link small{display:block;font-size:13px;font-weight:400;margin-top:3px}
 .contact-block>a.whatsapp-contact-link:hover{background:#e0f0e6;border-color:#7fae91}
+
+/* Consistent image corners, with square hero artwork. */
+img{border-radius:5px}
+:is(.home-hero,.service-hero,.parts-hero,.ag-gallery-hero,.accessories-hero) img{border-radius:0}
+.service-image,.project-photo,.ag-photo-link{border-radius:5px;overflow:hidden}
