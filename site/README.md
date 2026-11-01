@@ -17,6 +17,7 @@ Open `dist/index.html` in a browser. Navigation, the work gallery, enquiry draft
 - `scripts/project-archive-page.mjs`: archive filters, cards and individual record pages.
 - `scripts/client-logos.mjs`: selected client and partner footer logos from the company profile; Foskor and Stibium are excluded.
 - `scripts/social-links.mjs`: supplied Facebook/LinkedIn destinations, WhatsApp contact and shared social-link rendering.
+- `scripts/vendor-registrations.mjs`: seven qualified-supplier organisations shown after Business platforms on About.
 - `scripts/business-platforms.mjs`: About-page Netcash, Sage, SAP Ariba and Coupa platform logos.
 - `scripts/registered-bodies.mjs`: About-page registration and compliance logos from the supplied industrial profile, plus the official SIZA logo.
 - `scripts/agriculture-gallery-data.mjs`: selected original agriculture photographs and captions.
