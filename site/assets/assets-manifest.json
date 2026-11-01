@@ -374,6 +374,14 @@
       "description": "Coupa Supplier Portal logo",
       "source": "https://supplier.coupahost.com/assets/CSP_logo-82ef11b1868649330682f1cc61ec964e5cb143f1845b41bd7376e6e509f79912.png",
       "note": "Original official Coupa Supplier Portal header logo downloaded without alteration. Shown as a business platform, without certification or partner-tier claims."
+    },
+    {
+      "file": "construction-redmi14c.jpg",
+      "width": 768,
+      "height": 1134,
+      "description": "Civil construction worker beside a concrete drainage channel",
+      "source": "clemets-projects/WhatsApp Image 2026-11-01 at 07.02.49.jpeg",
+      "note": "Original supplied JPEG copied without alteration for the homepage Civil Construction card. Redmi 14C watermark remains in the original image; the responsive card uses CSS object-position to frame the worker."
     }
   ]
 }

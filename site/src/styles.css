@@ -558,3 +558,5 @@
 img{border-radius:5px}
 :is(.home-hero,.service-hero,.parts-hero,.ag-gallery-hero,.accessories-hero) img{border-radius:0}
 .service-image,.project-photo,.ag-photo-link{border-radius:5px;overflow:hidden}
+
+.work-card>.civil-preview-image{object-position:50% 27%}
