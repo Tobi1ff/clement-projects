@@ -1,0 +1,893 @@
+{
+  "version": 1,
+  "images": {
+    "citrus-harvest.jpg": {
+      "sourceSha256": "a3ddcdc39e66a9b372649e229387806eec2ba38316f4cda4182c9b0fb499d03a",
+      "width": 1040,
+      "height": 780,
+      "bytes": 178506,
+      "variants": [
+        {
+          "file": "optimized/citrus-harvest-w480-230ed30cbc62.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 49494,
+          "sha256": "230ed30cbc62c920434d871a273c6ad94628356c69a05be9d33c1ef567fdf945"
+        },
+        {
+          "file": "optimized/citrus-harvest-w800-5903293f38cf.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 102074,
+          "sha256": "5903293f38cfde75c86ceb3b4fd36ae4eda6381bb479f36f9f51fc511ba9d887"
+        },
+        {
+          "file": "optimized/citrus-harvest-w1040-531a65cb49a8.webp",
+          "width": 1040,
+          "height": 780,
+          "bytes": 143152,
+          "sha256": "531a65cb49a8d936acd41c12f13397385c6cab2203f6b62e5c814a90a0537d98"
+        }
+      ]
+    },
+    "citrus-orchard.jpg": {
+      "sourceSha256": "3d05afc5e32731413c4ed62e684cf09780e7fd126727ca2bbb5b07c3df38fc59",
+      "width": 780,
+      "height": 1040,
+      "bytes": 212332,
+      "variants": [
+        {
+          "file": "optimized/citrus-orchard-w480-b0958a571593.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 82374,
+          "sha256": "b0958a57159357870c55f7ddc4b8f7530bd09f1910b35b73617291d83cab44e9"
+        },
+        {
+          "file": "optimized/citrus-orchard-w780-c6a8fffc5bd0.webp",
+          "width": 780,
+          "height": 1040,
+          "bytes": 211922,
+          "sha256": "c6a8fffc5bd0d749e9134b24a71b47c67157be83a59dce83c2578a5610b96f50"
+        }
+      ]
+    },
+    "citrus-sorting.jpg": {
+      "sourceSha256": "b9bed471d3c15636dd9403761fdece8b818e644fb3e37ac2f0155cdc825c6565",
+      "width": 1040,
+      "height": 780,
+      "bytes": 162425,
+      "variants": [
+        {
+          "file": "optimized/citrus-sorting-w480-89eee762bb08.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 44662,
+          "sha256": "89eee762bb08593003f793cf095bef1a43ba472c4f5d95bc173a18a14cd9159f"
+        },
+        {
+          "file": "optimized/citrus-sorting-w800-475510bc2e22.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 92008,
+          "sha256": "475510bc2e22b06275152c868e8dedd4d90573ce3771c90c2f07072c7ae91d25"
+        },
+        {
+          "file": "optimized/citrus-sorting-w1040-5d521c2b2681.webp",
+          "width": 1040,
+          "height": 780,
+          "bytes": 131588,
+          "sha256": "5d521c2b26811bde5e711706a1d2237b7424822f0881a7da799c979769bd682a"
+        }
+      ]
+    },
+    "citrus-team.jpg": {
+      "sourceSha256": "1acf75281d21e092e707ae1025c133e7deade023cac206f460d1d45d92dbade3",
+      "width": 780,
+      "height": 1040,
+      "bytes": 166633,
+      "variants": [
+        {
+          "file": "optimized/citrus-team-w480-e182375cfb82.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 65308,
+          "sha256": "e182375cfb821fe337d1e40ebb4c1eb67cde6f60492e97562680b5112677472e"
+        },
+        {
+          "file": "optimized/citrus-team-w780-da934cc8cebc.webp",
+          "width": 780,
+          "height": 1040,
+          "bytes": 144162,
+          "sha256": "da934cc8cebc2fa722a4ab288ef1bf6f6ddbd2bbe9507645a770f19b597f0b94"
+        }
+      ]
+    },
+    "construction-drainage.jpg": {
+      "sourceSha256": "1c085e0469ce864faff8eb8f3462047b9f9d7792609e45d05f9035ff883fd98e",
+      "width": 960,
+      "height": 592,
+      "bytes": 116969,
+      "variants": [
+        {
+          "file": "optimized/construction-drainage-w480-0725688e9eea.webp",
+          "width": 480,
+          "height": 296,
+          "bytes": 28802,
+          "sha256": "0725688e9eea6f01e482302b9318af4f3e58709b983092c134ac6936787e3832"
+        },
+        {
+          "file": "optimized/construction-drainage-w800-cd527c3a0487.webp",
+          "width": 800,
+          "height": 493,
+          "bytes": 75962,
+          "sha256": "cd527c3a048772f69c66d7619611c6ebd522de71e027718d9241ba086388a0be"
+        },
+        {
+          "file": "optimized/construction-drainage-w960-4333c362480b.webp",
+          "width": 960,
+          "height": 592,
+          "bytes": 106910,
+          "sha256": "4333c362480b5cc6e8290677b778352c8d1cf503232cecad3ba87550cc991c11"
+        }
+      ]
+    },
+    "construction-grader-earthworks.jpg": {
+      "sourceSha256": "f4cddf10a8a32b8610cfe54dbec468c3ec9e58105cc6ca1b43a9ddee41e38f48",
+      "width": 1200,
+      "height": 1600,
+      "bytes": 427070,
+      "variants": [
+        {
+          "file": "optimized/construction-grader-earthworks-w480-4b322d456ddd.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 81280,
+          "sha256": "4b322d456dddb1523080eeecfec074c398c297ebf6a557426336791632517189"
+        },
+        {
+          "file": "optimized/construction-grader-earthworks-w800-c24c1c579a67.webp",
+          "width": 800,
+          "height": 1067,
+          "bytes": 199946,
+          "sha256": "c24c1c579a671bd71ace3cef0f71c081b6ccc660d8cff92cbdb5869a9fc81bdb"
+        },
+        {
+          "file": "optimized/construction-grader-earthworks-w1200-4225708308e9.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 378194,
+          "sha256": "4225708308e9340f91c35c34cdc74202f4bdef0327d0f8b3420c25f3cff0fc63"
+        }
+      ]
+    },
+    "construction-redmi14c.jpg": {
+      "sourceSha256": "5d9eb05bf2555251bd6a4f8e6d8fdf85613a95f532555fe5b56d550e22efb374",
+      "width": 768,
+      "height": 1134,
+      "bytes": 168345,
+      "variants": [
+        {
+          "file": "optimized/construction-redmi14c-w480-a336f250e3df.webp",
+          "width": 480,
+          "height": 709,
+          "bytes": 65470,
+          "sha256": "a336f250e3df168f002a0ea5f60cdc5009a49b40fecaf9084627835724332c58"
+        },
+        {
+          "file": "optimized/construction-redmi14c-w768-fcb1958d0785.webp",
+          "width": 768,
+          "height": 1134,
+          "bytes": 157776,
+          "sha256": "fcb1958d0785f5122ca54b76fc3e2d3d50133f6f99abefdfff6752b49eb99bb4"
+        }
+      ]
+    },
+    "construction-road-grading.jpg": {
+      "sourceSha256": "c3157648bfa690b271bdc278dfaa969c73c1d07fcadc5d791a37894173660ef1",
+      "width": 1200,
+      "height": 1600,
+      "bytes": 408253,
+      "variants": [
+        {
+          "file": "optimized/construction-road-grading-w480-2cd4b94b6949.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 71088,
+          "sha256": "2cd4b94b69493b618ba9e963443b81db6624854317fae00c8272ff076de9beaa"
+        },
+        {
+          "file": "optimized/construction-road-grading-w800-60311af20ee6.webp",
+          "width": 800,
+          "height": 1067,
+          "bytes": 198270,
+          "sha256": "60311af20ee6ff5184cac1b6b72197663417cfa15e2d7e93dddd2277ef5edcb6"
+        },
+        {
+          "file": "optimized/construction-road-grading-w1200-15a6d8b621d4.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 393904,
+          "sha256": "15a6d8b621d420bca2bf9412e323e5c67671184ebdb2c1eda01ca7c235a522ac"
+        }
+      ]
+    },
+    "construction-road-marking.jpg": {
+      "sourceSha256": "afaac13d75c1734e584be43f1c2cde342f0d1e2ea979dd021e6c899a8404b61c",
+      "width": 1200,
+      "height": 1600,
+      "bytes": 470562,
+      "variants": [
+        {
+          "file": "optimized/construction-road-marking-w480-43a63cddaa0e.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 80684,
+          "sha256": "43a63cddaa0ebb31ebbac124f7faeda013969066656522dd6840059fee2080dc"
+        },
+        {
+          "file": "optimized/construction-road-marking-w800-319fcfb9bf4c.webp",
+          "width": 800,
+          "height": 1067,
+          "bytes": 228234,
+          "sha256": "319fcfb9bf4c6f3d9d60cbc99032584129cf93afcf09729b0cfb1851bcc2b57a"
+        },
+        {
+          "file": "optimized/construction-road-marking-w1200-6c542579aac6.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 471862,
+          "sha256": "6c542579aac6d345985d9a9bb65fba9e54db2d46788d8f417610c3e6ff00e598"
+        }
+      ]
+    },
+    "construction-road-preparation.jpg": {
+      "sourceSha256": "941511838e1c9524ed0d5664e8677d8ed215acfb80a9b933a26385f28b1bcac2",
+      "width": 1200,
+      "height": 1600,
+      "bytes": 442379,
+      "variants": [
+        {
+          "file": "optimized/construction-road-preparation-w480-de0ba2256e54.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 75878,
+          "sha256": "de0ba2256e54af22d0f3f4fa9503680c26de214fae609cd8697252de6ab1b4bf"
+        },
+        {
+          "file": "optimized/construction-road-preparation-w800-61a2e2ede3bd.webp",
+          "width": 800,
+          "height": 1067,
+          "bytes": 214426,
+          "sha256": "61a2e2ede3bd23a3c85adcd5bcaa59410819bce8b82d7857e32678d00d1194bb"
+        },
+        {
+          "file": "optimized/construction-road-preparation-w1200-baf688540eec.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 441312,
+          "sha256": "baf688540eecbe50e591f6e22ade805f9c7246d2d744568abf030047aa3fe3e5"
+        }
+      ]
+    },
+    "construction-team.jpg": {
+      "sourceSha256": "aa2eac2e2d227ad85022996d9a88c91e1798f2d52730d737bedebee74a8c4604",
+      "width": 1157,
+      "height": 1536,
+      "bytes": 474374,
+      "variants": [
+        {
+          "file": "optimized/construction-team-w480-7dcdb368b3e4.webp",
+          "width": 480,
+          "height": 637,
+          "bytes": 78996,
+          "sha256": "7dcdb368b3e488ede5a8820827718794a9af5d079b6f4905896374c6712e69cf"
+        },
+        {
+          "file": "optimized/construction-team-w800-20755538a168.webp",
+          "width": 800,
+          "height": 1062,
+          "bytes": 217574,
+          "sha256": "20755538a168c919e6b1ab40577bac965cc7f5885c1e34689af82a514a18a02c"
+        },
+        {
+          "file": "optimized/construction-team-w1157-01fe32106a4b.webp",
+          "width": 1157,
+          "height": 1536,
+          "bytes": 455996,
+          "sha256": "01fe32106a4b88998b00acdae9456e6b3753dff629bc817c55de28f305dc076c"
+        }
+      ]
+    },
+    "gallery-blue-citrus-crates.jpg": {
+      "sourceSha256": "ee5b85812fa81b01b004d3d11292449a5e3db4592d3e79ee4eb5ea909ee45b0b",
+      "width": 780,
+      "height": 1040,
+      "bytes": 161549,
+      "variants": [
+        {
+          "file": "optimized/gallery-blue-citrus-crates-w480-b79d04bb2b54.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 64106,
+          "sha256": "b79d04bb2b5467b598e808feb4eaf40a7b71d8d7efbba5e4312cb4a89b6dc76c"
+        },
+        {
+          "file": "optimized/gallery-blue-citrus-crates-w780-a2a58ca5bed0.webp",
+          "width": 780,
+          "height": 1040,
+          "bytes": 127988,
+          "sha256": "a2a58ca5bed0d11eb9f9b75500967e76d46e2428224539241271d60497e3b328"
+        }
+      ]
+    },
+    "gallery-blue-harvest-bins.jpg": {
+      "sourceSha256": "a94b79815487df1632493ecfda4713e161432e854474a8ff6eb531bbd37d956c",
+      "width": 780,
+      "height": 1040,
+      "bytes": 162311,
+      "variants": [
+        {
+          "file": "optimized/gallery-blue-harvest-bins-w480-049f7285dfd6.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 61880,
+          "sha256": "049f7285dfd6e7799a2bab838a37d83d52083929289efdbd8acf477a434f3528"
+        },
+        {
+          "file": "optimized/gallery-blue-harvest-bins-w780-fbad9c01373e.webp",
+          "width": 780,
+          "height": 1040,
+          "bytes": 122850,
+          "sha256": "fbad9c01373ebc6c940a47dc51051c70dc841592a33751dcb98e4f56f6bc4090"
+        }
+      ]
+    },
+    "gallery-citrus-detail.jpg": {
+      "sourceSha256": "167826efc84ced023404794527fc430b2f7ef678f059e41ae28424fb7fb2e0e9",
+      "width": 780,
+      "height": 1040,
+      "bytes": 102817,
+      "variants": [
+        {
+          "file": "optimized/gallery-citrus-detail-w480-90870ccac44f.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 38736,
+          "sha256": "90870ccac44fa8c790c4c4b0488f00c5f9b03c6bdda2a3c54256f4979847be6a"
+        },
+        {
+          "file": "optimized/gallery-citrus-detail-w780-1487ac3eb805.webp",
+          "width": 780,
+          "height": 1040,
+          "bytes": 71732,
+          "sha256": "1487ac3eb805db7d23944aef64c921298f26b78c1169715364b01e264ad52b76"
+        }
+      ]
+    },
+    "gallery-citrus-trees.jpg": {
+      "sourceSha256": "bc7cfd19a815b11d51a9cdb5802bc5ba3c0215ebcb169125ad863af96061f683",
+      "width": 1040,
+      "height": 780,
+      "bytes": 210588,
+      "variants": [
+        {
+          "file": "optimized/gallery-citrus-trees-w480-b0bc74f833cf.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 53502,
+          "sha256": "b0bc74f833cfb820fba03cfb4754e1378e7fc8e537c9a7550bee23a2c48a4ed5"
+        },
+        {
+          "file": "optimized/gallery-citrus-trees-w800-ad047ad6772f.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 130504,
+          "sha256": "ad047ad6772f2ead8ed99d0b33875a66a958bdb8d31275b860f8ae8f6734b323"
+        },
+        {
+          "file": "optimized/gallery-citrus-trees-w1040-f64e881fe519.webp",
+          "width": 1040,
+          "height": 780,
+          "bytes": 194782,
+          "sha256": "f64e881fe51911cb9de2414527349b21aa82ed70473bcd3fb83a593b08bed41d"
+        }
+      ]
+    },
+    "gallery-crates-tractor.jpg": {
+      "sourceSha256": "04527bd41e66799c0705e7d9d1f2cba103f717240e7f1b3629a4d4278ddb91a1",
+      "width": 1040,
+      "height": 780,
+      "bytes": 163223,
+      "variants": [
+        {
+          "file": "optimized/gallery-crates-tractor-w480-499b87006d98.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 44554,
+          "sha256": "499b87006d98b97b7c209a2b2032fdfd977e0d88bd374c75a0d343bbfd996ba2"
+        },
+        {
+          "file": "optimized/gallery-crates-tractor-w800-1103723919e1.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 91500,
+          "sha256": "1103723919e1022a3bdb52ec8ad7aeb1bc117f1f4551c3454e52a77aee365df8"
+        },
+        {
+          "file": "optimized/gallery-crates-tractor-w1040-767be498179c.webp",
+          "width": 1040,
+          "height": 780,
+          "bytes": 129558,
+          "sha256": "767be498179cdf4d2aa85e4374311f472f23928280d0c56033d1f65574be9ce3"
+        }
+      ]
+    },
+    "gallery-filled-crates.jpg": {
+      "sourceSha256": "15331706da32b1bdc862bd93fed0265d37e321cf8375c0c3390303d4d105751e",
+      "width": 780,
+      "height": 1040,
+      "bytes": 131588,
+      "variants": [
+        {
+          "file": "optimized/gallery-filled-crates-w480-18b9af177b87.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 47762,
+          "sha256": "18b9af177b87361113630bd0094e4b5c3709e1dadbf16f8b9eb8f04529968e00"
+        },
+        {
+          "file": "optimized/gallery-filled-crates-w780-d1ef8223155e.webp",
+          "width": 780,
+          "height": 1040,
+          "bytes": 104222,
+          "sha256": "d1ef8223155e3767d37996c30d604030d1ff927044476c73b70ebef2bd08b106"
+        }
+      ]
+    },
+    "gallery-fruit-picking.jpg": {
+      "sourceSha256": "d58a30805ca8fd9200369298f1796ba0c481ae4c31bd09160cef437e7cf791df",
+      "width": 780,
+      "height": 1040,
+      "bytes": 225247,
+      "variants": [
+        {
+          "file": "optimized/gallery-fruit-picking-w480-ddd8822bbbbb.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 92896,
+          "sha256": "ddd8822bbbbb4344d3f173551041078a5268cce7f366e2864252673e705e64d9"
+        },
+        {
+          "file": "optimized/gallery-fruit-picking-w780-041c779846f0.webp",
+          "width": 780,
+          "height": 1040,
+          "bytes": 207560,
+          "sha256": "041c779846f06eacceba88a6a088ba98eff9788465cb15a46de9c6126e6a0903"
+        }
+      ]
+    },
+    "gallery-grapefruit.jpg": {
+      "sourceSha256": "370a40a068f2373cc7b15e2ff7d7ad924d80b750be177f7dd0423009feac3461",
+      "width": 780,
+      "height": 1040,
+      "bytes": 103840,
+      "variants": [
+        {
+          "file": "optimized/gallery-grapefruit-w480-59954086ea63.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 36642,
+          "sha256": "59954086ea6399b46066014184a4eb18068ddf3bad51aa540e0e5c21a19e7597"
+        },
+        {
+          "file": "optimized/gallery-grapefruit-w780-c8ee0777a129.webp",
+          "width": 780,
+          "height": 1040,
+          "bytes": 70860,
+          "sha256": "c8ee0777a1295dc749997d3c14958500dfb5e78b8b338b30761cb2465c7a14d6"
+        }
+      ]
+    },
+    "gallery-green-citrus-crates.jpg": {
+      "sourceSha256": "41b4f0aa4e7aa8672e3f864539af8e610e1aae0047d1eb727caa59490a702adb",
+      "width": 1040,
+      "height": 780,
+      "bytes": 164432,
+      "variants": [
+        {
+          "file": "optimized/gallery-green-citrus-crates-w480-823963f6e7e3.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 40042,
+          "sha256": "823963f6e7e3f395fa0a73cf9211c8125cf5b8cad538af08b8401619f9246d49"
+        },
+        {
+          "file": "optimized/gallery-green-citrus-crates-w800-da1d6cd469ab.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 93224,
+          "sha256": "da1d6cd469ab0abf41cec2425d9aca07d79cb1b9911a1f89b6344e08662c5556"
+        },
+        {
+          "file": "optimized/gallery-green-citrus-crates-w1040-30a57e35d9b6.webp",
+          "width": 1040,
+          "height": 780,
+          "bytes": 144038,
+          "sha256": "30a57e35d9b608403d7cb2f05c8898585d3bba06699902e9cd5e02ee36ebf8a3"
+        }
+      ]
+    },
+    "gallery-harvest-crates-row.jpg": {
+      "sourceSha256": "d7d0b7d1bff677e7aba0bd6fbe80fc18723e5a9fa1a1b1703323e9446cc83e50",
+      "width": 780,
+      "height": 1040,
+      "bytes": 167698,
+      "variants": [
+        {
+          "file": "optimized/gallery-harvest-crates-row-w480-42f310b39f67.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 64710,
+          "sha256": "42f310b39f676238c6845e89e504366632ec5e744b77f90729d7943ad7e03768"
+        },
+        {
+          "file": "optimized/gallery-harvest-crates-row-w780-751032b2eecb.webp",
+          "width": 780,
+          "height": 1040,
+          "bytes": 137744,
+          "sha256": "751032b2eecbe223b5c42c952427db99a8fb9ee84a4f35b355d45c110e9f4104"
+        }
+      ]
+    },
+    "gallery-harvest-team-member.jpg": {
+      "sourceSha256": "235a1fb3b4b767b4ff22d803cf6345f3d7aac9c1e683455a24fe443e9abbc666",
+      "width": 780,
+      "height": 1040,
+      "bytes": 205624,
+      "variants": [
+        {
+          "file": "optimized/gallery-harvest-team-member-w480-d02186e40672.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 82528,
+          "sha256": "d02186e406725ea38ec67be8599b8752fc78283a6b2db211dd6f8e685b5aa56f"
+        },
+        {
+          "file": "optimized/gallery-harvest-team-member-w780-8658261a56fb.webp",
+          "width": 780,
+          "height": 1040,
+          "bytes": 190368,
+          "sha256": "8658261a56fb992573dc2ea26d40410cb5e9d66f6f90558f0a2aaa0ce9ad4b99"
+        }
+      ]
+    },
+    "gallery-orchard-ladder.jpg": {
+      "sourceSha256": "2d9f0dbbb7dc617d197a81189b0f61c6db294b5652e13b3154f87ff0fdfe6dd4",
+      "width": 780,
+      "height": 1040,
+      "bytes": 287367,
+      "variants": [
+        {
+          "file": "optimized/gallery-orchard-ladder-w480-6929481523ae.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 124222,
+          "sha256": "6929481523aebea8adca4c2fede3de6c92a1818b2d76b56da8f0b2e224dc5ffa"
+        },
+        {
+          "file": "optimized/gallery-orchard-ladder-w780-4158830e7d8b.webp",
+          "width": 780,
+          "height": 1040,
+          "bytes": 296040,
+          "sha256": "4158830e7d8b4b01f607de79895de8568d696f2b6b1da310abd414c5b3584500"
+        }
+      ]
+    },
+    "gallery-orchard-path.jpg": {
+      "sourceSha256": "bb1df796143206bd33abbbfedd4edf2046a85f92fa4cc49ceb15f40577f9869b",
+      "width": 780,
+      "height": 1040,
+      "bytes": 233824,
+      "variants": [
+        {
+          "file": "optimized/gallery-orchard-path-w480-5e0a9e990d23.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 93038,
+          "sha256": "5e0a9e990d237b80e2a48d0efd65c6aff9f9e853fb79b2c1bcbfc35889ae78aa"
+        },
+        {
+          "file": "optimized/gallery-orchard-path-w780-85faa32dba1f.webp",
+          "width": 780,
+          "height": 1040,
+          "bytes": 236022,
+          "sha256": "85faa32dba1fb738aeb315d9a80418633f3cc00f3739723e84b9b66922643632"
+        }
+      ]
+    },
+    "gallery-orchard-rows.jpg": {
+      "sourceSha256": "63431c388806d39015eb8d6b553c2552bf0aa4717fa27d688317f98f283208e1",
+      "width": 1040,
+      "height": 780,
+      "bytes": 200944,
+      "variants": [
+        {
+          "file": "optimized/gallery-orchard-rows-w480-3db9dc6c11a9.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 50532,
+          "sha256": "3db9dc6c11a9fee8231cce28ada9a11464ee1990bd643a4c9924ae159707e40a"
+        },
+        {
+          "file": "optimized/gallery-orchard-rows-w800-e1923e1662e1.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 124988,
+          "sha256": "e1923e1662e1dea299a3b7ef10ae17f19b5ba2ce0b88e07fd110227d870056da"
+        },
+        {
+          "file": "optimized/gallery-orchard-rows-w1040-d9b641c6955d.webp",
+          "width": 1040,
+          "height": 780,
+          "bytes": 187056,
+          "sha256": "d9b641c6955d502870df4767d8838bc3d605229756fe19700890dc4b4cce7ed8"
+        }
+      ]
+    },
+    "gallery-team-blue-crates.jpg": {
+      "sourceSha256": "2ea02cf3092157504b07fc53592ada708af8f4df4eef2969ff9354d82c9dc5c0",
+      "width": 1040,
+      "height": 780,
+      "bytes": 185939,
+      "variants": [
+        {
+          "file": "optimized/gallery-team-blue-crates-w480-82fcbd9c6246.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 47268,
+          "sha256": "82fcbd9c6246d95f689b4a10deb45de14d2561899770fbe6984c578c888a5c4d"
+        },
+        {
+          "file": "optimized/gallery-team-blue-crates-w800-605d102ef1bf.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 104710,
+          "sha256": "605d102ef1bf656644a9b35cc4707ac67cd2e9a29e738cf2c2e697c7858280d6"
+        },
+        {
+          "file": "optimized/gallery-team-blue-crates-w1040-68a94b17a0f0.webp",
+          "width": 1040,
+          "height": 780,
+          "bytes": 155294,
+          "sha256": "68a94b17a0f09a0e3afc063ebd7040717f4546743457ea8cdff25b5a8518b8fe"
+        }
+      ]
+    },
+    "gallery-team-crates.jpg": {
+      "sourceSha256": "85971d7309eb91db90e4394ac0c1949a05e2de61b900e3b4c921ac8af94e8f31",
+      "width": 1040,
+      "height": 780,
+      "bytes": 193406,
+      "variants": [
+        {
+          "file": "optimized/gallery-team-crates-w480-57bc3763cc21.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 51680,
+          "sha256": "57bc3763cc21fca490ac4b6cc58d0d31ff9f4d642d2611c53172464f0d80519e"
+        },
+        {
+          "file": "optimized/gallery-team-crates-w800-bf8000247b58.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 116684,
+          "sha256": "bf8000247b583a6c45f394d33b51d3ef828cda75df67546402602c28808c3517"
+        },
+        {
+          "file": "optimized/gallery-team-crates-w1040-ecd019fcb5c3.webp",
+          "width": 1040,
+          "height": 780,
+          "bytes": 171784,
+          "sha256": "ecd019fcb5c3bd5cb7f3456b231f236a906705eaa4b7cab10f894fb14beb61bb"
+        }
+      ]
+    },
+    "gallery-team-harvest-bins.jpg": {
+      "sourceSha256": "7da262b443741e5189a2f6443cba063c8f0f835a760147584ba04a468e09fa54",
+      "width": 780,
+      "height": 1040,
+      "bytes": 156215,
+      "variants": [
+        {
+          "file": "optimized/gallery-team-harvest-bins-w480-31e291aee448.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 58488,
+          "sha256": "31e291aee4489b52805cd79770a56cc80608d65d5fbf1ab2b6206631ab55209a"
+        },
+        {
+          "file": "optimized/gallery-team-harvest-bins-w780-bd75fa3532d4.webp",
+          "width": 780,
+          "height": 1040,
+          "bytes": 118502,
+          "sha256": "bd75fa3532d48741b433b8f5aa5bd0e8db0655ab9dd7439511d9f839388b83c0"
+        }
+      ]
+    },
+    "gallery-team-orchard.jpg": {
+      "sourceSha256": "5ea93bae01e2c08236894c7a273125d537b092853386516d901716c88215c170",
+      "width": 1040,
+      "height": 780,
+      "bytes": 174276,
+      "variants": [
+        {
+          "file": "optimized/gallery-team-orchard-w480-9e9b99c79b9c.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 49822,
+          "sha256": "9e9b99c79b9cb5f932209524c3e5c1208beb2e25eed6d60b32e392326d26b4b3"
+        },
+        {
+          "file": "optimized/gallery-team-orchard-w800-ecd4069f1d17.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 103290,
+          "sha256": "ecd4069f1d1712a878edffeec404a630b53f9d6a901e6082e2153f1e46dceeed"
+        },
+        {
+          "file": "optimized/gallery-team-orchard-w1040-321b546d4266.webp",
+          "width": 1040,
+          "height": 780,
+          "bytes": 142726,
+          "sha256": "321b546d42661e58663eab9d011cf8edf74ff9f7024872178a83fcdf8d257c8a"
+        }
+      ]
+    },
+    "gallery-tractor-lane.jpg": {
+      "sourceSha256": "c49242e3d0d3d8867aa0590af38f9aa52aec410d3238227d2e5e171f9b699bf5",
+      "width": 1040,
+      "height": 780,
+      "bytes": 173071,
+      "variants": [
+        {
+          "file": "optimized/gallery-tractor-lane-w480-1a88480d315c.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 38714,
+          "sha256": "1a88480d315c0a5d639819a0ecb139724a8a2beb54b52673cb0d7b39ede38acb"
+        },
+        {
+          "file": "optimized/gallery-tractor-lane-w800-c7ef9fec861c.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 104576,
+          "sha256": "c7ef9fec861cf356d1f60baf60fb868f646245a22547feb345c1fca617d6d04f"
+        },
+        {
+          "file": "optimized/gallery-tractor-lane-w1040-0ae29f30f45c.webp",
+          "width": 1040,
+          "height": 780,
+          "bytes": 163222,
+          "sha256": "0ae29f30f45c3da7adc5c5e655af3cd64ca9064581dc6864b1c718125d8e68e8"
+        }
+      ]
+    },
+    "gallery-yellow-citrus.jpg": {
+      "sourceSha256": "53807156cc4e2b5333ba530c243a6fdf393bb81dd468ca592d9dd4b3f8ef920c",
+      "width": 780,
+      "height": 1040,
+      "bytes": 111135,
+      "variants": [
+        {
+          "file": "optimized/gallery-yellow-citrus-w480-e1e6070161c7.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 39072,
+          "sha256": "e1e6070161c7ea05800f2a1b943f5b36e0ca8cf633a1965a35a52def2864700c"
+        },
+        {
+          "file": "optimized/gallery-yellow-citrus-w780-f42000aa89e2.webp",
+          "width": 780,
+          "height": 1040,
+          "bytes": 73598,
+          "sha256": "f42000aa89e241e8d4a2103f020f3eedbbb4eebc30b74fe9ef948f156878792e"
+        }
+      ]
+    },
+    "lifting-rigging.jpg": {
+      "sourceSha256": "1836577732d50cea1ad04b7cd98abfe681772c5c290a2b4b2c4b59d4b60259fd",
+      "width": 1024,
+      "height": 678,
+      "bytes": 128675,
+      "variants": [
+        {
+          "file": "optimized/lifting-rigging-w480-e680a1dd7b6e.webp",
+          "width": 480,
+          "height": 318,
+          "bytes": 32548,
+          "sha256": "e680a1dd7b6e1cadb9fe391e6e99aef53b082c826837cd9877378ae0601189c8"
+        },
+        {
+          "file": "optimized/lifting-rigging-w800-b32242ba530d.webp",
+          "width": 800,
+          "height": 530,
+          "bytes": 72454,
+          "sha256": "b32242ba530dcaf319dcfdf716b3dc92b3d21a0217d6f1b2888d4e36ccbffc62"
+        },
+        {
+          "file": "optimized/lifting-rigging-w1024-1dff2b106e66.webp",
+          "width": 1024,
+          "height": 678,
+          "bytes": 102844,
+          "sha256": "1dff2b106e660aed8d2cde6ba0a9c5842366738c57f7ec364e61676a922e3598"
+        }
+      ]
+    },
+    "mining-pumps.jpg": {
+      "sourceSha256": "3c6ee733c4bd28945f7b9a3b6da1da689b4433d30e5e5a799201ca17e34170b1",
+      "width": 1600,
+      "height": 1200,
+      "bytes": 262032,
+      "variants": [
+        {
+          "file": "optimized/mining-pumps-w480-762d283d95b2.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 24446,
+          "sha256": "762d283d95b28b5f3cfd5f82a1ca9a24b93cf4bfb989a62dab13c1745c99c838"
+        },
+        {
+          "file": "optimized/mining-pumps-w800-7c3172830c14.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 59496,
+          "sha256": "7c3172830c14732a4be3f8c454d161048370571e28d90f5ae919291c54ddea58"
+        },
+        {
+          "file": "optimized/mining-pumps-w1200-4ee5be1fc7fb.webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 114564,
+          "sha256": "4ee5be1fc7fbc86bbf4510392ba24c0b655018af59fc2e39fcaeed2ebacfa989"
+        },
+        {
+          "file": "optimized/mining-pumps-w1600-08a5d9f248c5.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 180492,
+          "sha256": "08a5d9f248c51a95571d1def5642fa999fa807a8ce3d01475b217c9676ee1ee1"
+        }
+      ]
+    },
+    "pump-repair.jpg": {
+      "sourceSha256": "13869f12622b351b075649ffed2369a54d5af0678a554dced110060dd5d1494b",
+      "width": 1024,
+      "height": 768,
+      "bytes": 131196,
+      "variants": [
+        {
+          "file": "optimized/pump-repair-w480-6f78e38dacd9.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 30006,
+          "sha256": "6f78e38dacd92b854e0417beba355310630ba139ee43f880b0997c78b55a0b72"
+        },
+        {
+          "file": "optimized/pump-repair-w800-0e864ed95aec.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 66532,
+          "sha256": "0e864ed95aec9091c2966aaa2f372ae2d4ec1c263f17dcc911e51de611ba5e7e"
+        },
+        {
+          "file": "optimized/pump-repair-w1024-96041806b63a.webp",
+          "width": 1024,
+          "height": 768,
+          "bytes": 97412,
+          "sha256": "96041806b63a1bef79cda7dca6063a121540f30c2e8d137b5625535b2476d894"
+        }
+      ]
+    }
+  }
+}

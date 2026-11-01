@@ -57,7 +57,7 @@ The footer links to Facebook, LinkedIn and WhatsApp on every page. Contact inclu
 
 ## Content review before public launch
 
-Confirm the preferred domain, current procurement documents and client publication permissions. The existing profiles use different domain spellings. No unverified current certificate badges, invented testimonials, client endorsements or nationwide service claims have been introduced. Equipment photographs are described as equipment examples from the company profile.
+The public domain is https://www.clementprojectss.co.za/ (the bare domain redirects to www). Confirm current procurement documents and client publication permissions. The existing profiles use different domain spellings. No unverified current certificate badges, invented testimonials, client endorsements or nationwide service claims have been introduced. Equipment photographs are described as equipment examples from the company profile.
 
 ## Hosting and verification
 
@@ -66,3 +66,9 @@ The Sites project identity is retained in `.openai/hosting.json`. Static output 
 JavaScript syntax and static site integrity checks pass. Browser verification completed on 29 October 2026 using Chrome outside the socket-restricted sandbox: the original ten pages were checked at five viewport widths, with no horizontal overflow, broken image sources or JavaScript errors. Mobile navigation, gallery interactions, enquiry drafts and PDF downloads passed. Homepage desktop and mobile screenshots were visually reviewed. See `QA-REPORT.md` for scope and remaining launch requirements.
 
 No external npm dependencies are used. Inter is distributed under the SIL Open Font License; see `assets/OFL-Inter.txt`.
+
+## Search preparation
+
+See [SEO-LAUNCH-CHECKLIST.md](SEO-LAUNCH-CHECKLIST.md) for completed website work and the remaining search-account steps. `seo.config.json` contains the canonical origin, business details and optional verification tokens. `scripts/seo-data.mjs` maps page topics and service questions; `scripts/seo.mjs` generates metadata, structured data, responsive images, robots.txt and the 16-page sitemap. `seo/` contains the generated page inventory, stable revision dates and keyword map, plus a business listing draft and content plan.
+
+Responsive photo variants and their hashes are committed under `assets/optimized/` and `assets/image-delivery.json`; full-size originals remain available. The optional Sharp regeneration tool is separate from the dependency-free production build. Inter is served as local WOFF2 subsets. `npm run check` includes SEO checks. Vercel preview builds use noindex; production uses the confirmed www domain. PDFs are kept accessible with a noindex response header.

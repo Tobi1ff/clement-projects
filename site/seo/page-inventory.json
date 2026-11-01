@@ -1,0 +1,133 @@
+{
+  "origin": "https://www.clementprojectss.co.za",
+  "preview": false,
+  "indexablePages": 16,
+  "pages": [
+    {
+      "file": "404.html",
+      "canonical": "https://www.clementprojectss.co.za/404.html",
+      "title": "Page Not Found | Clement Projects Solution",
+      "description": "The requested CPS page could not be found. Explore our services, galleries, downloads or contact our team.",
+      "indexable": false
+    },
+    {
+      "file": "about.html",
+      "canonical": "https://www.clementprojectss.co.za/about.html",
+      "title": "About Clement Projects Solution | Phalaborwa",
+      "description": "Meet Clement Projects Solution in Phalaborwa: our founder, capabilities, registered bodies, vendor registrations and business procurement platforms.",
+      "indexable": true
+    },
+    {
+      "file": "agriculture-gallery.html",
+      "canonical": "https://www.clementprojectss.co.za/agriculture-gallery.html",
+      "title": "Fruit Picking & Agriculture Photo Gallery | CPS",
+      "description": "Explore 24 CPS harvest photographs showing fruit picking teams, citrus orchards, produce handling and transport. Filter photos and browse full-size images.",
+      "indexable": true
+    },
+    {
+      "file": "agriculture.html",
+      "canonical": "https://www.clementprojectss.co.za/agriculture.html",
+      "title": "Fruit Picking & Harvest Services | Phalaborwa | CPS",
+      "description": "Fruit picking, sorting, grading, packing and loading services from Clement Projects Solution in Phalaborwa. Discuss your farm, harvest dates and team needs.",
+      "indexable": true
+    },
+    {
+      "file": "construction-gallery.html",
+      "canonical": "https://www.clementprojectss.co.za/construction-gallery.html",
+      "title": "Construction Gallery: Drainage & Earthworks | CPS",
+      "description": "View CPS construction photographs of concrete drainage, site preparation and road earthworks. Filter the gallery and open original photos in the viewer.",
+      "indexable": true
+    },
+    {
+      "file": "construction.html",
+      "canonical": "https://www.clementprojectss.co.za/construction.html",
+      "title": "Construction & V-Drainage in Phalaborwa | CPS",
+      "description": "Civil construction, V-drainage, general building, electrical works and plant hire from CPS in Phalaborwa. Discuss excavation, formwork and casting needs.",
+      "indexable": true
+    },
+    {
+      "file": "contact.html",
+      "canonical": "https://www.clementprojectss.co.za/contact.html",
+      "title": "Contact & Sales Enquiries | Phalaborwa | CPS",
+      "description": "Contact Clement Projects Solution in Phalaborwa. Call 015 004 1433, WhatsApp 065 691 8895, or prepare a service enquiry or product quotation email.",
+      "indexable": true
+    },
+    {
+      "file": "index.html",
+      "canonical": "https://www.clementprojectss.co.za/",
+      "title": "Industrial Pumps, Construction & Agriculture | CPS",
+      "description": "Clement Projects Solution supplies industrial pumps and spares, construction, lifting equipment and agricultural services from Phalaborwa, Limpopo.",
+      "indexable": true
+    },
+    {
+      "file": "interchangeable-models-parts.html",
+      "canonical": "https://www.clementprojectss.co.za/interchangeable-models-parts.html",
+      "title": "Pump Model Cross-Reference: 59 Pairings | CPS",
+      "description": "Search 59 pump model pairings across AH, HH, L, M, G/GH, SP, SH and AF families. Share both references with CPS to enquire about the correct spare part.",
+      "indexable": true
+    },
+    {
+      "file": "lifting-rigging.html",
+      "canonical": "https://www.clementprojectss.co.za/lifting-rigging.html",
+      "title": "Lifting & Rigging Equipment in Phalaborwa | CPS",
+      "description": "Browse chain blocks, slings, shackles, wire rope, rigging and transport lashing equipment. Ask CPS in Phalaborwa for a product quotation and specifications.",
+      "indexable": true
+    },
+    {
+      "file": "mining-industrial.html",
+      "canonical": "https://www.clementprojectss.co.za/mining-industrial.html",
+      "title": "Slurry Pumps & Industrial Spares | Phalaborwa | CPS",
+      "description": "Explore slurry pumps, industrial spares, wear parts, air torque actuators and repair support from CPS in Phalaborwa. Enquire with your model and application.",
+      "indexable": true
+    },
+    {
+      "file": "privacy.html",
+      "canonical": "https://www.clementprojectss.co.za/privacy.html",
+      "title": "Privacy Information | Clement Projects Solution",
+      "description": "How the CPS website handles email enquiry drafts, external contact links, social platforms and information you choose to share with our team.",
+      "indexable": false
+    },
+    {
+      "file": "project-archive.html",
+      "canonical": "https://www.clementprojectss.co.za/project-archive.html",
+      "title": "Construction Project Records & Bids | CPS",
+      "description": "Browse two CPS construction project records by client, year and work type. Recorded status is explained, and bid information is available on request.",
+      "indexable": true
+    },
+    {
+      "file": "project-ba-phalaborwa-plant-hire-2024.html",
+      "canonical": "https://www.clementprojectss.co.za/project-ba-phalaborwa-plant-hire-2024.html",
+      "title": "Ba-Phalaborwa Plant Hire (2024) | CPS",
+      "description": "Ba-Phalaborwa Municipality: completed 30-day plant hire for water and sanitation repairs, recorded in 2024. Bid details available on request.",
+      "indexable": true
+    },
+    {
+      "file": "project-dwellers-side-drains-2025.html",
+      "canonical": "https://www.clementprojectss.co.za/project-dwellers-side-drains-2025.html",
+      "title": "Dwellers Side-Drain Construction (2025) | CPS",
+      "description": "Dwellers side-drain construction recorded in 2025. Last reported ongoing; current status unconfirmed. Bid details available on request.",
+      "indexable": true
+    },
+    {
+      "file": "projects.html",
+      "canonical": "https://www.clementprojectss.co.za/projects.html",
+      "title": "Construction & Agriculture Work Gallery | CPS",
+      "description": "Explore CPS construction and harvest photographs, industrial equipment examples and the project archive. Open the dedicated construction and agriculture galleries.",
+      "indexable": true
+    },
+    {
+      "file": "pump-accessories.html",
+      "canonical": "https://www.clementprojectss.co.za/pump-accessories.html",
+      "title": "Pump Accessories & Spares in Phalaborwa | CPS",
+      "description": "Choose expellers, shafts, sleeves, strainers and other pump accessories. Prepare a CPS quotation request with your selected part, model and quantity.",
+      "indexable": true
+    },
+    {
+      "file": "resources.html",
+      "canonical": "https://www.clementprojectss.co.za/resources.html",
+      "title": "Company Profiles & Procurement Documents | CPS",
+      "description": "Download CPS mining, construction, lifting and agriculture profiles. Request current CIDB, CSD, B-BBEE and company documentation for procurement enquiries.",
+      "indexable": true
+    }
+  ]
+}
