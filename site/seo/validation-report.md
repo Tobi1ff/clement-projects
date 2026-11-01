@@ -20,3 +20,9 @@ For 34 photographs, the original files total 7,264,845 bytes. The representative
 ## Public account work
 
 Search Console and Bing verification/submission, Google Business Profile review and real-user Core Web Vitals reporting require the company's accounts. No ownership verification, ranking improvement, lead attribution or search indexing is claimed by these local checks. See the launch checklist for the exact account steps.
+
+## Production checks
+
+The public domain was verified after publication: all 16 sitemap pages returned HTTP 200 with the expected www canonical, index directive and parsable structured data. The bare domain and `/index.html` returned HTTP 308 to the preferred homepage. A missing URL returned HTTP 404. Privacy and the error page carried noindex. All five downloadable PDFs matched the reviewed local copies and returned the noindex header. A hash-named WebP returned matching bytes and immutable caching; the local font and both PNG icons matched the published copies.
+
+A mobile Lighthouse 13.6.0 run against the public homepage reported performance 97, accessibility 100, best practices 100 and SEO 100; LCP was 2.5 seconds and CLS 0. These are single-run lab diagnostics, not a ranking or real-user Core Web Vitals guarantee. The baseline run reported performance 77 and LCP 5.8 seconds. The remaining brand-link label advisory was addressed by using the visible company name as the link's accessible name.
