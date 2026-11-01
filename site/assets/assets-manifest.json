@@ -382,6 +382,38 @@
       "description": "Civil construction worker beside a concrete drainage channel",
       "source": "clemets-projects/WhatsApp Image 2026-11-01 at 07.02.49.jpeg",
       "note": "Original supplied JPEG copied without alteration for the homepage Civil Construction card. Redmi 14C watermark remains in the original image; the responsive card uses CSS object-position to frame the worker."
+    },
+    {
+      "file": "construction-road-marking.jpg",
+      "width": 1200,
+      "height": 1600,
+      "description": "Team members setting out a line beside an unpaved road.",
+      "source": "clemets-projects/construction-images/WhatsApp Image 2026-10-31 at 02.33.52 (1).jpeg",
+      "note": "Original supplied JPEG copied without alteration for the construction gallery. Duplicate uploads are shown only once; no project/client attribution or completion status is inferred."
+    },
+    {
+      "file": "construction-road-preparation.jpg",
+      "width": 1200,
+      "height": 1600,
+      "description": "Construction team preparing road-cutting equipment on site.",
+      "source": "clemets-projects/construction-images/WhatsApp Image 2026-10-31 at 02.33.52.jpeg",
+      "note": "Original supplied JPEG copied without alteration for the construction gallery. Duplicate uploads are shown only once; no project/client attribution or completion status is inferred."
+    },
+    {
+      "file": "construction-road-grading.jpg",
+      "width": 1200,
+      "height": 1600,
+      "description": "Motor grader on an unpaved road.",
+      "source": "clemets-projects/construction-images/WhatsApp Image 2026-10-31 at 02.33.54.jpeg",
+      "note": "Original supplied JPEG copied without alteration for the construction gallery. Duplicate uploads are shown only once; no project/client attribution or completion status is inferred."
+    },
+    {
+      "file": "construction-grader-earthworks.jpg",
+      "width": 1200,
+      "height": 1600,
+      "description": "Motor grader moving soil along a road edge.",
+      "source": "clemets-projects/construction-images/WhatsApp Image 2026-10-31 at 02.33.55.jpeg",
+      "note": "Original supplied JPEG copied without alteration for the construction gallery. Duplicate uploads are shown only once; no project/client attribution or completion status is inferred."
     }
   ]
 }

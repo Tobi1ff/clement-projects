@@ -568,3 +568,14 @@ img{border-radius:5px}
 .vendor-registrations-list>li:last-child{grid-column:1/-1}
 .vendor-registration-number{color:var(--orange-dark);font-size:11px;font-weight:650;letter-spacing:.08em;flex-shrink:0}
 @media(max-width:560px){.vendor-registrations-section{padding-block:45px}.vendor-registrations-list{grid-template-columns:1fr;gap:12px}.vendor-registrations-list>li{min-height:72px;padding:18px;gap:15px;font-size:16px}}
+
+/* Construction uses the shared photo gallery with the industrial colour palette. */
+.construction-gallery-hero,.construction-work-gallery-link{background:var(--navy)}
+.construction-gallery-hero figure img{object-position:50% 27%}
+.construction-gallery-hero figcaption{background:linear-gradient(transparent,#0c1728e8)}
+.construction-gallery-section .filter-button{color:var(--ink)}
+.construction-gallery-section .filter-button.active{background:var(--navy);border-color:var(--navy);color:white}
+.construction-gallery-section .ag-photo-card .small-label{color:var(--muted)}
+.construction-hero-gallery{display:flex;width:fit-content;margin-top:16px;color:white}
+.construction-hero-gallery:hover{color:var(--orange)}
+.construction-gallery-preview .ag-preview-grid img{object-position:50% 10%}

@@ -91,8 +91,7 @@ filters.forEach(button => button.addEventListener('click', () => {
   try { history.replaceState(null, '', url); } catch { /* Local-file previews may restrict history updates. */ }
 }));
 if (filters.length) applyFilter(new URLSearchParams(location.search).get('filter') || 'all');
-const agricultureFilters = document.getElementById('agriculture-filters');
-if (agricultureFilters) agricultureFilters.hidden = false;
+document.querySelectorAll('[data-gallery-filters]').forEach(group => { group.hidden = false; });
 
 const dialog = document.getElementById('image-dialog');
 const photoLinks = [...document.querySelectorAll('[data-image]')];
