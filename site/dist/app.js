@@ -94,7 +94,7 @@ if (filters.length) applyFilter(new URLSearchParams(location.search).get('filter
 document.querySelectorAll('[data-gallery-filters]').forEach(group => { group.hidden = false; });
 
 const dialog = document.getElementById('image-dialog');
-const photoLinks = [...document.querySelectorAll('[data-image]')];
+const photoLinks = [...document.querySelectorAll('[data-image]:not([aria-hidden="true"] [data-image])')];
 let galleryImages = [];
 let galleryIndex = 0;
 let photoOpener = null;

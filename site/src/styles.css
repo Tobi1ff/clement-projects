@@ -193,6 +193,11 @@
 .ag-work-gallery-link h2{font-size:30px;margin-top:14px}
 .ag-work-gallery-link p{font-size:13px;margin-top:18px}
 .ag-work-gallery-action{display:flex;align-items:center;gap:20px;white-space:nowrap;font-size:13px;font-weight:600;color:var(--orange)}
+.construction-work-gallery-link{display:flex;justify-content:space-between;gap:35px;align-items:center;background:var(--navy);color:white;padding:38px;margin-top:25px}
+.construction-work-gallery-link .small-label,.construction-work-gallery-link p{color:#c6cfdb}
+.construction-work-gallery-link h2{font-size:30px;margin-top:14px}
+.construction-work-gallery-link p{font-size:13px;margin-top:18px}
+.construction-work-gallery-action{display:flex;align-items:center;gap:20px;white-space:nowrap;font-size:13px;font-weight:600;color:var(--orange)}
 .dialog-navigation{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:12px 25px 20px;border-top:1px solid #ffffff30}
 .dialog-navigation button{display:flex;align-items:center;gap:12px;background:transparent;color:white;border:1px solid #ffffff60;min-height:44px;padding:9px 14px;font-size:12px}
 .dialog-navigation button:hover{background:#ffffff20}
@@ -212,6 +217,7 @@
  .ag-gallery-hero-grid>div>p:not(.eyebrow):not(.ag-gallery-meta){max-width:550px}
  .ag-gallery-hero figure img{height:330px}
  .ag-work-gallery-link{padding:28px;align-items:start;flex-direction:column;gap:25px}
+ .construction-work-gallery-link{padding:28px;align-items:start;flex-direction:column;gap:25px}
 }
 @media(max-width:560px){
  .ag-gallery-hero{padding-block:25px 35px}
@@ -234,6 +240,7 @@
  .ag-preview-grid{grid-template-columns:1fr;gap:20px}
  .ag-preview-grid span{font-size:15px}
  .ag-work-gallery-link h2{font-size:27px}
+ .construction-work-gallery-link h2{font-size:27px}
  .dialog-navigation{padding:12px 16px 18px;gap:8px}
  .dialog-navigation button{font-size:11px;padding-inline:10px;gap:8px}
  .image-dialog:has(.dialog-navigation:not([hidden]))>img{max-height:calc(100dvh - 220px)}
@@ -241,6 +248,92 @@
 
 /* Original client and partner logos from the supplied company profile. */
 .site-footer{padding-top:0}
+
+/* Construction photo gallery — on-site construction work */
+.construction-gallery-hero{background:var(--navy);color:white;padding:30px 0 65px}
+.construction-gallery-hero .breadcrumb{color:#c6cfdb;flex-wrap:wrap;margin-bottom:45px}
+.construction-gallery-hero-grid{display:grid;grid-template-columns:1fr 1.1fr;align-items:center;gap:65px}
+.construction-gallery-hero h1{font-size:clamp(48px,5.7vw,82px);line-height:1.08}
+.construction-gallery-hero-grid>div>p:not(.eyebrow):not(.construction-gallery-meta){color:#c6cfdb;font-size:15px;line-height:1.9;max-width:430px;margin-top:26px}
+.construction-gallery-hero .construction-gallery-meta{font-size:9px;letter-spacing:.12em;color:#c6cfdb;margin-top:35px;line-height:1.9}
+.construction-gallery-hero figure{position:relative;min-width:0}
+.construction-gallery-hero figure img{width:100%;height:410px;object-fit:cover}
+.construction-gallery-hero figcaption{position:absolute;left:0;bottom:0;right:0;background:linear-gradient(transparent,#0b1728e8);padding:55px 25px 22px;font-size:9px;letter-spacing:.12em;color:white}
+
+/* The moving wheel — continuous left-scrolling photo carousel */
+.construction-wheel-section{background:var(--navy-deep);color:white;padding-top:65px;padding-bottom:0}
+.construction-wheel-section .section-heading{align-items:flex-start;flex-direction:column;gap:14px}
+.construction-wheel-section .eyebrow span{background:var(--orange)}
+.construction-wheel-section .section-heading h2{color:white}
+.construction-wheel-section .section-heading h2 span{color:#8fa1b8}
+.construction-wheel-section .section-heading>p{color:#a2adbc;max-width:620px}
+.construction-wheel-viewport{width:100%;overflow:hidden;position:relative;margin-top:40px;-webkit-mask-image:linear-gradient(to right,transparent 0,black 60px,black calc(100% - 60px),transparent 100%);mask-image:linear-gradient(to right,transparent 0,black 60px,black calc(100% - 60px),transparent 100%);background:#0c1728}
+.construction-wheel-track{display:flex;width:max-content;will-change:transform}
+.construction-wheel-group{display:flex;flex-shrink:0}
+.construction-wheel-group-copy{pointer-events:none}
+.construction-carousel-item{display:block;flex-shrink:0;height:300px;width:auto;position:relative;background:#1a2a40;border-right:2px solid #0c1728;overflow:hidden;text-decoration:none}
+.construction-carousel-item img{height:300px;width:auto;object-fit:cover;transition:transform .3s ease}
+.construction-carousel-item:hover img{transform:scale(1.05)}
+.construction-carousel-item:focus-visible{outline:3px solid var(--orange);outline-offset:-3px;z-index:1}
+.construction-carousel-item::after{content:"";position:absolute;inset:0;background:transparent;transition:background .2s}
+.construction-carousel-item:hover::after{background:linear-gradient(to top,#101e32cc 0%,transparent 50%)}
+.construction-wheel-note{display:flex;flex-direction:column;align-items:center;gap:14px;padding:35px 0 65px;text-align:center}
+.construction-wheel-note .small-label{font-size:9px;letter-spacing:.12em;color:#8fa1b8}
+.construction-wheel-note p{font-size:13px;color:#a2adbc;line-height:1.8}
+.construction-wheel-note .text-link{color:var(--orange)}
+.construction-wheel-note .text-link:hover{color:#ffac73}
+.construction-wheel-viewport:focus{outline:none}
+.construction-wheel-viewport:focus-within{outline:2px solid var(--orange);outline-offset:-2px}
+
+/* Construction gallery preview on the construction service page */
+.construction-gallery-preview{background:var(--soft)}
+.construction-gallery-preview .section-heading>.button{flex-shrink:0}
+.construction-preview-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px}
+.construction-preview-grid>a{display:block;border:1px solid var(--line);background:white;overflow:hidden}
+.construction-preview-grid img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
+.construction-preview-grid span{display:block;padding:20px;font-size:15px;line-height:1.5;font-weight:500}
+.construction-preview-grid>a:hover{border-color:var(--orange-dark)}
+.construction-hero-gallery{display:flex;width:fit-content;margin-top:20px;color:white}
+.construction-hero-gallery:hover{color:var(--orange)}
+
+/* Animation: scroll all photos left, loop seamlessly */
+@media (prefers-reduced-motion:no-preference){
+ .construction-wheel-track{animation:construction-wheel-scroll 120s linear infinite}
+ .construction-wheel-viewport:hover .construction-wheel-track,.construction-wheel-viewport:focus-within .construction-wheel-track{animation-play-state:paused}
+}
+@media (prefers-reduced-motion:reduce){
+ .construction-wheel-viewport{overflow-x:auto;-webkit-overflow-scrolling:touch}
+}
+@keyframes construction-wheel-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+@media(max-width:1000px){
+ .construction-gallery-hero-grid{gap:35px}
+ .construction-gallery-hero figure img{height:360px}
+ .construction-gallery-preview .section-heading{align-items:start;flex-direction:column;gap:24px}
+}
+@media(max-width:800px){
+ .construction-gallery-hero-grid{grid-template-columns:1fr;gap:35px}
+ .construction-gallery-hero-grid>div>p:not(.eyebrow):not(.construction-gallery-meta){max-width:550px}
+ .construction-gallery-hero figure img{height:330px}
+ .construction-carousel-item{height:240px}
+ .construction-carousel-item img{height:240px}
+ .construction-preview-grid{grid-template-columns:1fr;gap:20px}
+}
+@media(max-width:560px){
+ .construction-gallery-hero{padding-block:25px 35px}
+ .construction-gallery-hero .breadcrumb{font-size:9px;gap:8px;margin-bottom:32px}
+ .construction-gallery-hero .eyebrow{font-size:8px}
+ .construction-gallery-hero h1{font-size:clamp(44px,12vw,64px)}
+ .construction-gallery-hero-grid>div>p:not(.eyebrow):not(.construction-gallery-meta){font-size:14px}
+ .construction-gallery-hero .construction-gallery-meta{font-size:8px;margin-top:25px}
+ .construction-gallery-hero .hero-actions .button{font-size:11px}
+ .construction-gallery-hero figure img{height:auto;aspect-ratio:4/3}
+ .construction-gallery-hero figcaption{font-size:7px;padding:45px 18px 18px}
+ .construction-carousel-item{height:200px}
+ .construction-carousel-item img{height:200px}
+ .construction-gallery-preview .section-heading>.button{font-size:11px;gap:16px;max-width:100%}
+ .construction-preview-grid span{font-size:15px}
+}
 .footer-clients{background:white;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .footer-client-logos{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:35px;align-items:center;padding-block:30px;max-width:1100px}
 .footer-client-logo{display:flex;align-items:center;justify-content:center;min-width:0;min-height:95px}

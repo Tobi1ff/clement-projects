@@ -118,7 +118,7 @@ for (const s of services) {
  writeFileSync(`${out}/${s.file}`, layout(s.title, s.intro, body, 'services', `class="page-${s.id}"`));
 }
 
-writeFileSync(`${out}/construction-gallery.html`, layout('Construction gallery', 'Explore CPS construction photographs, site preparation, road earthworks and concrete drainage. Filter photographs and open them for a full-size view.', renderConstructionGallery({ eyebrow, button, arrow, diagonal, cta }), 'projects', 'class="page-construction-gallery"'));
+writeFileSync(`${out}/construction-gallery.html`, layout('Construction gallery', 'Browse on-site construction photographs from drainage works, concrete, earthworks and civil construction. All photos scroll in a continuous photo wheel.', renderConstructionGallery({ eyebrow, button, arrow, diagonal, cta }), 'projects', 'class="page-construction-gallery"'));
 
 writeFileSync(`${out}/agriculture-gallery.html`, layout('Agriculture gallery', 'Explore original CPS fruit-picking photographs, harvest teams, citrus orchards and agricultural work. Filter photographs and open them for a closer look.', renderAgricultureGallery({ eyebrow, button, arrow, diagonal, cta }), 'projects', 'class="page-agriculture-gallery"'));
 
