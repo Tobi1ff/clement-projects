@@ -1,4 +1,4 @@
-import { mkdirSync, writeFileSync, copyFileSync, readdirSync, rmSync, statSync } from 'node:fs';
+import { mkdirSync, writeFileSync, copyFileSync, cpSync, readdirSync, rmSync, statSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { finalizeSiteSeo } from './seo.mjs';
 import { serviceQuestions } from './seo-data.mjs';
@@ -24,6 +24,7 @@ mkdirSync(`${out}/downloads`, { recursive: true });
 const selectedAssets = [...new Set(['construction-redmi14c.jpg', 'lifting-rigging.jpg', 'pump-accessories-diagram.jpg', 'shai-clement-founder.jpg', 'construction-team.jpg', 'construction-drainage.jpg', 'mining-pumps.jpg', 'pump-repair.jpg', 'citrus-harvest.jpg', 'citrus-orchard.jpg', 'cps-logo.png', 'Inter-latin.woff2', 'Inter-latin-ext.woff2', 'OFL-Inter.txt', 'LICENSE-Bootstrap-Icons.txt', ...agriculturePhotos.map(photo => photo.file), ...constructionPhotos.map(photo => photo.file), ...footerClients.map(client => client.file), ...registeredBodies.map(body => body.file), ...businessPlatforms.map(platform => platform.file)])];
 for (const name of readdirSync(`${out}/assets`)) if (name !== 'optimized' && !selectedAssets.includes(name)) rmSync(`${out}/assets/${name}`);
 for (const name of selectedAssets) copyFileSync(`${root}/assets/${name}`, `${out}/assets/${name}`);
+cpSync(`${root}/assets/compressed`, `${out}/assets/compressed`, { recursive: true });
 const serviceProfiles = [
   { id: 'industrial', file: 'cps-mining-industrial-profile.pdf', title: 'Mining &<br>Industrial' },
   { id: 'construction', file: 'cps-construction-profile.pdf', title: 'Construction' },

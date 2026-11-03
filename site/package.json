@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
+    "compress:gallery": "node scripts/compress-gallery-images.mjs",
     "check": "node scripts/check.mjs && node scripts/check-seo.mjs",
     "dev": "python3 -m http.server 4173 --bind 127.0.0.1 --directory dist"
   }

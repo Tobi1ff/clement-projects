@@ -1,0 +1,880 @@
+{
+  "version": 1,
+  "quality": 78,
+  "maxWidth": 1600,
+  "images": [
+    {
+      "source": "construction-gallery-01.jpg",
+      "output": "compressed/construction-gallery-01.webp",
+      "sourceBytes": 5977057,
+      "outputBytes": 766684,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "3bf4f149fbe75e270509cdb87264fc689237bea727bbe3838c6cdc1753c9f743"
+    },
+    {
+      "source": "construction-gallery-02.jpg",
+      "output": "compressed/construction-gallery-02.webp",
+      "sourceBytes": 6228622,
+      "outputBytes": 467968,
+      "width": 1600,
+      "height": 1205,
+      "sourceSha256": "1134770715a5cb245f3aca1f6f4103a74d5e838cc4af78eeb43963b6e077f58e"
+    },
+    {
+      "source": "construction-gallery-03.jpg",
+      "output": "compressed/construction-gallery-03.webp",
+      "sourceBytes": 5547398,
+      "outputBytes": 758682,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "52f62ae5d255377fab5e06bbceb41b093fec2ea542d227325bd1000b5b878b58"
+    },
+    {
+      "source": "construction-gallery-04.jpg",
+      "output": "compressed/construction-gallery-04.webp",
+      "sourceBytes": 5510814,
+      "outputBytes": 740634,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "7fa32c50eb5962dfb019f11c2f728f97747ad27c60dfb46796df685a1b410f9e"
+    },
+    {
+      "source": "construction-gallery-05.jpg",
+      "output": "compressed/construction-gallery-05.webp",
+      "sourceBytes": 5851848,
+      "outputBytes": 822950,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "3a9f90a523feffabd4f1622fe95896d2737750001a5ed60ad008299510f87f4a"
+    },
+    {
+      "source": "construction-gallery-06.jpg",
+      "output": "compressed/construction-gallery-06.webp",
+      "sourceBytes": 5557392,
+      "outputBytes": 787544,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "98f1850efdc1abc8ed8c3756c359822e9d05daab8db9aeaba13e2b666db94a45"
+    },
+    {
+      "source": "construction-gallery-07.jpg",
+      "output": "compressed/construction-gallery-07.webp",
+      "sourceBytes": 5186557,
+      "outputBytes": 729814,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "78cf86fc4acac84a24add160588c7543215a008c23179ccdfda9c57c3239fa1c"
+    },
+    {
+      "source": "construction-gallery-08.jpg",
+      "output": "compressed/construction-gallery-08.webp",
+      "sourceBytes": 5157509,
+      "outputBytes": 705262,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "a3fc7b135672c98a2a327ef0279287bf0bbdf2d3d3586b58a031657937be8670"
+    },
+    {
+      "source": "construction-gallery-09.jpg",
+      "output": "compressed/construction-gallery-09.webp",
+      "sourceBytes": 7359395,
+      "outputBytes": 1049628,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "365626d8284adbc9f2f463dc8752aaa7df99d2df22afa4a004e089f701326c4c"
+    },
+    {
+      "source": "construction-gallery-10.jpg",
+      "output": "compressed/construction-gallery-10.webp",
+      "sourceBytes": 7043320,
+      "outputBytes": 1073286,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "4cf0f64b69b07a30c7209fdca4e2aa70166e83619b37144847dcb15121a38c02"
+    },
+    {
+      "source": "construction-gallery-11.jpg",
+      "output": "compressed/construction-gallery-11.webp",
+      "sourceBytes": 7697836,
+      "outputBytes": 1195372,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "91fcf84830cc4833a44663543c7f693a2a4dbc3390d5a08bb60ea46a5067a720"
+    },
+    {
+      "source": "construction-gallery-12.jpg",
+      "output": "compressed/construction-gallery-12.webp",
+      "sourceBytes": 7153003,
+      "outputBytes": 1089246,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "25895276fb9beff9d142ffd963daa9b5c80b650af5412d05a226b9e466093463"
+    },
+    {
+      "source": "construction-gallery-13.jpg",
+      "output": "compressed/construction-gallery-13.webp",
+      "sourceBytes": 5889377,
+      "outputBytes": 402152,
+      "width": 1600,
+      "height": 1205,
+      "sourceSha256": "f2eb03aec2601fbe912971227c686955985c9c6a71f0d8d5f76877dba456289b"
+    },
+    {
+      "source": "construction-gallery-14.jpg",
+      "output": "compressed/construction-gallery-14.webp",
+      "sourceBytes": 7085442,
+      "outputBytes": 1036312,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "132e11b716f79ffc876f35253da07c17353feca6e85e868bc88b0940a1d30f4e"
+    },
+    {
+      "source": "construction-gallery-15.jpg",
+      "output": "compressed/construction-gallery-15.webp",
+      "sourceBytes": 5673276,
+      "outputBytes": 399616,
+      "width": 1600,
+      "height": 1205,
+      "sourceSha256": "d80b31be7bc4e30eb36894063aba00acaeb1ebdd27adcb066192b2d4f3467d19"
+    },
+    {
+      "source": "construction-gallery-16.jpg",
+      "output": "compressed/construction-gallery-16.webp",
+      "sourceBytes": 6302780,
+      "outputBytes": 853814,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "f814a5e0fb5b20c8e2f83dbee53010d594165495c0249d954e97789f636b8c78"
+    },
+    {
+      "source": "construction-gallery-17.jpg",
+      "output": "compressed/construction-gallery-17.webp",
+      "sourceBytes": 6168948,
+      "outputBytes": 794542,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "30366fc6bcadb946ea14868d764e56e75a1749dfb11dec5775c16e1417c12e37"
+    },
+    {
+      "source": "construction-gallery-18.jpg",
+      "output": "compressed/construction-gallery-18.webp",
+      "sourceBytes": 5973067,
+      "outputBytes": 468384,
+      "width": 1600,
+      "height": 1205,
+      "sourceSha256": "f88c79d3f19b9dc86e881c1cb2b302d605480441fe63bc0c3f5d17b8c225b1ac"
+    },
+    {
+      "source": "construction-gallery-19.jpg",
+      "output": "compressed/construction-gallery-19.webp",
+      "sourceBytes": 5910729,
+      "outputBytes": 448208,
+      "width": 1600,
+      "height": 1205,
+      "sourceSha256": "db28ae1cace74b0c9be824b9473ca61d3cf6228d8982d44cd5f53bcc5e44d053"
+    },
+    {
+      "source": "construction-gallery-20.jpg",
+      "output": "compressed/construction-gallery-20.webp",
+      "sourceBytes": 5864166,
+      "outputBytes": 457026,
+      "width": 1600,
+      "height": 1205,
+      "sourceSha256": "bb8911efcb7ddf7c6f0cd82cd1d779fb779030feeb1e1a2ef83e87288b1d91e3"
+    },
+    {
+      "source": "construction-gallery-21.jpg",
+      "output": "compressed/construction-gallery-21.webp",
+      "sourceBytes": 6093219,
+      "outputBytes": 809136,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "4af4b3ec7155f1685998021ed2c9cbc485e8ce5601f26b43b04d3320cee0695c"
+    },
+    {
+      "source": "construction-gallery-22.jpg",
+      "output": "compressed/construction-gallery-22.webp",
+      "sourceBytes": 6521124,
+      "outputBytes": 905430,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "87eba37c57a8c73ee404f8070b2116bb35f69d5ada63e79f91055597a6864124"
+    },
+    {
+      "source": "construction-gallery-23.jpg",
+      "output": "compressed/construction-gallery-23.webp",
+      "sourceBytes": 5915617,
+      "outputBytes": 800956,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "3e6f9d81794d022acf9a0dfc45232c4a207e6f22fff5acac8626751c140e21a5"
+    },
+    {
+      "source": "construction-gallery-24.jpg",
+      "output": "compressed/construction-gallery-24.webp",
+      "sourceBytes": 5715399,
+      "outputBytes": 765034,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "fe267e516704a9370ce6059b0a1da873aa2ca648fedfc2cf5b6b3e42a96ec6a1"
+    },
+    {
+      "source": "construction-gallery-25.jpg",
+      "output": "compressed/construction-gallery-25.webp",
+      "sourceBytes": 5915253,
+      "outputBytes": 809108,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "b941ec34b35c0d7a4db570e6f2c4ad7f90ca6cffb39b2dc950699d0c890d8647"
+    },
+    {
+      "source": "construction-gallery-26.jpg",
+      "output": "compressed/construction-gallery-26.webp",
+      "sourceBytes": 6251024,
+      "outputBytes": 875032,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "b8aee0fe9e6dd56ac25958e86b31525e73d2442a925db9413a41cb1653f61012"
+    },
+    {
+      "source": "construction-gallery-27.jpg",
+      "output": "compressed/construction-gallery-27.webp",
+      "sourceBytes": 8511664,
+      "outputBytes": 1323308,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "a8aeccaff517d4f1303c3e9edaca9239b4318e5c5b2caa7e7a5baa823961af77"
+    },
+    {
+      "source": "construction-gallery-28.jpg",
+      "output": "compressed/construction-gallery-28.webp",
+      "sourceBytes": 8174155,
+      "outputBytes": 715744,
+      "width": 1600,
+      "height": 1205,
+      "sourceSha256": "509a905540b2220d6f8c4890e1f27635e1fe9f174ba49a7e43cab829c127be64"
+    },
+    {
+      "source": "construction-gallery-29.jpg",
+      "output": "compressed/construction-gallery-29.webp",
+      "sourceBytes": 7342720,
+      "outputBytes": 617162,
+      "width": 1600,
+      "height": 1205,
+      "sourceSha256": "78624b39e2283d32b0066c994732b8942905069c35a6cfa9a812282e215d2d9a"
+    },
+    {
+      "source": "construction-gallery-30.jpg",
+      "output": "compressed/construction-gallery-30.webp",
+      "sourceBytes": 7739098,
+      "outputBytes": 1161496,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "c28e1637b244d3ef2b51fa63c84902e6772fba27f5cb6c3319cd78212f270da1"
+    },
+    {
+      "source": "construction-gallery-31.jpg",
+      "output": "compressed/construction-gallery-31.webp",
+      "sourceBytes": 6445413,
+      "outputBytes": 499532,
+      "width": 1600,
+      "height": 1205,
+      "sourceSha256": "57556b799c161da5ae41e39c1fdcc0a9303a46388df90e08d44270ddedd914cb"
+    },
+    {
+      "source": "construction-gallery-32.jpg",
+      "output": "compressed/construction-gallery-32.webp",
+      "sourceBytes": 5309166,
+      "outputBytes": 425866,
+      "width": 1600,
+      "height": 1205,
+      "sourceSha256": "a8834586db99487bdfa2a0cf284100b47c581a58d08e7cfad6d8fe5aea6dadf0"
+    },
+    {
+      "source": "construction-gallery-33.jpg",
+      "output": "compressed/construction-gallery-33.webp",
+      "sourceBytes": 6612737,
+      "outputBytes": 569964,
+      "width": 1600,
+      "height": 1205,
+      "sourceSha256": "feed13f95d592a832357069a4eb00ed43183eb56bd29c84c97ed5ed1c8d2450c"
+    },
+    {
+      "source": "construction-gallery-34.jpg",
+      "output": "compressed/construction-gallery-34.webp",
+      "sourceBytes": 8069419,
+      "outputBytes": 1245284,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "3ee07ecd6097e6e1111942413e7118add0c0b3897f331f4f0366a1367171c77e"
+    },
+    {
+      "source": "construction-gallery-35.jpg",
+      "output": "compressed/construction-gallery-35.webp",
+      "sourceBytes": 6185291,
+      "outputBytes": 899738,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "1cc8d5cb87cc5ae7a23ebea4b0b2626ac9d8392d2f0c1fb82f6c1739933c4199"
+    },
+    {
+      "source": "construction-gallery-36.jpg",
+      "output": "compressed/construction-gallery-36.webp",
+      "sourceBytes": 5912558,
+      "outputBytes": 542164,
+      "width": 1600,
+      "height": 1205,
+      "sourceSha256": "69450a5839fe58ac6871c37c704224f5d3a4d949ab8b70083131809dddb395e6"
+    },
+    {
+      "source": "construction-gallery-37.jpg",
+      "output": "compressed/construction-gallery-37.webp",
+      "sourceBytes": 5568229,
+      "outputBytes": 741648,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "c70179a1b094753042a7b64e1de39d622e6fd052372834563d47d22a7b103d6d"
+    },
+    {
+      "source": "construction-gallery-38.jpg",
+      "output": "compressed/construction-gallery-38.webp",
+      "sourceBytes": 5672490,
+      "outputBytes": 752854,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "5e9919a020605c806d0c08074eb2737110de27f2fce7e82116f3c5edc067dd91"
+    },
+    {
+      "source": "construction-gallery-39.jpg",
+      "output": "compressed/construction-gallery-39.webp",
+      "sourceBytes": 7602496,
+      "outputBytes": 1129674,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "3e7aeb33649f6b4a357c49d77cbcb723b27168c801aeb37d88e69cba615c880b"
+    },
+    {
+      "source": "construction-gallery-40.jpg",
+      "output": "compressed/construction-gallery-40.webp",
+      "sourceBytes": 6525012,
+      "outputBytes": 908528,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "600b2efa867a71c72f26686cefe6fa8a65ade34f0c4b23d82bbccc91e89fac47"
+    },
+    {
+      "source": "construction-gallery-41.jpg",
+      "output": "compressed/construction-gallery-41.webp",
+      "sourceBytes": 7211184,
+      "outputBytes": 1062690,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "513ea8d10a799d75af12f1f3c9898f943d6fb7ddbd9ceea48b77fed91282c52a"
+    },
+    {
+      "source": "construction-gallery-42.jpg",
+      "output": "compressed/construction-gallery-42.webp",
+      "sourceBytes": 7710790,
+      "outputBytes": 991504,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "8acb9d5eef6bae915ce37fcdddd48b3c65aac3a18bf19daecf3be7410b3c690c"
+    },
+    {
+      "source": "construction-gallery-43.jpg",
+      "output": "compressed/construction-gallery-43.webp",
+      "sourceBytes": 8461734,
+      "outputBytes": 1129992,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "0d4f0cf37b118f7103b58cacba66c646fe586dfe10994404a17ea0dc883a2b0d"
+    },
+    {
+      "source": "construction-gallery-44.jpg",
+      "output": "compressed/construction-gallery-44.webp",
+      "sourceBytes": 6601199,
+      "outputBytes": 808382,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "d65521140fb69c4a1afa1e0496488eee337016c2e8727728730aa09b739d0cc9"
+    },
+    {
+      "source": "construction-gallery-45.jpg",
+      "output": "compressed/construction-gallery-45.webp",
+      "sourceBytes": 6224128,
+      "outputBytes": 732008,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "db1552c7896c1ab9c1f2c78cd9cf03393f96b3b95ddfd21686b0e40a0c3c48fe"
+    },
+    {
+      "source": "construction-gallery-46.jpg",
+      "output": "compressed/construction-gallery-46.webp",
+      "sourceBytes": 7055216,
+      "outputBytes": 900460,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "5f8d88991821fded9d710fcc4ad2c24583cbd79cedce6ae2ae9859fc1c9bdf33"
+    },
+    {
+      "source": "construction-gallery-47.jpg",
+      "output": "compressed/construction-gallery-47.webp",
+      "sourceBytes": 7248033,
+      "outputBytes": 912982,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "3ee4ee49b79360cbd71a4a3fb94704819dddde2c7e0b15dda18b4ee897b6dcad"
+    },
+    {
+      "source": "construction-gallery-48.jpg",
+      "output": "compressed/construction-gallery-48.webp",
+      "sourceBytes": 7133666,
+      "outputBytes": 987832,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "50d955852eb1daeb17f4dc481b03ddf1f5fb8be6c9dcb56530506da361aa6ffd"
+    },
+    {
+      "source": "construction-gallery-49.jpg",
+      "output": "compressed/construction-gallery-49.webp",
+      "sourceBytes": 7655441,
+      "outputBytes": 1021088,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "0c2daeac3f3c71d9a34655e644c8ce8ef49cb5b3124f2b4f64fe7730cb5c9318"
+    },
+    {
+      "source": "construction-gallery-50.jpg",
+      "output": "compressed/construction-gallery-50.webp",
+      "sourceBytes": 7601797,
+      "outputBytes": 992746,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "375eab39a10cbce4f357fa8a449964dc13727741e672326c113783498f5c46a2"
+    },
+    {
+      "source": "construction-gallery-51.jpg",
+      "output": "compressed/construction-gallery-51.webp",
+      "sourceBytes": 6565583,
+      "outputBytes": 781210,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "44a54ebe8da6e873ee16ade9f5e0bd233683d6020ff6a1a9cfefc2f6a8197ab0"
+    },
+    {
+      "source": "construction-gallery-52.jpg",
+      "output": "compressed/construction-gallery-52.webp",
+      "sourceBytes": 5721130,
+      "outputBytes": 653560,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "b462e82364d8ff9be22cf6d0419bb34928ccd561ce13fd457557650ed6e88e54"
+    },
+    {
+      "source": "construction-gallery-53.jpg",
+      "output": "compressed/construction-gallery-53.webp",
+      "sourceBytes": 7156783,
+      "outputBytes": 895042,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "69c23decbeb83cbd52159f98d579b455d17b361d7d328e61221336b15429a982"
+    },
+    {
+      "source": "construction-gallery-54.jpg",
+      "output": "compressed/construction-gallery-54.webp",
+      "sourceBytes": 6635217,
+      "outputBytes": 783448,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "1340cf86d1042fd7e4f4692b30f719a9d2d4c1e05bce7549084ed1dac103558d"
+    },
+    {
+      "source": "construction-gallery-55.jpg",
+      "output": "compressed/construction-gallery-55.webp",
+      "sourceBytes": 8626176,
+      "outputBytes": 1216594,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "444a2308d0ae60eca17b886a25b2a0cb447e476b2a9ed191cab785661673c5c4"
+    },
+    {
+      "source": "construction-gallery-56.jpg",
+      "output": "compressed/construction-gallery-56.webp",
+      "sourceBytes": 8834216,
+      "outputBytes": 1249962,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "c58dc17be7d695c9f47d18cdb21e17022ba52ddfc96316607985b4b5cd5db1ce"
+    },
+    {
+      "source": "construction-gallery-57.jpg",
+      "output": "compressed/construction-gallery-57.webp",
+      "sourceBytes": 9640480,
+      "outputBytes": 1287194,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "821b49eb80a770465810e30e1043303c5663e7e12d184b79d695708619547743"
+    },
+    {
+      "source": "construction-gallery-58.jpg",
+      "output": "compressed/construction-gallery-58.webp",
+      "sourceBytes": 9088746,
+      "outputBytes": 1184062,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "a8a8e8d8c4546b78ea072de4a72dc72574be2a2a7a6dc8c7eb93239d8bd810d3"
+    },
+    {
+      "source": "construction-gallery-59.jpg",
+      "output": "compressed/construction-gallery-59.webp",
+      "sourceBytes": 7910924,
+      "outputBytes": 1081690,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "cdf7dcdbe81a9efeb72fcc10bb87ac473db8b8e8824274f8053c56ca002e69ff"
+    },
+    {
+      "source": "construction-gallery-60.jpg",
+      "output": "compressed/construction-gallery-60.webp",
+      "sourceBytes": 8503875,
+      "outputBytes": 1160510,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "1712a8067174c1adf7687332cbe6b3334e30f90079e335d6280f2d5e21651815"
+    },
+    {
+      "source": "construction-gallery-61.jpg",
+      "output": "compressed/construction-gallery-61.webp",
+      "sourceBytes": 7216111,
+      "outputBytes": 967078,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "4d4ec4b824a13fbdbdc314396058a8cfaf3ea3eb550f22c0ae5df070cc724749"
+    },
+    {
+      "source": "construction-gallery-62.jpg",
+      "output": "compressed/construction-gallery-62.webp",
+      "sourceBytes": 9713005,
+      "outputBytes": 1334498,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "6c384da5b627437154e49dd15bce550c3847ad004aa9487e9182f3a567fa1966"
+    },
+    {
+      "source": "construction-gallery-63.jpg",
+      "output": "compressed/construction-gallery-63.webp",
+      "sourceBytes": 9519652,
+      "outputBytes": 1334726,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "828e55e2cacaa7814fd4cd92c8911667bc5b50e9de562f1835039b4426dd2615"
+    },
+    {
+      "source": "construction-gallery-64.jpg",
+      "output": "compressed/construction-gallery-64.webp",
+      "sourceBytes": 8305228,
+      "outputBytes": 1100134,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "ac11664957ff85b92a5a8737f12535566293b4b5e6523ddff54aecae37521627"
+    },
+    {
+      "source": "construction-gallery-65.jpg",
+      "output": "compressed/construction-gallery-65.webp",
+      "sourceBytes": 6674369,
+      "outputBytes": 816040,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "75f9d59df4c50bba7ce113e649e168c28b7b447cdb4eae6880d112f1ad1b5800"
+    },
+    {
+      "source": "construction-gallery-66.jpg",
+      "output": "compressed/construction-gallery-66.webp",
+      "sourceBytes": 7510519,
+      "outputBytes": 958586,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "a665e85bc54c038058cceaaa6e8eb882fccf8d0660442f870763b4f3d615be81"
+    },
+    {
+      "source": "construction-gallery-67.jpg",
+      "output": "compressed/construction-gallery-67.webp",
+      "sourceBytes": 7657284,
+      "outputBytes": 1004682,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "ec26904306282a9ac9e6ff4b2e2f91d98f9b5e5b0aade22e2c20eb772ad9d889"
+    },
+    {
+      "source": "construction-gallery-68.jpg",
+      "output": "compressed/construction-gallery-68.webp",
+      "sourceBytes": 7871169,
+      "outputBytes": 1092820,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "bb55ffa184f4ecc80e7b53b86c080d42575a233850c102f4612ef065536d51cf"
+    },
+    {
+      "source": "construction-gallery-69.jpg",
+      "output": "compressed/construction-gallery-69.webp",
+      "sourceBytes": 8780860,
+      "outputBytes": 1265676,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "90c7fd222476325c29a55ad48889f94b81f5e83af0c73e124aa0151cd44bf9f5"
+    },
+    {
+      "source": "construction-gallery-70.jpg",
+      "output": "compressed/construction-gallery-70.webp",
+      "sourceBytes": 7404439,
+      "outputBytes": 1021202,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "dcd9fbf6f3bb95d76e5bf06a81e7409753763adaf521b3f35f2fa1de501a09c9"
+    },
+    {
+      "source": "construction-gallery-71.jpg",
+      "output": "compressed/construction-gallery-71.webp",
+      "sourceBytes": 6783297,
+      "outputBytes": 899302,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "15b1321a60bde0865602136ebe93b6aeb236c8ae9890c7f6591d881e165141d0"
+    },
+    {
+      "source": "construction-gallery-72.jpg",
+      "output": "compressed/construction-gallery-72.webp",
+      "sourceBytes": 6765832,
+      "outputBytes": 897160,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "7635920690c96c2b1acf9923bd91cd796a8b3eeac2b46aa3e3095f413b756ded"
+    },
+    {
+      "source": "construction-gallery-73.jpg",
+      "output": "compressed/construction-gallery-73.webp",
+      "sourceBytes": 7024122,
+      "outputBytes": 834924,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "23e38c27f38ac669d14453aab884abdb3784dd86212a6d4f17715956c761fd7e"
+    },
+    {
+      "source": "construction-gallery-74.jpg",
+      "output": "compressed/construction-gallery-74.webp",
+      "sourceBytes": 8296725,
+      "outputBytes": 1105150,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "7eaf24689ad5cbba4c32faeb633b2a4b40865d2345f65727efc7ab8473305926"
+    },
+    {
+      "source": "construction-gallery-75.jpg",
+      "output": "compressed/construction-gallery-75.webp",
+      "sourceBytes": 7410207,
+      "outputBytes": 917800,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "b5b9f60ae507a229972c91b2fd62255224d943dc56ad92fcf53504bf71266caf"
+    },
+    {
+      "source": "construction-gallery-76.jpg",
+      "output": "compressed/construction-gallery-76.webp",
+      "sourceBytes": 7428489,
+      "outputBytes": 921140,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "86a0dfe4fb0212d92ae939b36bfdf8eba7d094bc48ee462c47ee1333130d5b96"
+    },
+    {
+      "source": "construction-gallery-77.jpg",
+      "output": "compressed/construction-gallery-77.webp",
+      "sourceBytes": 7411672,
+      "outputBytes": 986070,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "f21c8e0c4fb3ef67e8c6b80216acd5177531d20066b13592d9144ac0dc12a6a5"
+    },
+    {
+      "source": "construction-gallery-78.jpg",
+      "output": "compressed/construction-gallery-78.webp",
+      "sourceBytes": 7885197,
+      "outputBytes": 1030060,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "0318bc409ee8dc45fd67ecd0135439dcb976b59e8dde8dd6364a2d4303ae7d1c"
+    },
+    {
+      "source": "construction-gallery-79.jpg",
+      "output": "compressed/construction-gallery-79.webp",
+      "sourceBytes": 7861830,
+      "outputBytes": 1121772,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "1d625b9b0a4aa33ac0309831c61f86b671fe815e973e2bf92be18ad7f1893e3f"
+    },
+    {
+      "source": "construction-gallery-80.jpg",
+      "output": "compressed/construction-gallery-80.webp",
+      "sourceBytes": 8924171,
+      "outputBytes": 1223548,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "ca2867e021f2b22d28217d8121681d21427eabc5cb3a1378c996a75e5c84fce6"
+    },
+    {
+      "source": "construction-gallery-81.jpg",
+      "output": "compressed/construction-gallery-81.webp",
+      "sourceBytes": 8054012,
+      "outputBytes": 1138810,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "dd6d14c4c597e647edb590854796a09f69f499578a7fee3a3b3d092c2c4cd2ad"
+    },
+    {
+      "source": "construction-gallery-82.jpg",
+      "output": "compressed/construction-gallery-82.webp",
+      "sourceBytes": 8334233,
+      "outputBytes": 1125104,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "a9bdd5b2572449ea37ac7f2ec3be83b3d6a43a82071435eec89b732002eb2b81"
+    },
+    {
+      "source": "construction-gallery-83.jpg",
+      "output": "compressed/construction-gallery-83.webp",
+      "sourceBytes": 7809944,
+      "outputBytes": 1112514,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "7f95940e4c312364220a3c2f8ab5bfa9f87976dd0c772aa3dbe75f81ea35bea5"
+    },
+    {
+      "source": "construction-gallery-84.jpg",
+      "output": "compressed/construction-gallery-84.webp",
+      "sourceBytes": 8893484,
+      "outputBytes": 1342252,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "092810df0fc239313a995066c9f7494088792557ebeaa484abbbe9dda3814730"
+    },
+    {
+      "source": "construction-gallery-85.jpg",
+      "output": "compressed/construction-gallery-85.webp",
+      "sourceBytes": 8888383,
+      "outputBytes": 1214928,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "7af6e5186167c75ad38e0f2862fdb7764d8fb17b1d3d004c1ac10d50b43c284d"
+    },
+    {
+      "source": "construction-gallery-86.jpg",
+      "output": "compressed/construction-gallery-86.webp",
+      "sourceBytes": 5986728,
+      "outputBytes": 737514,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "ba4ec7699aef1342e6c1905c23fe203b495e3b0a453bdbff0ba5814285fd7ed2"
+    },
+    {
+      "source": "construction-gallery-87.jpg",
+      "output": "compressed/construction-gallery-87.webp",
+      "sourceBytes": 7384595,
+      "outputBytes": 1004878,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "aa029c3340eaa64df9bb5bf77d622c332b5e02c02adb71a68b18100185bd7384"
+    },
+    {
+      "source": "construction-gallery-88.jpg",
+      "output": "compressed/construction-gallery-88.webp",
+      "sourceBytes": 7316208,
+      "outputBytes": 918678,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "0a3989d263a2ec3e6e99601ad7f3a8dc50db2e021550b2d50351a0abe6707bf8"
+    },
+    {
+      "source": "construction-gallery-89.jpg",
+      "output": "compressed/construction-gallery-89.webp",
+      "sourceBytes": 9161331,
+      "outputBytes": 1295266,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "82890f472808c6aa57f7285ff7e4a5dc7f1c44418161dd046f2a579f905232a2"
+    },
+    {
+      "source": "construction-gallery-90.jpg",
+      "output": "compressed/construction-gallery-90.webp",
+      "sourceBytes": 9404547,
+      "outputBytes": 1317956,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "22064cbd88ddda9a0c6dd794de12fd0f661ac70c95580eb1300d7ebc14e500d3"
+    },
+    {
+      "source": "construction-gallery-91.jpg",
+      "output": "compressed/construction-gallery-91.webp",
+      "sourceBytes": 8998443,
+      "outputBytes": 1189644,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "1f97c9f1408d5d362f2eecab8165404ecbc8c54b51599356e6e328f78b8aa730"
+    },
+    {
+      "source": "construction-gallery-92.jpg",
+      "output": "compressed/construction-gallery-92.webp",
+      "sourceBytes": 6592538,
+      "outputBytes": 853598,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "8fd099e9307411a7146d4fb3cccb54be47343b738e1db5d24b6567615382b332"
+    },
+    {
+      "source": "construction-gallery-93.jpg",
+      "output": "compressed/construction-gallery-93.webp",
+      "sourceBytes": 4369240,
+      "outputBytes": 407056,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "9327cc81b678520c8698f6567eb62642aa1a9139f1878e50d247a27ceb696a67"
+    },
+    {
+      "source": "construction-gallery-94.jpg",
+      "output": "compressed/construction-gallery-94.webp",
+      "sourceBytes": 5475204,
+      "outputBytes": 633534,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "5bed0c0bdf4e1a64e578027dec6634afac148a98dbe63ebc6e914a575e756f40"
+    },
+    {
+      "source": "construction-gallery-95.jpg",
+      "output": "compressed/construction-gallery-95.webp",
+      "sourceBytes": 5940690,
+      "outputBytes": 743878,
+      "width": 1600,
+      "height": 2361,
+      "sourceSha256": "f7eb7a1f047c1745a667eedbe30aa13a359ecb2c9dd38173086a2c02fdad8c4f"
+    },
+    {
+      "source": "construction-gallery-96.jpg",
+      "output": "compressed/construction-gallery-96.webp",
+      "sourceBytes": 4531966,
+      "outputBytes": 289230,
+      "width": 1600,
+      "height": 1205,
+      "sourceSha256": "dad2c8635c7cf978b2cc46555cc2332a7a921762ac85e440e09c5e0ae03536c8"
+    },
+    {
+      "source": "construction-gallery-97.jpg",
+      "output": "compressed/construction-gallery-97.webp",
+      "sourceBytes": 5584640,
+      "outputBytes": 707238,
+      "width": 1600,
+      "height": 2125,
+      "sourceSha256": "2921122a3c73ff15ed7db95ae0d7fbc3d2ab3da9e6d27f4deeb6cb7ea1100659"
+    }
+  ]
+}
