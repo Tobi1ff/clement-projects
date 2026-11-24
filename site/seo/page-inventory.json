@@ -1,7 +1,7 @@
 {
   "origin": "https://www.clementprojectss.co.za",
   "preview": false,
-  "indexablePages": 16,
+  "indexablePages": 18,
   "pages": [
     {
       "file": "404.html",
@@ -41,8 +41,8 @@
     {
       "file": "construction.html",
       "canonical": "https://www.clementprojectss.co.za/construction.html",
-      "title": "Construction & V-Drainage in Phalaborwa | CPS",
-      "description": "Civil construction, V-drainage, general building, electrical works and plant hire from CPS in Phalaborwa. Discuss excavation, formwork and casting needs.",
+      "title": "Civil, Road & Building Construction | Phalaborwa | CPS",
+      "description": "CPS provides civil works, V-drainage, building, road construction, electrical infrastructure, plumbing, water infrastructure and plant hire in Phalaborwa.",
       "indexable": true
     },
     {
@@ -53,10 +53,17 @@
       "indexable": true
     },
     {
+      "file": "conveyor-systems.html",
+      "canonical": "https://www.clementprojectss.co.za/conveyor-systems.html",
+      "title": "Conveyor Plant Installation & Supplies | CPS",
+      "description": "Discuss conveyor design support, installation, maintenance, belts, accessories and drive components for mining and industrial operations with CPS.",
+      "indexable": true
+    },
+    {
       "file": "index.html",
       "canonical": "https://www.clementprojectss.co.za/",
-      "title": "Industrial Pumps, Construction & Agriculture | CPS",
-      "description": "Clement Projects Solution supplies industrial pumps and spares, construction, lifting equipment and agricultural services from Phalaborwa, Limpopo.",
+      "title": "Mining Engineering, Construction & Agriculture | CPS",
+      "description": "Clement Projects Solution provides mining equipment, turnkey projects, conveyor systems, construction and agricultural services from Phalaborwa, Limpopo.",
       "indexable": true
     },
     {
@@ -76,8 +83,8 @@
     {
       "file": "mining-industrial.html",
       "canonical": "https://www.clementprojectss.co.za/mining-industrial.html",
-      "title": "Slurry Pumps & Industrial Spares | Phalaborwa | CPS",
-      "description": "Explore slurry pumps, industrial spares, wear parts, air torque actuators and repair support from CPS in Phalaborwa. Enquire with your model and application.",
+      "title": "Mining Equipment & Industrial Supply | Phalaborwa | CPS",
+      "description": "CPS supplies pumps, spares, pipes, valves, actuators and lifting equipment for mining, mineral processing and water projects. Enquire with our Phalaborwa team.",
       "indexable": true
     },
     {
@@ -105,7 +112,7 @@
       "file": "project-dwellers-side-drains-2025.html",
       "canonical": "https://www.clementprojectss.co.za/project-dwellers-side-drains-2025.html",
       "title": "Dwellers Side-Drain Construction (2025) | CPS",
-      "description": "Dwellers side-drain construction recorded in 2025. Last reported ongoing; current status unconfirmed. Bid details available on request.",
+      "description": "Dwellers side-drain construction, recorded in 2025 and listed as current in the latest company profile. Bid details are available on request.",
       "indexable": true
     },
     {
@@ -127,6 +134,13 @@
       "canonical": "https://www.clementprojectss.co.za/resources.html",
       "title": "Company Profiles & Procurement Documents | CPS",
       "description": "Download CPS mining, construction, lifting and agriculture profiles. Request current CIDB, CSD, B-BBEE and company documentation for procurement enquiries.",
+      "indexable": true
+    },
+    {
+      "file": "turnkey-projects.html",
+      "canonical": "https://www.clementprojectss.co.za/turnkey-projects.html",
+      "title": "Turnkey Mining & Infrastructure Projects | CPS",
+      "description": "Coordinate engineering, procurement, installation, commissioning and handover for mining, industrial, water infrastructure and construction projects with CPS.",
       "indexable": true
     }
   ]

@@ -1,5 +1,5 @@
-// Public project summaries cross-checked against the 2026 construction profile,
-// PDF page 6 (printed page 5). Reference contacts are omitted.
+// Project statuses cross-checked against the November company profile, page 15.
+// The existing public source links point to the reviewed construction profile, page 6.
 // Bid amounts are withheld from public records and available on request.
 // Change status to "current" only after obtaining a current company update.
 export const projectRecords = [
@@ -11,9 +11,9 @@ export const projectRecords = [
     workType: 'civil-works',
     workTypeLabel: 'Civil works',
     year: 2025,
-    status: 'unconfirmed',
+    status: 'current',
     reportedStatus: 'Ongoing',
-    statusNote: 'The profile lists this 2025 project as ongoing. Its current status has not been confirmed.',
+    statusNote: 'The latest company profile lists this side-drain project, recorded in 2025, as current.',
     scope: 'Construction of side open drains.',
     duration: null,
     source: 'Construction Company Profile 2026',

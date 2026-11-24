@@ -165,6 +165,8 @@ if (form) {
     && enquiryParams.get('service') === 'lifting'
     && Boolean(enquiryParams.get('detail')?.trim());
   const details = {
+    turnkey: ['Project scope and stage', 'Include the site, scope, project stage and target dates.', 'e.g. pumping station upgrade, design stage, proposed installation date'],
+    conveyor: ['Conveyor or component requirements', 'Include the material handled, equipment reference and work or parts required.', 'e.g. replacement belt or new conveyor installation'],
     lifting: ['Product required', 'Include the equipment type and intended application.', 'e.g. manual chain block or webbing sling'],
     industrial: ['Equipment, model or part number', 'A model, part number or quantity helps us understand your requirement.', 'e.g. pump model, spare part and quantity'],
     construction: ['Approximate scope and timing', 'Tell us the work type, approximate size and preferred dates.', 'e.g. drainage works, approximate length and dates'],
