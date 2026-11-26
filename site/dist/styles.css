@@ -147,9 +147,9 @@
 }
 
 /* Founder portrait from the supplied company profile. */
-.leadership-with-portrait{grid-template-columns:238px minmax(0,680px);justify-content:center;align-items:center;gap:clamp(35px,6vw,85px)}
-.founder-portrait{max-width:238px;padding:12px;background:var(--soft);border-bottom:3px solid var(--orange)}
-.founder-portrait img{width:214px;max-width:100%;height:auto}
+.leadership-with-portrait{grid-template-columns:270px minmax(0,680px);justify-content:center;align-items:center;gap:clamp(35px,6vw,85px)}
+.founder-portrait{max-width:270px;padding:12px;background:var(--soft);border-bottom:3px solid var(--orange)}
+.founder-portrait img{width:246px;max-width:100%;height:auto}
 .leadership-with-portrait h2{margin-bottom:28px}
 @media(max-width:700px){.leadership-with-portrait{grid-template-columns:minmax(0,1fr);gap:30px}.leadership-with-portrait h2{margin-bottom:24px}}
 
