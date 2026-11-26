@@ -330,7 +330,7 @@ if (archiveRecords.length) {
     let count = 0;
     archiveRecords.forEach(record => {
       const matches = (status === 'all' || record.dataset.recordStatus === status)
-        && (year.value === 'all' || record.dataset.recordYear === year.value)
+        && (year.value === 'all' || record.dataset.recordYear.split(',').includes(year.value))
         && (workType.value === 'all' || record.dataset.recordWorkType === workType.value)
         && words.every(word => record.dataset.recordSearch.toLowerCase().includes(word));
       record.hidden = !matches;

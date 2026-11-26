@@ -1,7 +1,7 @@
 {
   "origin": "https://www.clementprojectss.co.za",
   "preview": false,
-  "indexablePages": 18,
+  "indexablePages": 19,
   "pages": [
     {
       "file": "404.html",
@@ -14,7 +14,7 @@
       "file": "about.html",
       "canonical": "https://www.clementprojectss.co.za/about.html",
       "title": "About Clement Projects Solution | Phalaborwa",
-      "description": "Read the CPS executive summary, meet founder and CEO Shai Clement, and see the company’s work in the Mashishimale Fun Walk and Heritage Event.",
+      "description": "Explore CPS company overview, values, project delivery, community development, leadership and registered supplier credentials.",
       "indexable": true
     },
     {
@@ -55,7 +55,7 @@
     {
       "file": "conveyor-systems.html",
       "canonical": "https://www.clementprojectss.co.za/conveyor-systems.html",
-      "title": "Conveyor Plant Installation & Supplies | CPS",
+      "title": "Conveyor Plant Design and Installation | CPS",
       "description": "Discuss conveyor design support, installation, maintenance, belts, accessories and drive components for mining and industrial operations with CPS.",
       "indexable": true
     },
@@ -104,15 +104,22 @@
     {
       "file": "project-ba-phalaborwa-plant-hire-2024.html",
       "canonical": "https://www.clementprojectss.co.za/project-ba-phalaborwa-plant-hire-2024.html",
-      "title": "Ba-Phalaborwa Plant Hire (2024) | CPS",
-      "description": "Ba-Phalaborwa Municipality: completed 30-day plant hire for water and sanitation repairs, recorded in 2024. Bid details available on request.",
+      "title": "Plant hire for water & sanitation works (2024) | CPS",
+      "description": "Ba-Phalaborwa Municipality: TLB plant hire to assist water and sanitation teams repairing leaking pipes. Status: Completed. Bid details are available on request.",
       "indexable": true
     },
     {
       "file": "project-dwellers-side-drains-2025.html",
       "canonical": "https://www.clementprojectss.co.za/project-dwellers-side-drains-2025.html",
-      "title": "Dwellers Side-Drain Construction (2025) | CPS",
-      "description": "Dwellers side-drain construction, recorded in 2025 and listed as current in the latest company profile. Bid details are available on request.",
+      "title": "Construction of side open drains (2025) | CPS",
+      "description": "Dwellers Trading & Projects: Construction of side open drains. Status: In progress. Bid details are available on request.",
+      "indexable": true
+    },
+    {
+      "file": "project-fruit-picking-2024-2026.html",
+      "canonical": "https://www.clementprojectss.co.za/project-fruit-picking-2024-2026.html",
+      "title": "Fruit picking (2024–2026) | CPS",
+      "description": "Agricultural project: Fruit-picking project recorded in the 2026 agriculture profile. Status: Completed. Bid details are available on request.",
       "indexable": true
     },
     {

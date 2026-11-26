@@ -17,7 +17,7 @@ export const engineeringServices = [
   },
   {
     id: 'conveyor',
-    title: 'Conveyor Systems',
+    title: 'Conveyor Plant Design and Installation',
     file: 'conveyor-systems.html',
     headline: 'Conveyor plant design<br><em>and installation.</em>',
     description: 'Conveyor design support, installation, maintenance and component supply for mining and industrial operations.',
