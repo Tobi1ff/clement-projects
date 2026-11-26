@@ -1,5 +1,4 @@
-// Original client logos from PDF page 12 and partner logos from page 4 (printed page 3).
-// Foskor and Stibium are intentionally excluded at the company’s request.
+// Current client marks taken from page 17 of the latest company profile.
 export const footerClients = [
   {
     "file": "client-mopani-tvet.png",
@@ -30,17 +29,17 @@ export const footerClients = [
     "sourceObject": 353
   },
   {
-    "file": "partner-netcash.jpg",
-    "name": "Netcash",
-    "width": 200,
-    "height": 53,
-    "sourceObject": 148
+    "file": "client-foskor.png",
+    "name": "Foskor",
+    "width": 547,
+    "height": 192,
+    "source": "Clement Projects Solution Company Profile 2026, page 17"
   },
   {
-    "file": "partner-sage.png",
-    "name": "Sage",
-    "width": 56,
-    "height": 32,
-    "sourceObject": 145
+    "file": "client-sassa.png",
+    "name": "SASSA",
+    "width": 325,
+    "height": 384,
+    "source": "Clement Projects Solution Company Profile 2026, page 17"
   }
 ];
