@@ -686,3 +686,22 @@ img{border-radius:5px}
 
 .service-questions{background:var(--light,#f4f6f7)}
 .service-question-list{max-width:900px}.service-question-list details{border-top:1px solid #cdd4dc;padding:20px 0}.service-question-list details:last-child{border-bottom:1px solid #cdd4dc}.service-question-list summary{font-size:1.05rem;font-weight:600;cursor:pointer;line-height:1.5}.service-question-list p{max-width:740px;margin:14px 0 0;line-height:1.75;color:#465568}
+
+.executive-summary{background:var(--navy);color:white}
+.executive-summary .container{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(32px,7vw,96px);align-items:start}
+.executive-summary h2{font-size:clamp(32px,4vw,48px);line-height:1.15;margin-top:14px}
+.executive-summary h2 span{color:#d1d9e1}
+.executive-summary .eyebrow{color:#d1d9e1}
+.executive-summary .container>p{font-size:17px;line-height:1.8;color:#e3e8ed}
+.community-section{background:var(--soft)}
+.community-copy{max-width:850px;font-size:17px;line-height:1.8;margin:0 0 32px}
+.community-gallery,.engineering-photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.community-gallery figure,.engineering-photo-grid figure,.turnkey-layout{margin:0;min-width:0;background:white;border:1px solid var(--line)}
+.community-gallery img{width:100%;height:440px;object-fit:cover;object-position:center 35%}
+.community-gallery figcaption,.engineering-photo-grid figcaption,.turnkey-layout figcaption{padding:16px 20px;font-size:15px;font-weight:600;line-height:1.5}
+.engineering-photo-grid img{width:100%;height:390px;object-fit:cover}
+.engineering-photo-grid figure:first-child img{object-position:center 62%}
+.turnkey-layout{max-width:900px;padding:16px;margin-inline:auto}
+.turnkey-layout img{width:100%;height:auto}
+@media(max-width:800px){.executive-summary .container{grid-template-columns:1fr;gap:18px}.community-gallery img{height:360px}.engineering-photo-grid img{height:320px}}
+@media(max-width:560px){.community-section{padding-block:45px}.community-gallery,.engineering-photo-grid{grid-template-columns:1fr;gap:16px}.community-gallery img,.engineering-photo-grid img{height:auto;aspect-ratio:4/3}.community-gallery figcaption,.engineering-photo-grid figcaption{padding:14px 16px}.executive-summary .container>p,.community-copy{font-size:16px}}
