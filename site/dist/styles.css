@@ -705,3 +705,17 @@ img{border-radius:5px}
 .turnkey-layout img{width:100%;height:auto}
 @media(max-width:800px){.executive-summary .container{grid-template-columns:1fr;gap:18px}.community-gallery img{height:360px}.engineering-photo-grid img{height:320px}}
 @media(max-width:560px){.community-section{padding-block:45px}.community-gallery,.engineering-photo-grid{grid-template-columns:1fr;gap:16px}.community-gallery img,.engineering-photo-grid img{height:auto;aspect-ratio:4/3}.community-gallery figcaption,.engineering-photo-grid figcaption{padding:14px 16px}.executive-summary .container>p,.community-copy{font-size:16px}}
+
+/* About us page structure */
+.about-section-nav{display:flex;gap:12px;flex-wrap:wrap;padding-block:8px 28px}
+.about-section-nav a{border:1px solid var(--line);padding:11px 16px;color:var(--navy);font-size:11px;transition:background .2s,color .2s}
+.about-section-nav a:hover,.about-section-nav a:focus-visible{background:var(--navy);color:white}
+.overview-summary{background:var(--navy);color:white;margin-top:70px;padding:clamp(28px,5vw,64px);display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(32px,7vw,96px);align-items:start}
+.overview-summary h2{font-size:clamp(32px,4vw,48px);line-height:1.15;margin-top:14px}
+.overview-summary h2 span{color:#d1d9e1}
+.overview-summary .eyebrow{color:#d1d9e1}
+.overview-summary p{font-size:15px;line-height:1.8;color:#e3e8ed;margin:0 0 16px}
+.delivery-section .community-section{background:var(--soft);padding:clamp(28px,5vw,60px);margin-top:70px}
+.delivery-section .community-section .section-heading h3{font-size:clamp(27px,3vw,38px);line-height:1.2}
+@media(max-width:800px){.overview-summary{grid-template-columns:1fr;gap:18px;margin-top:45px}.about-section-nav{gap:8px;padding-bottom:18px}.about-section-nav a{font-size:10px;padding:10px 12px}.delivery-section .community-section{padding:28px;margin-top:45px}}
+@media(max-width:560px){.about-section-nav{display:grid;grid-template-columns:1fr 1fr}.about-section-nav a{text-align:center}.overview-summary p{font-size:14px}.delivery-section .community-section{padding:22px 18px}.delivery-section .community-section .section-heading{display:block}.delivery-section .community-section .section-heading>p{margin-top:18px}}
