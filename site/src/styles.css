@@ -856,3 +856,19 @@ img{border-radius:5px}
 
 .leadership-bio h4{font-size:17px;margin:24px 0 8px}.leadership-bio h4+p{margin-top:0}.leadership-bio>p{font-size:13px;line-height:1.9;max-width:680px}
 @media(max-width:560px){.leadership-bio h4{font-size:16px;margin-top:22px}.leadership-bio>p{font-size:14px}}
+
+/* Keep the mobile home hero compact and bring its service shortcuts into view. */
+@media(max-width:700px){
+ .home-hero-reference{min-height:500px;min-height:clamp(500px,62svh,590px);flex-direction:column;align-items:stretch}
+ .home-hero-reference .hero-copy{width:100%;max-width:680px;padding:40px var(--gutter) 0}
+ .home-hero-reference .hero-copy h1{font-size:clamp(46px,11vw,68px)}
+ .hero-service-links{position:relative;left:auto;right:auto;bottom:auto;margin:28px var(--gutter) 24px}
+ .hero-values-strip{padding-block:8px}
+ .hero-value{padding-block:11px}
+}
+@media(max-width:420px){
+ .home-hero-reference{min-height:440px;min-height:clamp(440px,60svh,520px)}
+ .home-hero-reference .hero-copy{padding-top:36px}
+ .home-hero-reference .hero-copy h1{font-size:clamp(42px,12vw,58px)}
+ .hero-service-links{margin-top:24px;margin-bottom:20px}
+}
