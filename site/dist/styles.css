@@ -19,7 +19,7 @@
 .home-hero-reference{position:relative;display:flex;align-items:center;min-height:clamp(590px,43vw,750px);overflow:hidden;background:var(--navy)}
 .home-hero-reference>.hero-main-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 18%}
 .home-hero-reference>.hero-image-shade{position:absolute;inset:0;background:linear-gradient(90deg,#09182cf5 0%,#09182ce8 27%,#09182cb8 42%,#09182c42 61%,transparent 78%),linear-gradient(0deg,#09182c86 0%,transparent 25%)}
-.home-hero-reference .hero-copy{width:min(850px,58%);max-width:850px;padding:60px max(var(--gutter),calc((100vw - var(--max))/2)) 100px;position:relative;z-index:1}
+.home-hero-reference .hero-copy{width:min(1050px,64%);max-width:1050px;padding:60px 35px 100px max(var(--gutter),calc((100vw - var(--max))/2));position:relative;z-index:1}
 .home-hero-reference .hero-copy:before{display:none}
 .home-hero-reference .hero-copy .eyebrow{font-size:11px;letter-spacing:.15em;color:white;margin-bottom:25px}
 .home-hero-reference .hero-copy h1{font-size:clamp(62px,6vw,100px);line-height:.99;letter-spacing:-.055em;font-weight:620}
