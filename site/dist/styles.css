@@ -567,7 +567,7 @@
 .footer-brand-row{display:flex;align-items:center;gap:28px;padding-top:60px;margin-bottom:24px}
 .footer-brand-row .footer-brand{flex:0 0 auto;margin:0;padding:0}
 .footer-registered-bodies{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;flex:0 1 360px;min-width:0}
-.footer-body-logo{display:flex;align-items:center;justify-content:center;min-width:0;height:40px;padding:6px;background:white;border-radius:2px}
+.footer-body-logo{display:flex;align-items:center;justify-content:center;min-width:0;height:40px;padding:6px;background:transparent;border-radius:2px}
 .footer-body-logo img{display:block;width:auto;height:auto;max-width:100%;max-height:28px;object-fit:contain}
 .site-footer .footer-main{padding-top:0}
 @media(max-width:700px){.footer-brand-row{padding-top:45px}}
