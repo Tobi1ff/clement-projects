@@ -1,7 +1,7 @@
 {
   "origin": "https://www.clementprojectss.co.za",
   "preview": false,
-  "indexablePages": 19,
+  "indexablePages": 20,
   "pages": [
     {
       "file": "404.html",
@@ -71,6 +71,13 @@
       "canonical": "https://www.clementprojectss.co.za/interchangeable-models-parts.html",
       "title": "Pump Model Cross-Reference: 59 Pairings | CPS",
       "description": "Search 59 pump model pairings across AH, HH, L, M, G/GH, SP, SH and AF families. Share both references with CPS to enquire about the correct spare part.",
+      "indexable": true
+    },
+    {
+      "file": "jobs.html",
+      "canonical": "https://www.clementprojectss.co.za/jobs",
+      "title": "Jobs & Vacancies | Clement Projects Solution",
+      "description": "View current vacancies at Clement Projects Solution in Phalaborwa and apply online with your CV.",
       "indexable": true
     },
     {

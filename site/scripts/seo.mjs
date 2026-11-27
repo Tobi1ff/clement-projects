@@ -9,7 +9,7 @@ const root = resolve(import.meta.dirname, '..');
 export const seoConfig = JSON.parse(readFileSync(resolve(root, 'seo.config.json'), 'utf8'));
 const origin = new URL(seoConfig.origin).origin;
 if (!origin.startsWith('https://') || seoConfig.origin !== origin) throw new Error('SEO origin must be an HTTPS origin without a path or trailing slash');
-export const canonicalUrl = file => `${origin}/${file === 'index.html' ? '' : file}`;
+export const canonicalUrl = file => `${origin}/${file === 'index.html' ? '' : (seoPages[file]?.path || file)}`;
 const absolute = path => new URL(path, `${origin}/`).href;
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const jsonLd = data => JSON.stringify(data).replace(/</g, '\\u003c');

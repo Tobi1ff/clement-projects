@@ -1,86 +1,90 @@
 {
   "404.html": {
-    "hash": "f5bb9a5b087a44c0cb06cc02bb784d5307dce2faa63d3c7d83c3104dbcb06e95",
+    "hash": "71b3823aece6c67f803217b3314ace48a961595857ce556f6c7fa89a2ffa66d8",
     "modified": "2026-11-27"
   },
   "about.html": {
-    "hash": "a50e5b569b0b7341403f41abfa85d7a5cf5fdc665d19a8850947f71e40ff419d",
+    "hash": "9d7a5b09769d9c0ad6cece65bf628ff1dc4f790ff87c86d554aa441fcbc5dd2a",
     "modified": "2026-11-27"
   },
   "agriculture-gallery.html": {
-    "hash": "8e87f4b04c80d107900bba4c424b857f0118154d50a49fbb7fab73dd374f35b6",
+    "hash": "fb4f63f8ef794cff9149f93547369f23b2d383a95ad0b47dbf093060d8216c7d",
     "modified": "2026-11-27"
   },
   "agriculture.html": {
-    "hash": "a75f4917f92c8ca727b1193dad10ee7ceb61c87e879b388fd509b4fca9b47563",
+    "hash": "11c8c2c359230a020f0bdd51f90f2023fc45136acf342910c2797fbc497dc91e",
     "modified": "2026-11-27"
   },
   "construction-gallery.html": {
-    "hash": "c15861df4b752dde2b923a20ee78c61fcd7b103043465e186d5a2600f46e3091",
+    "hash": "c5c01a9e947c3b5b8eed386b9821ef26eb45ef5739c3b0b4d47814113be887bc",
     "modified": "2026-11-27"
   },
   "construction.html": {
-    "hash": "4ed928ab2fdbb0077c223a089c1951985dc2598dd4bee2385ef3f67ffeab77cb",
+    "hash": "1e29090477731bc3c190c173d6ac33b761d070dfd504b23ee7401daf2f80489d",
     "modified": "2026-11-27"
   },
   "contact.html": {
-    "hash": "81b0b0e32200196ed7955c77fe0f2cd7e563b38b45c600d19fcf1f0bd248b019",
+    "hash": "5da82a9dd8b406960011942fab799fefda9c67a7e863c3d5b8d86ba480337c15",
     "modified": "2026-11-27"
   },
   "conveyor-systems.html": {
-    "hash": "c98d058d039d08a0928c847290e15000188f1618b70149057ceaf2e891c93478",
+    "hash": "2b6cb380fcd0dddd19e71321f595335e32f2dbc4b5d874cc09e356df5e50d575",
     "modified": "2026-11-27"
   },
   "index.html": {
-    "hash": "04c457fb11986a1058285eb5eae0113c7da8688a91c6df35f70b98c0c996a4a2",
+    "hash": "7c24e424a266f8434ce2bdd5151dea8c596d03bce7f8fbe903cd0477feca95f9",
     "modified": "2026-11-27"
   },
   "interchangeable-models-parts.html": {
-    "hash": "52e44d284d0b0f173b8ba27644692835538edf07a42f13b6eb22cc3ca6e1c35b",
+    "hash": "c5d1e1226a473c4742ca746769449f85d853171b228d1dd64b094f1906d502e7",
+    "modified": "2026-11-27"
+  },
+  "jobs.html": {
+    "hash": "05540d76dc7fca3879ad10906a2d32c0d27ac1697b0b55a9fab965c3e913c80d",
     "modified": "2026-11-27"
   },
   "lifting-rigging.html": {
-    "hash": "b88bc15fe428056ba06db9264220c4ceb761f1d4873f3b3fa1512566b9a300ed",
+    "hash": "e148291d0d38919d91f3e911b9020e480c2923f83703fa52e30b686ef1b662e8",
     "modified": "2026-11-27"
   },
   "mining-industrial.html": {
-    "hash": "3ceba8cd5a3b44f2d79a0f09550cebf49ef01b952511639a1fa38f09e8558ae8",
+    "hash": "e1c3c24eefec90db8d76431fdf477b482a39c6d148f4c990cb4389d41f72be57",
     "modified": "2026-11-27"
   },
   "privacy.html": {
-    "hash": "30c3d241882d2e0094eb7b14280aac0f7b4e38efc829098f2c98d21ea4f5e59b",
+    "hash": "29c69c875c74ed32978f2cb3ddfbfac2652fb666ebc642d38fb26a92c4f75545",
     "modified": "2026-11-27"
   },
   "project-archive.html": {
-    "hash": "443d8286d6592dec41e8e0bd741a85f81bf6b5f5b7ba07ff51f2eb25a702846a",
+    "hash": "6d9f60c5558f117aeb372317e586daec1a639b55c6e385b5d473953a174b7f6d",
     "modified": "2026-11-27"
   },
   "project-ba-phalaborwa-plant-hire-2024.html": {
-    "hash": "fa4b7284996357e795b86c89e373f99ecd627a30b26e6ed65fd6f30d445dc6ae",
+    "hash": "57274f85d47f0b67f40a6eab0e1d14f47f7b1f08a9e518f95de56b6603aff8a2",
     "modified": "2026-11-27"
   },
   "project-dwellers-side-drains-2025.html": {
-    "hash": "0b54e5faf686310a5b7ec27b97d9ace0dd45e5de857f4de91d164adcfab4e8ff",
+    "hash": "b6c5766ef432113a57897dd7f2a10873a43ed49f0be33611490e53b3807822b8",
     "modified": "2026-11-27"
   },
   "project-fruit-picking-2024-2026.html": {
-    "hash": "d08290edd94da32fe97b4d44d97cb76cca48b4ca33ac03127c67eee9627e42ce",
+    "hash": "55be8db0a5dc9900a3c5f77d1fca8df9daacf271ecadb0f368b57071849d5ff9",
     "modified": "2026-11-27"
   },
   "projects.html": {
-    "hash": "3062d4d563c1dd72e1f276db8e16e9946b1e865d17f38c7d406afc9e9fdb3749",
+    "hash": "f9c45e10dfa7d86ae3e3b6e9f882e0a28ae7832a6cd6138d0dde4e049275ef2a",
     "modified": "2026-11-27"
   },
   "pump-accessories.html": {
-    "hash": "c8be57f4d1d537745ffe8b13399ab9343f9efebebae52a7e42e333eb90f771a5",
+    "hash": "df6dde053c8ee8ce11545d3459f2549c9040c40a49be0bc7fe8f17c471e4e4ca",
     "modified": "2026-11-27"
   },
   "resources.html": {
-    "hash": "36bcb1d91113577f99cdc96cb9bb5b88f619addfcc72b3a016cd4f65722c4b6f",
+    "hash": "8ababeb4a3ccac363c41d6b90162397331e7d72affd6de63eb96ffca13d9499c",
     "modified": "2026-11-27"
   },
   "turnkey-projects.html": {
-    "hash": "3639c2087b5a1ed9a2cddea2ab2c4ef60d64df03497b8cb3090915b1d40ab09c",
+    "hash": "cb9bca0125d56d6c0b78584cebe1092bfd40cabf3f533aa9bd0a93711c9bf5eb",
     "modified": "2026-11-27"
   }
 }

@@ -376,3 +376,32 @@ if (archiveRecords.length) {
   });
   updateArchive(false);
 }
+
+const jobsForm = document.getElementById('jobs-application-form');
+if (jobsForm) {
+  const status = document.getElementById('jobs-form-status');
+  const submit = document.getElementById('jobs-submit');
+  const success = document.getElementById('jobs-success');
+  document.querySelectorAll('[data-apply-job]').forEach(link => link.addEventListener('click', () => {
+    const role = jobsForm.elements.namedItem('job_id');
+    role.value = link.dataset.applyJob;
+  }));
+  jobsForm.addEventListener('submit', async event => {
+    event.preventDefault();
+    if (!jobsForm.reportValidity()) return;
+    status.textContent = 'Sending your application…';
+    submit.disabled = true;
+    try {
+      const response = await fetch('/api/jobs-application', { method: 'POST', body: new FormData(jobsForm), headers: { Accept: 'application/json' } });
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error || 'We could not send your application. Please try again.');
+      jobsForm.hidden = true;
+      success.hidden = false;
+      success.focus();
+    } catch (error) {
+      status.textContent = error.message || 'We could not send your application. Please try again.';
+    } finally {
+      submit.disabled = false;
+    }
+  });
+}

@@ -1,0 +1,24 @@
+import { openings } from './jobs-data.mjs';
+
+const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[character]));
+
+export function renderJobsPage({ pageIntro, arrow }) {
+  const today = new Date().toISOString().slice(0, 10);
+  const active = openings.filter(job => !job.closingDate || job.closingDate >= today);
+  const listings = active.length
+    ? `<div class="jobs-list">${active.map(job => `<article class="job-card" id="${escapeHtml(job.id)}"><div class="job-card-top"><span class="small-label">${escapeHtml(job.type || 'VACANCY')}</span><span class="job-location">${escapeHtml(job.location || 'South Africa')}</span></div><h2>${escapeHtml(job.title)}</h2><p>${escapeHtml(job.summary)}</p><div class="job-meta"><span>${escapeHtml(job.type || 'Full time')}</span>${job.closingDate ? `<span>Apply by ${escapeHtml(job.closingDate)}</span>` : ''}</div><a class="button button-primary" href="#jobs-application-form" data-apply-job="${escapeHtml(job.id)}">Apply for this role${arrow}</a></article>`).join('')}</div>`
+    : `<div class="jobs-empty-state"><span class="small-label">NO OPEN VACANCIES</span><h2>There are no current openings.</h2><p>We’ll post new opportunities here when recruitment opens. Please check back soon.</p><a class="text-link" href="mailto:hr@clementprojectssolution.co.za">Contact Human Resources${arrow}</a></div>`;
+
+  const form = active.length ? `<section class="jobs-apply-section" id="apply"><div class="jobs-apply-copy"><span class="small-label">APPLY ONLINE</span><h2>Send us your application.</h2><p>Choose an open role and attach your CV. Your application will be sent to CPS Human Resources.</p></div><form id="jobs-application-form" class="jobs-application-form" enctype="multipart/form-data">
+    <div class="field"><label for="job-id">Vacancy <span aria-hidden="true">*</span></label><select id="job-id" name="job_id" required><option value="">Select a vacancy</option>${active.map(job => `<option value="${escapeHtml(job.id)}">${escapeHtml(job.title)} — ${escapeHtml(job.location || 'South Africa')}</option>`).join('')}</select></div>
+    <div class="form-row"><div class="field"><label for="applicant-name">Full name <span aria-hidden="true">*</span></label><input id="applicant-name" name="name" autocomplete="name" required maxlength="120"></div><div class="field"><label for="applicant-email">Email address <span aria-hidden="true">*</span></label><input id="applicant-email" name="email" type="email" autocomplete="email" required maxlength="200"></div></div>
+    <div class="field"><label for="applicant-phone">Phone number <span aria-hidden="true">*</span></label><input id="applicant-phone" name="phone" type="tel" autocomplete="tel" required maxlength="40"></div>
+    <div class="field"><label for="cover-note">Short note <span class="optional">(optional)</span></label><textarea id="cover-note" name="cover_note" rows="4" maxlength="2000" placeholder="Tell us briefly about your relevant experience."></textarea></div>
+    <div class="field"><label for="applicant-cv">CV or résumé <span aria-hidden="true">*</span></label><input id="applicant-cv" name="cv" type="file" accept=".pdf,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document" required><p class="field-help">PDF or DOCX, up to 3 MB.</p></div>
+    <div class="jobs-honeypot" aria-hidden="true"><label for="website">Leave this field empty</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
+    <div class="field jobs-consent"><label><input type="checkbox" name="privacy_consent" value="yes" required><span>I have read the <a href="privacy.html#job-applications">application privacy information</a> and agree to CPS using these details to assess my application.</span></label></div>
+    <button class="button button-primary" id="jobs-submit" type="submit">Submit application${arrow}</button><p class="jobs-form-status" id="jobs-form-status" role="status" aria-live="polite"></p>
+  </form></section><div class="jobs-success" id="jobs-success" hidden role="status" tabindex="-1"><span class="small-label">APPLICATION RECEIVED</span><h2>Thank you for applying.</h2><p>Your application has been sent to CPS Human Resources.</p></div>` : '';
+
+  return `${pageIntro('Careers','Opportunities to<br><em>grow with CPS.</em>','Explore current vacancies at Clement Projects Solution and apply online.')}<section class="section jobs-section"><div class="container"><div class="section-heading"><div><p class="eyebrow"><span></span>OPEN POSITIONS</p><h2>Current vacancies</h2></div><p>Our opportunities span the work we do in mining and industrial supply, engineering, construction and agriculture.</p></div>${listings}${form}</div></section>`;
+}
