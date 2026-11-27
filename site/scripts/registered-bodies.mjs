@@ -10,7 +10,7 @@ export const registeredBodies = [
     "sourceObject": 273
   },
   {
-    "file": "body-rma.jpg",
+    "file": "body-rma-transparent.png",
     "name": "RMA",
     "description": "Rand Mutual Assurance",
     "width": 358,
@@ -18,7 +18,7 @@ export const registeredBodies = [
     "sourceObject": 275
   },
   {
-    "file": "body-information-regulator.jpg",
+    "file": "body-information-regulator-transparent.png",
     "name": "Information Regulator",
     "description": "South Africa",
     "width": 347,
@@ -26,7 +26,7 @@ export const registeredBodies = [
     "sourceObject": 276
   },
   {
-    "file": "body-nhbrc.jpg",
+    "file": "body-nhbrc-transparent.png",
     "name": "NHBRC",
     "description": "National Home Builders Registration Council",
     "width": 190,
