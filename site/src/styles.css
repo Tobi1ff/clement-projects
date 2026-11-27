@@ -129,6 +129,13 @@
  .hero-value h2{font-size:12px}
  .hero-value p{font-size:10px}
 }
+.home-hero-reference .hero-actions{flex-wrap:nowrap;gap:12px}
+.home-hero-reference .hero-actions .button{border-radius:5px}
+@media(max-width:700px){
+ .home-hero-reference .hero-actions{gap:8px}
+ .home-hero-reference .hero-actions .button{font-size:clamp(10px,2.8vw,12px);padding-inline:clamp(10px,3vw,17px);gap:clamp(7px,2vw,14px)}
+ .home-hero-reference .hero-actions .button svg{width:17px;height:17px}
+}
 
 /* Keep the working copy comfortably readable at every screen size. */
 .hero-copy>p:not(.eyebrow){font-size:16px}
